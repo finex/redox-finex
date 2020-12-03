@@ -3,7 +3,7 @@
 #+DATE: 02/12/2020
 #+STARTUP: inlineimages
 
-* Indice :TOC_3:
+* Table of contents :TOC_3:
 - [[#customized-keymap-for-redox-by-leonardo-finex-finetti][Customized keymap for Redox by Leonardo (FiNeX) Finetti.]]
 - [[#features][Features]]
 - [[#layout][Layout]]
