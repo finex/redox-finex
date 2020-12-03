@@ -13,22 +13,22 @@ accents.
 * Features
 - Enabled USE_SERIAL for Falba.Tech Redox keyboards.
 - Layouts: Colemak DHm, Qwerty.
-- Added redundant =Space=, =Esc=, =Ctrl= and =Enter= keys. I like to have this
+- Added redundant ~Space~, ~Esc~, ~Ctrl~ and ~Enter~ keys. I like to have this
   keys on both halves.
-- Added macro to print =->= and ==>= strings.
-- Added macro to print =:-( = and =:-) = strings.
+- Added macro to print ~->~ and ~=>~ strings.
+- Added macro to print ~:-( ~ and ~:-) ~ strings.
 - Added more arrows.
-- Added =(= and =)= on Shifts keys (Space Cadet Shift).
-- Tapdance: =:= (=;= × 2), ={= (=[= × 2), =}= (=]= × 2).
+- Added ~(~ and ~)~ on Shifts keys (Space Cadet Shift).
+- Tapdance: ~:~ (~;~ × 2), ~{~ (~[~ × 2), ~}~ (~]~ × 2).
 - Removed Mouse and media support.
 - Added missing "Print Screen" and "Menu" keys.
 - Added missing "F11" and "F12" keys.
-- Added =Alt= modifier on home row.
-- Added =Ctrl= modifier on home row.
-- Added =Ctrl= modifier on home row.
-- Added =Shift other half= on home keys: this allows to shift the right half
-pressing =t= on the left (or =f= using Qwerty), and the opposite pressing =n=
-(or =j= for Qwerty layout).
+- Added ~Alt~ modifier on home row.
+- Added ~Ctrl~ modifier on home row.
+- Added ~Ctrl~ modifier on home row.
+- Added ~Shift other half~ on home keys: this allows to shift the right half
+pressing ~t~ on the left (or ~f~ using Qwerty), and the opposite pressing ~n~
+(or ~j~ for Qwerty layout).
 
 
 * Layout
@@ -108,7 +108,7 @@ keyboard whe one hand use the mouse.
   Added Ctrl on home row (and moved Alt on home row).
 - 2020/09/12
   Moved MO() "Function" layer to right.
-- 2020/12/02
+- 2020/12/03
   Added GUI modifier on home row and minor fixes.
 
 * TODO
