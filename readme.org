@@ -3,6 +3,15 @@
 #+DATE: 02/12/2020
 #+STARTUP: inlineimages
 
+* Indice :TOC_3:
+- [[#customized-keymap-for-redox-by-leonardo-finex-finetti][Customized keymap for Redox by Leonardo (FiNeX) Finetti.]]
+- [[#features][Features]]
+- [[#layout][Layout]]
+  - [[#keys-legend][Keys Legend]]
+  - [[#color-legend][Color Legend:]]
+- [[#changelog][Changelog]]
+- [[#todo][Todo]]
+
 * Customized keymap for Redox by Leonardo (FiNeX) Finetti.
 This keymap use the default one with some changes to suit my needs. Mainly
 having most used symbol on a separated layer copying the common symbols from the
@@ -107,5 +116,5 @@ keyboard whe one hand use the mouse.
 - 2020/12/03
   Added GUI modifier on home row and minor fixes.
 
-* TODO
+* Todo
 - Bring back mouse and multimedia keys.
