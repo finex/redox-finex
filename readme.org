@@ -16,7 +16,7 @@ accents.
 - Added redundant ~Space~, ~Esc~, ~Ctrl~ and ~Enter~ keys. I like to have this
   keys on both halves.
 - Added macro to print ~->~ and ~=>~ strings.
-- Added macro to print ~:-( ~ and ~:-) ~ strings.
+- Added macro to print ~:-(~ and ~:-)~ strings.
 - Added more arrows.
 - Added ~(~ and ~)~ on Shifts keys (Space Cadet Shift).
 - Tapdance: ~:~ (~;~ × 2), ~{~ (~[~ × 2), ~}~ (~]~ × 2).
