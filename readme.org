@@ -5,16 +5,15 @@
 
 * Customized keymap for Redox by Leonardo (FiNeX) Finetti.
 This keymap use the default one with some changes to suit my needs. Mainly
-having most used symbol on a separated layer copying the common symbols on the
-number keys on the second row and adding other symbols and ~◌̀~ ~◌́~ dead keys for
+having most used symbol on a separated layer copying the common symbols from the
+number keys to the second row, adding other symbols and ~◌̀~ ~◌́~ dead keys for
 accents.
 
 
 * Features
 - Enabled USE_SERIAL for Falba.Tech Redox keyboards.
 - Layouts: Colemak DHm, Qwerty.
-- Added redundant ~Space~, ~Esc~, ~Ctrl~ and ~Enter~ keys. I like to have this
-  keys on both halves.
+- Added redundant ~Space~, ~Esc~, ~Ctrl~ and ~Enter~ keys. I like to have this keys on both halves.
 - Added macro to print ~->~ and ~=>~ strings.
 - Added macro to print ~:-(~ and ~:-)~ strings.
 - Added more arrows.
@@ -26,14 +25,11 @@ accents.
 - Added ~Alt~ modifier on home row.
 - Added ~Ctrl~ modifier on home row.
 - Added ~Ctrl~ modifier on home row.
-- Added ~Shift other half~ on home keys: this allows to shift the right half
-pressing ~t~ on the left (or ~f~ using Qwerty), and the opposite pressing ~n~
-(or ~j~ for Qwerty layout).
+- Added ~Shift other half~ on home keys: this allows to shift the right half pressing ~t~ on the left (or ~f~ using Qwerty), and the opposite pressing ~n~ (or ~j~ for Qwerty layout).
 
 
 * Layout
-This keyboard laoyut is intended to be used with English (US, intl, with dead
-keys) settings on PC.
+This keyboard layout is intended to be used with English (US, intl, with dead keys) settings on PC.
 
 #+CAPTION: Redox FiNeX layout
 [[https://i.imgur.com/z2Fz0Ur.png]]
