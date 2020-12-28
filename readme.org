@@ -53,7 +53,7 @@ The following scheme describe the meaning of the keys symbols positions.
 |-----------------+---------------+---------------|
 | Shifted key (*) | Symbols Layer | Shifted AltGr |
 |-----------------+---------------+---------------|
-| Functions Layer | One shot      | Double Tap    |
+| Functions Layer |               | Double Tap    |
 |-----------------+---------------+---------------|
 | Single Tap      | Numbers Layer | AltGr         |
 |-----------------+---------------+---------------|
