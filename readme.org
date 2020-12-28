@@ -4,7 +4,7 @@
 #+STARTUP: inlineimages
 
 * Table of contents :TOC_3:
-- [[#customized-keymap-for-redox-by-leonardo-finex-finetti][Customized keymap for Redox by Leonardo (FiNeX) Finetti.]]
+- [[#customized-keymap-for-redox-by-leonardo-finex-finetti][Customized keymap for Redox by Leonardo (FiNeX) Finetti]]
 - [[#features][Features]]
 - [[#layout][Layout]]
   - [[#keys-legend][Keys Legend]]
@@ -12,7 +12,7 @@
 - [[#changelog][Changelog]]
 - [[#todo][Todo]]
 
-* Customized keymap for Redox by Leonardo (FiNeX) Finetti.
+* Customized keymap for Redox by Leonardo (FiNeX) Finetti
 This keymap use the default one with some changes to suit my needs. Mainly
 having most used symbol on a separated layer copying the common symbols from the
 number keys to the second row, adding other symbols and ~◌̀~ ~◌́~ dead keys for
@@ -48,11 +48,11 @@ This keyboard layout is intended to be used with English (US, intl, with dead ke
 The following scheme describe the meaning of the keys symbols positions.
 
 |-----------------+---------------+---------------|
-| Shifted key (*) | Symbol Layout | Shifted AltGr |
+| Shifted key (*) | Symbols Layer | Shifted AltGr |
 |-----------------+---------------+---------------|
-| Function Layout | One shot      | Double Tap    |
+| Functions Layer | One shot      | Double Tap    |
 |-----------------+---------------+---------------|
-| Single Tap      | Number Layout | AltGr         |
+| Single Tap      | Number Layer  | AltGr         |
 |-----------------+---------------+---------------|
 |                 | *Modifier*    |               |
 |-----------------+---------------+---------------|
@@ -63,8 +63,8 @@ keyboard whe one hand use the mouse.
 
 ** Color Legend
 - Green: Symbols & Navigation layer
-- Blue: Number Layer
-- Orange: Function Layer
+- Blue: Numbers Layer
+- Orange: Functions Layer
 - Red: Tap dance
 - Pink: Custom shift to enable shifted keys on opposite half and on same thumb
   cluster
@@ -101,7 +101,7 @@ keyboard whe one hand use the mouse.
   Updated keys to match FiNeX Let's Split Layout: added brackets on Hyper/Meh
   keys, added brackets on number layer, added gui on right arrow.
 - 2020/01/05
-  Updated inner top corners, moved "Function" activation layer on more
+  Updated inner top corners, moved "Functions" activation layer on more
   convenient positions, added Ctrl on right thumb instead of AltGr, removed mac
   layout, added extra layer switcher and minor code fixes.
 - 2020/03/23
@@ -111,7 +111,7 @@ keyboard whe one hand use the mouse.
 - 2020/09/01
   Added Ctrl on home row (and moved Alt on home row).
 - 2020/09/12
-  Moved MO() "Function" layer to right.
+  Moved MO() "Functions" layer to right.
 - 2020/12/03
   Added GUI modifier on home row and minor fixes.
 
