@@ -35,14 +35,15 @@ accents.
 - Added ~Ctrl~ modifier on home row.
 - Added ~Ctrl~ modifier on home row.
 - Added ~Shift other half~ on home keys: this allows to shift the right half pressing ~t~ on the left (or ~f~ using Qwerty), and the opposite pressing ~n~ (or ~j~ for Qwerty layout).
+- Configured key to enable number layer with mod (GUI). Used for custom AwesomeWM bindings.
+- Added numbers layer persistent toggle.
 
 
 * Layout
 This keyboard layout is intended to be used with English (US, intl, with dead keys) settings on PC.
 
 #+CAPTION: Redox FiNeX layout
-[[https://i.imgur.com/z2Fz0Ur.png]]
-
+[[https://raw.githubusercontent.com/finex/redox-finex/awesomewm/images/redox-finex.png]]
 
 ** Keys Legend
 The following scheme describe the meaning of the keys symbols positions.
@@ -115,6 +116,8 @@ keyboard whe one hand use the mouse.
   Moved MO() "Function" layer to right.
 - 2020/12/03
   Added GUI modifier on home row and minor fixes.
+- 2020/12/28
+  Reworked number layer, added number layer peristent toggle to keep the layer active without pressing constantly a button. Tried to exclude some keys to emulate common Dactyl Manuform layouts. Added new layout to enable ~_NUMB~ layer with ~GUI~ modifier enabled for switching AwesomeWM tag.
 
 * Todo
 - Bring back mouse and multimedia keys.
