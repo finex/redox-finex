@@ -48,13 +48,14 @@ This keyboard layout is intended to be used with English (US, intl, with dead ke
 The following scheme describe the meaning of the keys symbols positions.
 
 |-----------------+---------------+---------------|
+|-----------------+---------------+---------------|
 | Shifted key (*) | Symbols Layer | Shifted AltGr |
 |-----------------+---------------+---------------|
 | Functions Layer | One shot      | Double Tap    |
 |-----------------+---------------+---------------|
 | Single Tap      | Number Layer  | AltGr         |
 |-----------------+---------------+---------------|
-|                 | *Modifier*    |               |
+|                 | Modifier      |               |
 |-----------------+---------------+---------------|
 
 (*): Shift is enabled with standard key or with custom home row shitfs which
