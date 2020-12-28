@@ -233,8 +233,27 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
 };
 
 
-
-
+// Fine tuning of TAPPING_TERM valuer on some home row modifiers to avoid errors during typing.
+uint16_t get_tapping_term(uint16_t keycode, keyrecord_t *record) {
+  switch (keycode) {
+  case KC_AL_I:
+  case KC_AL_R:
+    // My right ring finger is weak, so I need a more high TAPPING term
+    return TAPPING_TERM + 200;
+  case KC_GU_O:
+  case KC_GU_A:
+    // Same for right pinky
+    return TAPPING_TERM + 50;
+  case KC_CT_S:
+    // Needed for fast typing
+    return TAPPING_TERM - 30;
+  case KC_CT_E:
+    // Needed for fast typing
+    return TAPPING_TERM - 30;
+  default:
+    return TAPPING_TERM;
+  }
+}
 
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {

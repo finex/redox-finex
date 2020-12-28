@@ -34,7 +34,7 @@ accents.
 - Added ~Alt~ modifier on home row.
 - Added ~Ctrl~ modifier on home row.
 - Added ~Ctrl~ modifier on home row.
-- Added ~Shift other half~ on home keys: this allows to shift the right half pressing ~t~ on the left (or ~f~ using Qwerty), and the opposite pressing ~n~ (or ~j~ for Qwerty layout).
+- Added ~Shift other half~ on home keys: this allows to shift the right half pressing ~t~ on the left, and the opposite pressing ~n~.
 - Added "Numbers" layer toggle button.
 - Added specific layout for "AwesomeWM" window manager.
 
@@ -100,7 +100,7 @@ keyboard when opposite hand use the mouse.
 - 2019/02/25
   Major layouts upgrade, partially inspired by Steven Hum's Beakl layouts.
 - 2019/03/17
-  Aligned qwerty and mac to main layout.
+  Aligned Qwerty and Mac to main layout.
 - 2019/03/17
   Minor layout fix: moved thumb cluster keys because I was not happy with the
   previous one, added a couple of new keys on top corners (previously unused).
@@ -111,7 +111,7 @@ keyboard when opposite hand use the mouse.
   keys, added brackets on number layer, added gui on right arrow.
 - 2020/01/05
   Updated inner top corners, moved "Function" activation layer on more
-  convenient positions, added Ctrl on right thumb instead of AltGr, removed mac
+  convenient positions, added Ctrl on right thumb instead of AltGr, removed Mac
   layout, added extra layer switcher and minor code fixes.
 - 2020/03/23
   Added Alt on right thumb cluster instead of GUI because I'm not using it.
@@ -125,6 +125,9 @@ keyboard when opposite hand use the mouse.
   Added GUI modifier on home row and minor fixes.
 - 2020/12/28
   Added AwesomeWM layer, minor "Numbers" layer improvements and added "Numbers" layer toggle.
+- 2020/12/29
+  Added custom tapping term per keys. Added =LTO_ENABLE = no= and =CONSOLE_ENABLE = no= reduce firmware size.
 
 * Todo
 - Bring back mouse and multimedia keys.
+- Align Qwerty Layout.

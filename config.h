@@ -19,13 +19,13 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 /* Use I2C or Serial, not both */
 #define USE_SERIAL
-// #define USE_I2C
 
 /* Select hand configuration */
 #define MASTER_LEFT
 // #define MASTER_RIGHT
 // #define EE_HANDS
 
+/* RGB Settings */
 #undef RGBLED_NUM
 #define RGBLIGHT_ANIMATIONS
 #define RGBLED_NUM 14
@@ -33,8 +33,12 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define RGBLIGHT_SAT_STEP 8
 #define RGBLIGHT_VAL_STEP 8
 
-// #define PERMISSIVE_HOLD
-#define IGNORE_MOD_TAP_INTERRUPT
 
-// Recommended for heavy chording.
+/* Fine tuning */
+// Reduce errors on fast typing
+#define IGNORE_MOD_TAP_INTERRUPT
+// Recommended for heavy chording
 #define QMK_KEYS_PER_SCAN 4
+// Custom tapping term
+#define TAPPING_TERM 200
+#define TAPPING_TERM_PER_KEY
