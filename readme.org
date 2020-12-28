@@ -48,15 +48,17 @@ This keyboard layout is intended to be used with English (US, intl, with dead ke
 ** Keys Legend
 The following scheme describe the meaning of the keys symbols positions.
 
-|------------------+----------------+---------------|
-| Shifted key (*)  | Symbols Layout | Shifted AltGr |
-|------------------+----------------+---------------|
-| Functions Layout | One shot       | Double Tap    |
-|------------------+----------------+---------------|
-| Single Tap       | Numbers Layout | AltGr         |
-|------------------+----------------+---------------|
-|                  | *Modifier*     |               |
-|------------------+----------------+---------------|
+|-----------------+---------------+---------------|
+|                 |               |               |
+|-----------------+---------------+---------------|
+| Shifted key (*) | Symbols Layer | Shifted AltGr |
+|-----------------+---------------+---------------|
+| Functions Layer | One shot      | Double Tap    |
+|-----------------+---------------+---------------|
+| Single Tap      | Numbers Layer | AltGr         |
+|-----------------+---------------+---------------|
+|                 | Modifier      |               |
+|-----------------+---------------+---------------|
 
 (*): Shift is enabled with standard key or with custom home row shitfs which
 enables left top corner keycode on thumbs keys to make it easier use the
