@@ -42,27 +42,32 @@ accents.
 * Layout
 This keyboard layout is intended to be used with English (US, intl, with dead keys) settings on PC.
 
+On GNU/Linux systems use the following command to set the keyboard layout:
+#+begin_src sh
+setxkbmap -layout us -variant intl -option eurosign:e
+#+end_src
+
 #+CAPTION: Redox FiNeX layout
 [[https://raw.githubusercontent.com/finex/redox-finex/awesomewm/images/redox-finex.png]]
 
 ** Keys Legend
 The following scheme describe the meaning of the keys symbols positions.
 
-|-----------------+---------------+---------------|
-|                 |               |               |
-|-----------------+---------------+---------------|
-| Shifted key (*) | Symbols Layer | Shifted AltGr |
-|-----------------+---------------+---------------|
-| Functions Layer |               | Double Tap    |
-|-----------------+---------------+---------------|
-| Single Tap      | Numbers Layer | AltGr         |
-|-----------------+---------------+---------------|
-|                 | Modifier      |               |
-|-----------------+---------------+---------------|
+|-----------------+---------------+-----------------|
+|                 |               |                 |
+|-----------------+---------------+-----------------|
+| Shifted key (*) | Symbols Layer | Shifted AltGr   |
+|-----------------+---------------+-----------------|
+| Functions Layer | Double Tap    | AwesomeWM Layer |
+|-----------------+---------------+-----------------|
+| Single Tap      | Numbers Layer | AltGr           |
+|-----------------+---------------+-----------------|
+|                 | Modifier      |                 |
+|-----------------+---------------+-----------------|
 
 (*): Shift is enabled with standard key or with custom home row shitfs which
 enables left top corner keycode on thumbs keys to make it easier use the
-keyboard when right hand is on the mouse.
+keyboard when opposite hand use the mouse.
 
 ** Color Legend
 - Green: Symbols & Navigation layer

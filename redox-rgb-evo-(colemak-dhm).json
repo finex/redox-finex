@@ -3,7 +3,7 @@
     "backcolor": "#ffffff",
     "name": "Redox RGB Evo (Colemak DHm)",
     "author": "FiNeX (https://www.finex.org)",
-    "notes": "# Ergonomic Redox Keyboard Layout #\nRevision date: 2020-12-28\nLayout: English (US, intl, with dead keys)\n\n\n## Keys Legend: ##\nThe following scheme describe the meaning of the keys symbols positions.\n\n|-----------------+---------------+---------------|\n| Shifted key (*) | Symbol Layout | Shifted AltGr |\n|-----------------+---------------+---------------|\n| Function Layout | One shot      | Double Tap    |\n|-----------------+---------------+---------------|\n| Single Tap      | Number Layout | AltGr         |\n|-----------------+---------------+---------------|\n|                 | *Modifier*    |               |\n|-----------------+---------------+---------------|\n\n(*): Shift is enabled with standard key or with custom home row shitfs which\nenables left top corner keycode on thumbs keys to make it easier use the\nkeyboard whe one hand use the mouse.\n\n\n## Color Legend: ##\n- Green: Symbols & Navigation layer \n- Blue: Number Layer\n- Orange: Function Layer\n- Red: Tap dance\n- Pink: Custom shift to enable shifted keys on opposite half and on same thumb cluster.",
+    "notes": "# Ergonomic Redox Keyboard Layout #\nRevision date: 2020-12-28\nLayout: English (US, intl, with dead keys)\n\n\n## Keys Legend: ##\nThe following scheme describe the meaning of the keys symbols positions.\n\n|-----------------+---------------+-----------------|\n| Shifted key (*) | Symbols Layer | Shifted AltGr   |\n|-----------------+---------------+-----------------|\n| Functions Layer | Double Tap    | AwesomeWM Layer |\n|-----------------+---------------+-----------------|\n| Single Tap      | Numbers Layer | AltGr           |\n|-----------------+---------------+-----------------|\n|                 | Modifier      |                 |\n|-----------------+---------------+-----------------|\n\n(*): Shift is enabled with standard key or with custom home row shitfs which\nenables left top corner keycode on thumbs keys to make it easier use the\nkeyboard when opposite hand use the mouse.\n\n\n## Color Legend: ##\n- Green: Symbols & Navigation layer \n- Blue: Numbers Layer\n- Orange: Functions Layer\n- Red: Tap dance\n- Pink: Custom shift to enable shifted keys on opposite half and on same thumb cluster.\n- Brown: AwesomeWM Layer",
     "background": {
       "name": "Bamboo",
       "style": "background-image: url('/bg/wood/bamboo.jpg');"
@@ -115,9 +115,9 @@
     "F\nf\n\n\n\nRGB_TOG\n\n\n#",
     {
       "x": 10.5,
-      "t": "#ffffff\n\n\n\n\n\n#bc4816\n\n#448f2c\n\n#296cc0"
+      "t": "#ffffff\n\n\n\n\n\n#bc4816\n#4e3317\n#448f2c\n\n#296cc0"
     },
-    "U\nu\n\n\n\nRGB_VAI\nF8\n\n*\n\n8"
+    "U\nu\n\n\n\nRGB_VAI\nF8\n8\n*\n\n8"
   ],
   [
     {
@@ -133,13 +133,13 @@
     "P\np\n\n\n\nRGB_MOD\n\n\n$",
     {
       "x": 8.5,
-      "t": "#ffffff\n\n\n\n\n\n#bc4816\n\n#448f2c\n\n#296cc0"
+      "t": "#ffffff\n\n\n\n\n\n#bc4816\n#4e3317\n#448f2c\n\n#296cc0"
     },
-    "L\nl\nØ\nø\n\nRGB_VAD\nF7\n\n&\n\n7",
+    "L\nl\nØ\nø\n\nRGB_VAD\nF7\n7\n&\n\n7",
     {
       "x": 1
     },
-    "Y\ny\n\n\n\nRGB_SAD\nF9\n\n+\n\n9"
+    "Y\ny\n\n\n\nRGB_SAD\nF9\n9\n+\n\n9"
   ],
   [
     {
@@ -150,9 +150,9 @@
     "B\nb\n\n\n\nRGB_HUD\n\n\n%",
     {
       "x": 6.5,
-      "t": "#ffffff\n\n\n\n\n\n\n\n#448f2c\n\n#296cc0"
+      "t": "#ffffff\n\n\n\n\n\n\n#4e3317\n#448f2c\n\n#296cc0"
     },
-    "J\nj\n\n\n\nRGB_SAI\n\n\n^\n\n⏎"
+    "J\nj\n\n\n\nRGB_SAI\n\n⏎\n^\n\n⏎"
   ],
   [
     {
@@ -172,9 +172,21 @@
     "Q\nq\n\n\n\nRESET\n\n\n!",
     {
       "x": 14.5,
-      "t": "#ffffff\n\n\n\n\n\n#bc4816\n#b10000\n\n\n#296cc0"
+      "t": "#ffffff\n\n\n\n\n\n#bc4816\n#b10000\n\n#b10000\n#296cc0",
+      "fa": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        4
+      ]
     },
-    ":\n;\n°\n¶\n\nRGB_M_SW\nF12\n:\n\n\n+",
+    ":\n;\n°\n¶\n\nRGB_M_SW\nF12\n\n\n:\n+",
     {
       "c": "#333333",
       "t": "#ffffff\n\n\n\n#aeaeae",
@@ -187,15 +199,17 @@
     {
       "y": -0.625,
       "x": 6.5,
-      "t": "#ffffff\n\n\n\n\n\n\n#b10000\n#448f2c",
+      "t": "#ffffff\n\n\n\n\n\n\n#b10000\n#448f2c\n#b10000",
+      "f": 2,
       "h": 1.5
     },
-    "{\n[\n“\n«\n\n\n\n{\n->",
+    "{\n[\n“\n«\n\n\n\n\n->\n{",
     {
       "x": 4.5,
+      "f2": 0,
       "h": 1.5
     },
-    "}\n]\n”\n»\n\n\n\n}\n=>"
+    "}\n]\n”\n»\n\n\n\n\n=>\n}"
   ],
   [
     {
@@ -207,9 +221,9 @@
     "S\ns\n\n\nCtrl\n\n\n\n'\n\n→",
     {
       "x": 10.5,
-      "t": "#ffffff\n\n\n\n#aeaeae\n\n#bc4816\n\n#448f2c\n\n#296cc0"
+      "t": "#ffffff\n\n\n\n#aeaeae\n\n#bc4816\n#4e3317\n#448f2c\n\n#296cc0"
     },
-    "E\ne\n\n€\nCtrl\n\nF5\n\n↓\n\n5"
+    "E\ne\n\n€\nCtrl\n\nF5\n5\n↓\n\n5"
   ],
   [
     {
@@ -221,21 +235,21 @@
     {
       "x": 1,
       "c": "#743850",
-      "t": "#ffffff\n\n\n\n#aeaeae\n\n\n\n#448f2c\n\n#296cc0"
+      "t": "#ffffff\n\n\n\n#aeaeae\n\n\n\n#448f2c"
     },
     "T\nt\n\n\n≡ R⇧\n\n\n\n\"",
     {
       "x": 8.5,
       "c": "#74386d",
-      "t": "#ffffff\n\n\n\n#aeaeae\n\n#bc4816\n\n#448f2c\n\n#296cc0"
+      "t": "#ffffff\n\n\n\n#aeaeae\n\n#bc4816\n#4e3317\n#448f2c\n\n#296cc0"
     },
-    "N\nn\n\n\n≡ L⇧\n\nF4\n\n←\n\n4",
+    "N\nn\n\n\n≡ L⇧\n\nF4\n4\n←\n\n4",
     {
       "x": 1,
       "c": "#4f4f4f",
-      "t": "#ffffff\n\n\n\n\n\n#bc4816\n\n#448f2c\n\n#296cc0"
+      "t": "#ffffff\n\n\n\n\n\n#bc4816\n#4e3317\n#448f2c\n\n#296cc0"
     },
-    "I\ni\n\n\nAlt\n\nF6\n\n↑\n\n6"
+    "I\ni\n\n\nAlt\n\nF6\n6\n↑\n\n6"
   ],
   [
     {
@@ -247,9 +261,9 @@
     "G\ng\n\n\n\nRGB_M_S\nExec\n\n<span>&#9676;&#768;</span>",
     {
       "x": 6.5,
-      "t": "#ffffff\n\n\n\n\n\n\n\n#448f2c\n\n#296cc0"
+      "t": "#ffffff\n\n\n\n\n\n\n#4e3317\n#448f2c\n\n#296cc0"
     },
-    "M\nm\n\nµ\n\nRGB_M_R\n\n\n<span>&#9676;&#769;</span>\n\n="
+    "M\nm\n\nµ\n\nRGB_M_R\n\nM\n<span>&#9676;&#769;</span>\n\n="
   ],
   [
     {
@@ -289,10 +303,10 @@
     "C\nc\n\n©\n\nRGB_M_X\nIns\n\n:",
     {
       "x": 10.5,
-      "t": "#ffffff\n\n\n\n\n\n#bc4816\n\n#448f2c\n\n#296cc0",
+      "t": "#ffffff\n\n\n\n\n\n#bc4816\n#4e3317\n#448f2c\n\n#296cc0",
       "a": 4
     },
-    "<\n,\n\n\n\n\nF2\n\n▽\n\n2"
+    "<\n,\n\n\n\n\nF2\n2\n▽\n\n2"
   ],
   [
     {
@@ -308,14 +322,14 @@
     "D\nd\n\n\n\nRGB_M_G\nCaps\n\n~",
     {
       "x": 8.5,
-      "t": "#ffffff\n\n\n\n\n\n#bc4816\n\n#448f2c\n\n#296cc0",
+      "t": "#ffffff\n\n\n\n\n\n#bc4816\n#4e3317\n#448f2c\n\n#296cc0",
       "a": 4
     },
-    "H\nh\n\n1\n\n\nF1\n\n△\n\n1",
+    "H\nh\n\n\n\n\nF1\n1\n△\n\n1",
     {
       "x": 1
     },
-    ">\n.\n\n\n\n\nF3\n\n⇱\n\n3"
+    ">\n.\n\n\n\n\nF3\n3\n⇱\n\n3"
   ],
   [
     {
@@ -327,10 +341,10 @@
     "V\nv\n\n\n\nRGB_HUI\nApp\n\n=",
     {
       "x": 6.5,
-      "t": "#ffffff\n\n\n\n\n\n\n\n#448f2c\n\n#296cc0",
+      "t": "#ffffff\n\n\n\n\n\n\n#4e3317\n#448f2c\n\n#296cc0",
       "a": 4
     },
-    "K\nk\n\n\n\n\n\n\n`\n\n("
+    "K\nk\n\n\n\n\n\n␣\n`\n\n("
   ],
   [
     {
@@ -482,7 +496,7 @@
   [
     {
       "x": -2,
-      "c": "#4D3813",
+      "c": "#4e3317",
       "t": "#ffffff\n\n\n\n#aeaeae",
       "h": 1.5
     },
@@ -501,7 +515,6 @@
       "y": -3.9000000000000004,
       "x": -1.25,
       "c": "#bc4816",
-      "t": "#ffffff\n\n\n\n#aeaeae\n\n\n\n\n\n#296cc0",
       "w": 1.25
     },
     "Esc\nTab\n\n\n≡ Fun"
