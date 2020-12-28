@@ -8,7 +8,7 @@
 - [[#features][Features]]
 - [[#layout][Layout]]
   - [[#keys-legend][Keys Legend]]
-  - [[#color-legend][Color Legend:]]
+  - [[#color-legend][Color Legend]]
 - [[#changelog][Changelog]]
 - [[#todo][Todo]]
 
@@ -61,14 +61,13 @@ The following scheme describe the meaning of the keys symbols positions.
 enables left top corner keycode on thumbs keys to make it easier use the
 keyboard whe one hand use the mouse.
 
-** Color Legend:
-
+** Color Legend
 - Green: Symbols & Navigation layer
 - Blue: Number Layer
 - Orange: Function Layer
 - Red: Tap dance
 - Pink: Custom shift to enable shifted keys on opposite half and on same thumb
-  cluster.
+  cluster
 
 * Changelog
 - 2018/11/13
