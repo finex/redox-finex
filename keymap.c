@@ -129,7 +129,8 @@ qk_tap_dance_action_t tap_dance_actions[] = {
 #define KC_GURI LGUI_T(KC_RGHT)       // Right Arrow / Left Gui
 // -- Intenal corners:
 #define KC_SYPR LT(_SYMB, KC_PSCR)    // Print Screen / _symbols
-#define KC_NUGR LT(_NUMB, KC_GRAVE)   // ` ~ / _numbers
+// #define KC_NUGR LT(_NUMB, KC_GRAVE)   // ` ~ / _numbers
+#define KC_NUMB TG(_NUMB)             // Toggle _numbers layer
 // -- Thumb cluster:
 // --- Left half:
 #define KC_NUES LT(_NUMB, KC_ESC)     // Esc / _numbers
@@ -138,7 +139,8 @@ qk_tap_dance_action_t tap_dance_actions[] = {
 // --- Right half:
 #define KC_CTAB RCTL_T(KC_TAB)        // Tab / Right Ctrl
 #define KC_SYSP LT(_SYMB, KC_SPC)     // Space / _symbols
-#define KC_ALEN LALT_T(KC_ENT)        // Enter / Left Alt
+//#define KC_ALEN LALT_T(KC_ENT)        // Enter / Left Alt
+#define KC_AWEN LT(_AWES, KC_ENT)        // Enter / Left Alt
 
 // -- Bottom Keys:
 //#define KC_HYPL HYPR_T(KC_PPLS)       // +  / Hyper (Ctrl + Shift + Alt + Gui)
@@ -255,30 +257,30 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   // Colemak-DHm
   [_COLEMAKDHMK] = LAYOUT(
     //┌────────┬────────┬────────┬────────┬────────┬────────┐                                           ┌────────┬────────┬────────┬────────┬────────┬────────┐
-       KC_ESC ,KC_1    ,KC_2    ,KC_3    ,KC_4    ,KC_5    ,                                            KC_6    ,KC_7    ,KC_8    ,KC_9    ,KC_0    ,KC_QUOT ,
+       KC_ESC  ,KC_1    ,KC_2    ,KC_3    ,KC_4    ,KC_5    ,                                            KC_6    ,KC_7    ,KC_8    ,KC_9    ,KC_0    ,KC_ESC  ,
     //├────────┼────────┼────────┼────────┼────────┼────────┼────────┐                         ┌────────┼────────┼────────┼────────┼────────┼────────┼────────┤
-       KC_ATAB ,KC_Q    ,KC_W    ,KC_F    ,KC_P    ,KC_B    ,KC_PSCR ,                          TG(_NUMB) ,KC_J    ,KC_L    ,KC_U    ,KC_Y    ,KC_TDSC ,KC_AEQL ,
+       KC_ATAB ,KC_Q    ,KC_W    ,KC_F    ,KC_P    ,KC_B    ,KC_PSCR ,                          KC_NUMB ,KC_J    ,KC_L    ,KC_U    ,KC_Y    ,KC_TDSC ,KC_AEQL ,
     //├────────┼────────┼────────┼────────┼────────┼────────┼────────┤                         ├────────┼────────┼────────┼────────┼────────┼────────┼────────┤
        KC_CESC ,KC_GU_A ,KC_AL_R ,KC_CT_S ,KC_T_SH ,KC_G    ,KC_TDLB ,                          KC_TDRB ,KC_M    ,KC_N_SH ,KC_CT_E ,KC_AL_I ,KC_GU_O ,KC_CMIN ,
     //├────────┼────────┼────────┼────────┼────────┼────────┼────────┼────────┐       ┌────────┼────────┼────────┼────────┼────────┼────────┼────────┼────────┤
        KC_LSPO ,KC_Z    ,KC_X    ,KC_C    ,KC_D    ,KC_V    ,KC_ADPU ,KC_PGDN ,        KC_HOME ,KC_ADEN ,KC_K    ,KC_H    ,KC_COMM ,KC_DOT  ,KC_SLSH ,KC_RSPC ,
     //├────────┼────────┼────────┼────────┼────┬───┴────┬───┼────────┼────────┤       ├────────┼────────┼───┬────┴───┬────┼────────┼────────┼────────┼────────┤
-       XXXXXXX ,XXXXXXX, HYPR_T(KC_LEFT) ,MEH_T(KC_RGHT)  ,    LCTL_T(KC_ESC) ,    LT(_NUMB,KC_BSPC) ,LT(_FUNC,KC_DEL) ,        LT(_AWES, KC_ENT) ,KC_SYSP ,    LALT_T(KC_TAB) ,  RALT_T(KC_DOWN),KC_UP ,XXXXXXX   ,XXXXXXX
+       KC_GUSP ,KC_HYPR ,KC_MEH  ,XXXXXXX ,     KC_NUES ,    KC_CBSP ,KC_GUDE ,        KC_AWEN ,KC_SYSP ,    KC_FUTA ,     KC_LEFT ,KC_DOWN ,KC_UP   ,KC_GURI,
     //└────────┴────────┴────────┴────────┘    └────────┘   └────────┴────────┘       └────────┴────────┘   └────────┘    └────────┴────────┴────────┴────────┘
   ),
 
   // QWERTY
   [_QWERTY] = LAYOUT(
     //┌────────┬────────┬────────┬────────┬────────┬────────┐                                           ┌────────┬────────┬────────┬────────┬────────┬────────┐
-       KC_FUES ,KC_1    ,KC_2    ,KC_3    ,KC_4    ,KC_5    ,                                            KC_6    ,KC_7    ,KC_8    ,KC_9    ,KC_0    ,KC_FUQU ,
+       KC_FUES ,KC_1    ,KC_2    ,KC_3    ,KC_4    ,KC_5    ,                                            KC_6    ,KC_7    ,KC_8    ,KC_9    ,KC_0    ,KC_ESC  ,
     //├────────┼────────┼────────┼────────┼────────┼────────┼────────┐                         ┌────────┼────────┼────────┼────────┼────────┼────────┼────────┤
-       KC_ATAB ,KC_Q    ,KC_W    ,KC_E    ,KC_R    ,KC_T    ,KC_SYPR ,                          KC_NUGR ,KC_Y    ,KC_U    ,KC_I    ,KC_O    ,KC_P    ,KC_AEQL ,
+       KC_ATAB ,KC_Q    ,KC_W    ,KC_E    ,KC_R    ,KC_T    ,KC_SYPR ,                          KC_NUMB ,KC_Y    ,KC_U    ,KC_I    ,KC_O    ,KC_P    ,KC_AEQL ,
     //├────────┼────────┼────────┼────────┼────────┼────────┼────────┤                         ├────────┼────────┼────────┼────────┼────────┼────────┼────────┤
        KC_CESC ,KC_A    ,KC_S    ,KC_D    ,KC_F    ,KC_G    ,KC_TDLB ,                          KC_TDRB ,KC_H    ,KC_J    ,KC_K    ,KC_L    ,KC_TDSC ,KC_CMIN ,
     //├────────┼────────┼────────┼────────┼────────┼────────┼────────┼────────┐       ┌────────┼────────┼────────┼────────┼────────┼────────┼────────┼────────┤
        KC_LSPO ,KC_Z    ,KC_X    ,KC_C    ,KC_V    ,KC_B    ,KC_ADPU ,KC_PGDN ,        KC_HOME ,KC_ADEN ,KC_N    ,KC_M    ,KC_COMM ,KC_DOT  ,KC_SLSH ,KC_RSPC ,
     //├────────┼────────┼────────┼────────┼────┬───┴────┬───┼────────┼────────┤       ├────────┼────────┼───┬────┴───┬────┼────────┼────────┼────────┼────────┤
-       KC_GUSP ,KC_HYPR ,KC_MEH  ,XXXXXXX ,     KC_NUES ,    KC_CBSP ,KC_GUDE ,        KC_ALEN ,KC_SYSP ,    KC_FUTA ,     KC_LEFT ,KC_DOWN ,KC_UP   ,KC_GURI
+       KC_GUSP ,KC_HYPR ,KC_MEH  ,XXXXXXX ,     KC_NUES ,    KC_CBSP ,KC_GUDE ,        KC_AWEN ,KC_SYSP ,    KC_FUTA ,     KC_LEFT ,KC_DOWN ,KC_UP   ,KC_GURI
     //└────────┴────────┴────────┴────────┘    └────────┘   └────────┴────────┘       └────────┴────────┘   └────────┘    └────────┴────────┴────────┴────────┘
   ),
 
@@ -300,15 +302,15 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   // Numeric keypad layer
   [_NUMB] = LAYOUT(
     //┌────────┬────────┬────────┬────────┬────────┬────────┐                                           ┌────────┬────────┬────────┬────────┬────────┬────────┐
-       _______ ,_______ ,_______ ,_______ ,_______ ,_______ ,                                            _______ ,_______ ,_______ ,_______ ,_______ ,_______ ,
+       _______ ,_______ ,_______ ,_______ ,_______ ,_______ ,                                            XXXXXXX ,XXXXXXX ,XXXXXXX ,XXXXXXX ,KC_PAST ,_______ ,
     //├────────┼────────┼────────┼────────┼────────┼────────┼────────┐                         ┌────────┼────────┼────────┼────────┼────────┼────────┼────────┤
-       _______ ,_______ ,KC_UP   ,_______ ,_______ ,_______ ,_______ ,                          TG(_NUMB),KC_EQL  ,KC_KP_7 ,KC_KP_8 ,KC_KP_9 ,KC_PPLS ,_______ ,
+       _______ ,_______ ,KC_UP   ,_______ ,_______ ,_______ ,_______ ,                          KC_NUMB ,KC_PENT ,KC_KP_7 ,KC_KP_8 ,KC_KP_9 ,KC_PPLS ,_______ ,
     //├────────┼────────┼────────┼────────┼────────┼────────┼────────┤                         ├────────┼────────┼────────┼────────┼────────┼────────┼────────┤
-       _______ ,KC_LEFT ,KC_DOWN ,KC_RGHT ,_______ ,_______ ,_______ ,                          _______ ,S(KC_9) ,KC_KP_4 ,KC_KP_5 ,KC_KP_6 ,KC_PMNS ,_______ ,
+       _______ ,KC_LEFT ,KC_DOWN ,KC_RGHT ,_______ ,_______ ,_______ ,                          _______ ,KC_EQL  ,KC_KP_4 ,KC_KP_5 ,KC_KP_6 ,KC_PMNS ,_______ ,
     //├────────┼────────┼────────┼────────┼────────┼────────┼────────┼────────┐       ┌────────┼────────┼────────┼────────┼────────┼────────┼────────┼────────┤
-       _______ ,_______ ,_______ ,_______ ,_______ ,_______ ,_______ ,_______ ,        _______ ,_______ ,KC_PCMM ,KC_KP_1 ,KC_KP_2 ,KC_KP_3 ,KC_PSLS ,S(KC_0) ,
+       _______ ,_______ ,_______ ,_______ ,_______ ,_______ ,_______ ,_______ ,        _______ ,_______ ,S(KC9)  ,KC_KP_1 ,KC_KP_2 ,KC_KP_3 ,KC_PSLS ,S(KC_0) ,
     //├────────┼────────┼────────┼────────┼────┬───┴────┬───┼────────┼────────┤       ├────────┼────────┼───┬────┴───┬────┼────────┼────────┼────────┼────────┤
-       _______ ,_______ ,_______ ,_______ ,     _______ ,    _______ ,_______ ,        _______ ,_______ ,    KC_PAST ,     KC_KP_0 ,KC_PDOT ,XXXXXXX ,XXXXXXX
+       _______ ,_______ ,_______ ,_______ ,     _______ ,    _______ ,_______ ,        _______ ,_______ ,    XXXXXXX ,     KC_KP_0 ,KC_PDOT ,KC_PCMM ,XXXXXXX
     //└────────┴────────┴────────┴────────┘    └────────┘   └────────┴────────┘       └────────┴────────┘   └────────┘    └────────┴────────┴────────┴────────┘
   ),
 
