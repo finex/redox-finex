@@ -4,17 +4,17 @@
 #+STARTUP: inlineimages
 
 * Table of contents :TOC_3:
-- [[#customized-keymap-for-redox-by-leonardo-finex-finetti][Customized keymap for Redox by Leonardo (FiNeX) Finetti.]]
+- [[#customized-keymap-for-redox-by-leonardo-finex-finetti][Customized keymap for Redox by Leonardo (FiNeX) Finetti]]
 - [[#features][Features]]
 - [[#layout][Layout]]
   - [[#keys-legend][Keys Legend]]
-  - [[#color-legend][Color Legend:]]
+  - [[#color-legend][Color Legend]]
 - [[#changelog][Changelog]]
 - [[#todo][Todo]]
 
-* Customized keymap for Redox by Leonardo (FiNeX) Finetti.
+* Customized keymap for Redox by Leonardo (FiNeX) Finetti
 This keymap use the default one with some changes to suit my needs. Mainly
-having most used symbol on a separated layer copying the common symbols from the
+having most used symbols on a separated layer copying the common symbols from the
 number keys to the second row, adding other symbols and ~◌̀~ ~◌́~ dead keys for
 accents.
 
@@ -35,8 +35,8 @@ accents.
 - Added ~Ctrl~ modifier on home row.
 - Added ~Ctrl~ modifier on home row.
 - Added ~Shift other half~ on home keys: this allows to shift the right half pressing ~t~ on the left (or ~f~ using Qwerty), and the opposite pressing ~n~ (or ~j~ for Qwerty layout).
-- Configured key to enable number layer with mod (GUI). Used for custom AwesomeWM bindings.
-- Added numbers layer persistent toggle.
+- Added "Numbers" layer toggle button.
+- Added specific layout for "AwesomeWM" window manager.
 
 
 * Layout
@@ -48,28 +48,28 @@ This keyboard layout is intended to be used with English (US, intl, with dead ke
 ** Keys Legend
 The following scheme describe the meaning of the keys symbols positions.
 
-|-----------------+---------------+---------------|
-| Shifted key (*) | Symbol Layout | Shifted AltGr |
-|-----------------+---------------+---------------|
-| Function Layout | One shot      | Double Tap    |
-|-----------------+---------------+---------------|
-| Single Tap      | Number Layout | AltGr         |
-|-----------------+---------------+---------------|
-|                 | *Modifier*    |               |
-|-----------------+---------------+---------------|
+|------------------+----------------+---------------|
+| Shifted key (*)  | Symbols Layout | Shifted AltGr |
+|------------------+----------------+---------------|
+| Functions Layout | One shot       | Double Tap    |
+|------------------+----------------+---------------|
+| Single Tap       | Numbers Layout | AltGr         |
+|------------------+----------------+---------------|
+|                  | *Modifier*     |               |
+|------------------+----------------+---------------|
 
 (*): Shift is enabled with standard key or with custom home row shitfs which
 enables left top corner keycode on thumbs keys to make it easier use the
-keyboard whe one hand use the mouse.
+keyboard when right hand is on the mouse.
 
-** Color Legend:
-
+** Color Legend
 - Green: Symbols & Navigation layer
-- Blue: Number Layer
-- Orange: Function Layer
+- Blue: Numbers Layer
+- Orange: Functions Layer
 - Red: Tap dance
 - Pink: Custom shift to enable shifted keys on opposite half and on same thumb
-  cluster.
+  cluster
+- Brown: AwesomeWM layer
 
 * Changelog
 - 2018/11/13
@@ -117,7 +117,7 @@ keyboard whe one hand use the mouse.
 - 2020/12/03
   Added GUI modifier on home row and minor fixes.
 - 2020/12/28
-  Reworked number layer, added number layer peristent toggle to keep the layer active without pressing constantly a button. Tried to exclude some keys to emulate common Dactyl Manuform layouts. Added new layout to enable ~_NUMB~ layer with ~GUI~ modifier enabled for switching AwesomeWM tag.
+  Added AwesomeWM layer, minor "Numbers" layer improvements and added "Numbers" layer toggle.
 
 * Todo
 - Bring back mouse and multimedia keys.
