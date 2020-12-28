@@ -54,7 +54,7 @@ The following scheme describe the meaning of the keys symbols positions.
 |-----------------+---------------+---------------|
 | Functions Layer | One shot      | Double Tap    |
 |-----------------+---------------+---------------|
-| Single Tap      | Number Layer  | AltGr         |
+| Single Tap      | Numbers Layer | AltGr         |
 |-----------------+---------------+---------------|
 |                 | Modifier      |               |
 |-----------------+---------------+---------------|
