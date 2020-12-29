@@ -4,7 +4,6 @@
 enum{
   // - Base layers:
   _COLEMAKDHMK,
-  _QWERTY,
   // - Symbols, numbers, functions and custom shifts:
   _SYMB,
   _NUMB,
@@ -19,7 +18,6 @@ enum{
 // Custom keycodes
 enum custom_keycodes {
   COLEMAKDHMK = SAFE_RANGE,
-  QWERTY,
   ASC_SAR,
   ASC_DAR,
   ASC_SQT,
@@ -96,7 +94,6 @@ void dance_rbrc_reset (qk_tap_dance_state_t *state, void *user_data) {
   }
 }
 
-
 //Tap Dance Definitions
 qk_tap_dance_action_t tap_dance_actions[] = {
   [TD_SCLN]  = ACTION_TAP_DANCE_FN_ADVANCED(NULL, dance_scln_finished, dance_scln_reset),
@@ -104,17 +101,13 @@ qk_tap_dance_action_t tap_dance_actions[] = {
   [TD_RBRC]  = ACTION_TAP_DANCE_FN_ADVANCED(NULL, dance_rbrc_finished, dance_rbrc_reset)
 };
 
-
 // Shortcuts to make keymap more readable
-
 // - Adjustment Layer:
 #define KC_ADEN LT(_ADJUST, KC_END)   // End / _ADJUST layer
 #define KC_ADPU LT(_ADJUST, KC_PGUP)  // Page Up / _ADJUST layer
-
 // - Custom home row layers:
 #define KC_N_SH LT(_LHSH, KC_N)       // Pressing N key, enable shifted keys on other half (the left one)
 #define KC_T_SH LT(_RHSH, KC_T)       // Pressing T key, enable shifted keys on other half (the right one)
-
 // - Custom keys/modifiers:
 // -- External columns:
 // --- Left half:
@@ -129,7 +122,6 @@ qk_tap_dance_action_t tap_dance_actions[] = {
 #define KC_GURI LGUI_T(KC_RGHT)       // Right Arrow / Left Gui
 // -- Intenal corners:
 #define KC_SYPR LT(_SYMB, KC_PSCR)    // Print Screen / _symbols
-// #define KC_NUGR LT(_NUMB, KC_GRAVE)   // ` ~ / _numbers
 #define KC_NUMB TG(_NUMB)             // Toggle _numbers layer
 // -- Thumb cluster:
 // --- Left half:
@@ -139,33 +131,24 @@ qk_tap_dance_action_t tap_dance_actions[] = {
 // --- Right half:
 #define KC_CTAB RCTL_T(KC_TAB)        // Tab / Right Ctrl
 #define KC_SYSP LT(_SYMB, KC_SPC)     // Space / _symbols
-//#define KC_ALEN LALT_T(KC_ENT)        // Enter / Left Alt
-#define KC_AWEN LT(_AWES, KC_ENT)        // Enter / Left Alt
-
+#define KC_AWEN LT(_AWES, KC_ENT)     // Enter / Left Alt
 // -- Bottom Keys:
-//#define KC_HYPL HYPR_T(KC_PPLS)       // +  / Hyper (Ctrl + Shift + Alt + Gui)
-//#define KC_MEMI MEH_T(KC_MINS)        // -_ / Meh (Ctrl + Shift + Alt)
-#define KC_FUTA LT(_FUNC, KC_TAB)       // Tab / _functions
-
+//#define KC_HYPL HYPR_T(KC_PPLS)     // +  / Hyper (Ctrl + Shift + Alt + Gui)
+//#define KC_MEMI MEH_T(KC_MINS)      // -_ / Meh (Ctrl + Shift + Alt)
+#define KC_FUTA LT(_FUNC, KC_TAB)     // Tab / _functions
 // Home row mod tap keys:
 // - Left hand
-#define KC_GU_A LGUI_T(KC_A)           // A / Left Gui
-#define KC_CT_S LCTL_T(KC_S)           // R / Left Ctrl
-#define KC_AL_R LALT_T(KC_R)           // S / Left Alt
+#define KC_GU_A LGUI_T(KC_A)          // A / Left Gui
+#define KC_CT_S LCTL_T(KC_S)          // R / Left Ctrl
+#define KC_AL_R LALT_T(KC_R)          // S / Left Alt
 // - Right hand
-#define KC_GU_O RGUI_T(KC_O)           // O / Right Gui
-#define KC_AL_I LALT_T(KC_I)           // E / Left Alt (left alt because used as Emacs M- )
-#define KC_CT_E RCTL_T(KC_E)           // I / Right Ctrl
-
+#define KC_GU_O RGUI_T(KC_O)          // O / Right Gui
+#define KC_AL_I LALT_T(KC_I)          // E / Left Alt (left alt because used as Emacs M- )
+#define KC_CT_E RCTL_T(KC_E)          // I / Right Ctrl
 // Tap dance keys:
 #define KC_TDSC TD(TD_SCLN)           // ;; -> :
 #define KC_TDLB TD(TD_LBRC)           // [[ -> {
 #define KC_TDRB TD(TD_RBRC)           // ]] -> }
-
-// Keyboard base maps:
-#define LR1 COLEMAKDHMK
-#define LR2 QWERTY
-
 
 // Send custom strings or change default base layer
 bool process_record_user(uint16_t keycode, keyrecord_t *record) {
@@ -215,12 +198,6 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
       case ASC_RAN:
         SEND_STRING(SS_RALT("]"));
         return false;
-      case QWERTY:
-        if (record->event.pressed) {
-          set_single_persistent_default_layer(_QWERTY);
-        }
-        return false;
-        break;
       case COLEMAKDHMK:
         if (record->event.pressed) {
           set_single_persistent_default_layer(_COLEMAKDHMK);
@@ -231,7 +208,6 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
   }
   return true;
 };
-
 
 // Fine tuning of TAPPING_TERM valuer on some home row modifiers to avoid errors during typing.
 uint16_t get_tapping_term(uint16_t keycode, keyrecord_t *record) {
@@ -256,23 +232,7 @@ uint16_t get_tapping_term(uint16_t keycode, keyrecord_t *record) {
   }
 }
 
-
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
-
-  /* // Colemak-DHm */
-  /* [_COLEMAKDHMK] = LAYOUT( */
-  /*   //┌────────┬────────┬────────┬────────┬────────┬────────┐                                           ┌────────┬────────┬────────┬────────┬────────┬────────┐ */
-  /*      KC_FUES ,KC_1    ,KC_2    ,KC_3    ,KC_4    ,KC_5    ,                                            KC_6    ,KC_7    ,KC_8    ,KC_9    ,KC_0    ,KC_FUQU , */
-  /*   //├────────┼────────┼────────┼────────┼────────┼────────┼────────┐                         ┌────────┼────────┼────────┼────────┼────────┼────────┼────────┤ */
-  /*      KC_ATAB ,KC_Q    ,KC_W    ,KC_F    ,KC_P    ,KC_B    ,KC_SYPR ,                          KC_NUGR ,KC_J    ,KC_L    ,KC_U    ,KC_Y    ,KC_TDSC ,KC_AEQL , */
-  /*   //├────────┼────────┼────────┼────────┼────────┼────────┼────────┤                         ├────────┼────────┼────────┼────────┼────────┼────────┼────────┤ */
-  /*      KC_CESC ,KC_GU_A ,KC_AL_R ,KC_CT_S ,KC_T_SH ,KC_G    ,KC_TDLB ,                          KC_TDRB ,KC_M    ,KC_N_SH ,KC_CT_E ,KC_AL_I ,KC_GU_O ,KC_CMIN , */
-  /*   //├────────┼────────┼────────┼────────┼────────┼────────┼────────┼────────┐       ┌────────┼────────┼────────┼────────┼────────┼────────┼────────┼────────┤ */
-  /*      KC_LSPO ,KC_Z    ,KC_X    ,KC_C    ,KC_D    ,KC_V    ,KC_ADPU ,KC_PGDN ,        KC_HOME ,KC_ADEN ,KC_K    ,KC_H    ,KC_COMM ,KC_DOT  ,KC_SLSH ,KC_RSPC , */
-  /*   //├────────┼────────┼────────┼────────┼────┬───┴────┬───┼────────┼────────┤       ├────────┼────────┼───┬────┴───┬────┼────────┼────────┼────────┼────────┤ */
-  /*      KC_GUSP ,KC_HYPR ,KC_MEH  ,XXXXXXX ,     KC_NUES ,    KC_CBSP ,KC_GUDE ,        KC_ALEN ,KC_SYSP ,    KC_FUTA ,     KC_LEFT ,KC_DOWN ,KC_UP   ,KC_GURI   */
-  /*   //└────────┴────────┴────────┴────────┘    └────────┘   └────────┴────────┘       └────────┴────────┘   └────────┘    └────────┴────────┴────────┴────────┘ */
-  /* ), */
 
   // Colemak-DHm
   [_COLEMAKDHMK] = LAYOUT(
@@ -284,21 +244,6 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
        KC_CESC ,KC_GU_A ,KC_AL_R ,KC_CT_S ,KC_T_SH ,KC_G    ,KC_TDLB ,                          KC_TDRB ,KC_M    ,KC_N_SH ,KC_CT_E ,KC_AL_I ,KC_GU_O ,KC_CMIN ,
     //├────────┼────────┼────────┼────────┼────────┼────────┼────────┼────────┐       ┌────────┼────────┼────────┼────────┼────────┼────────┼────────┼────────┤
        KC_LSPO ,KC_Z    ,KC_X    ,KC_C    ,KC_D    ,KC_V    ,KC_ADPU ,KC_PGDN ,        KC_HOME ,KC_ADEN ,KC_K    ,KC_H    ,KC_COMM ,KC_DOT  ,KC_SLSH ,KC_RSPC ,
-    //├────────┼────────┼────────┼────────┼────┬───┴────┬───┼────────┼────────┤       ├────────┼────────┼───┬────┴───┬────┼────────┼────────┼────────┼────────┤
-       KC_GUSP ,KC_HYPR ,KC_MEH  ,XXXXXXX ,     KC_NUES ,    KC_CBSP ,KC_GUDE ,        KC_AWEN ,KC_SYSP ,    KC_FUTA ,     KC_LEFT ,KC_DOWN ,KC_UP   ,KC_GURI
-    //└────────┴────────┴────────┴────────┘    └────────┘   └────────┴────────┘       └────────┴────────┘   └────────┘    └────────┴────────┴────────┴────────┘
-  ),
-
-  // QWERTY
-  [_QWERTY] = LAYOUT(
-    //┌────────┬────────┬────────┬────────┬────────┬────────┐                                           ┌────────┬────────┬────────┬────────┬────────┬────────┐
-       KC_FUES ,KC_1    ,KC_2    ,KC_3    ,KC_4    ,KC_5    ,                                            KC_6    ,KC_7    ,KC_8    ,KC_9    ,KC_0    ,KC_ESC  ,
-    //├────────┼────────┼────────┼────────┼────────┼────────┼────────┐                         ┌────────┼────────┼────────┼────────┼────────┼────────┼────────┤
-       KC_ATAB ,KC_Q    ,KC_W    ,KC_E    ,KC_R    ,KC_T    ,KC_SYPR ,                          KC_NUMB ,KC_Y    ,KC_U    ,KC_I    ,KC_O    ,KC_P    ,KC_AEQL ,
-    //├────────┼────────┼────────┼────────┼────────┼────────┼────────┤                         ├────────┼────────┼────────┼────────┼────────┼────────┼────────┤
-       KC_CESC ,KC_A    ,KC_S    ,KC_D    ,KC_F    ,KC_G    ,KC_TDLB ,                          KC_TDRB ,KC_H    ,KC_J    ,KC_K    ,KC_L    ,KC_TDSC ,KC_CMIN ,
-    //├────────┼────────┼────────┼────────┼────────┼────────┼────────┼────────┐       ┌────────┼────────┼────────┼────────┼────────┼────────┼────────┼────────┤
-       KC_LSPO ,KC_Z    ,KC_X    ,KC_C    ,KC_V    ,KC_B    ,KC_ADPU ,KC_PGDN ,        KC_HOME ,KC_ADEN ,KC_N    ,KC_M    ,KC_COMM ,KC_DOT  ,KC_SLSH ,KC_RSPC ,
     //├────────┼────────┼────────┼────────┼────┬───┴────┬───┼────────┼────────┤       ├────────┼────────┼───┬────┴───┬────┼────────┼────────┼────────┼────────┤
        KC_GUSP ,KC_HYPR ,KC_MEH  ,XXXXXXX ,     KC_NUES ,    KC_CBSP ,KC_GUDE ,        KC_AWEN ,KC_SYSP ,    KC_FUTA ,     KC_LEFT ,KC_DOWN ,KC_UP   ,KC_GURI
     //└────────┴────────┴────────┴────────┘    └────────┘   └────────┴────────┘       └────────┴────────┘   └────────┘    └────────┴────────┴────────┴────────┘
@@ -349,7 +294,6 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     //└────────┴────────┴────────┴────────┘    └────────┘   └────────┴────────┘       └────────┴────────┘   └────────┘    └────────┴────────┴────────┴────────┘
   ),
 
-
   // Left hand shifted keycodes
   [_LHSH] = LAYOUT(
     //┌────────┬────────┬────────┬────────┬────────┬────────┐                                           ┌────────┬────────┬────────┬────────┬────────┬────────┐
@@ -398,7 +342,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   // Adjust layer (RGB, Reset and base layer switch)
   [_ADJUST] = LAYOUT(
     //┌────────┬────────┬────────┬────────┬────────┬────────┐                                           ┌────────┬────────┬────────┬────────┬────────┬────────┐
-       XXXXXXX ,LR1     ,LR2     ,XXXXXXX ,XXXXXXX ,XXXXXXX ,                                            XXXXXXX ,XXXXXXX ,XXXXXXX ,XXXXXXX ,XXXXXXX ,XXXXXXX ,
+       XXXXXXX ,XXXXXXX ,XXXXXXX ,XXXXXXX ,XXXXXXX ,XXXXXXX ,                                            XXXXXXX ,XXXXXXX ,XXXXXXX ,XXXXXXX ,XXXXXXX ,XXXXXXX ,
     //├────────┼────────┼────────┼────────┼────────┼────────┼────────┐                         ┌────────┼────────┼────────┼────────┼────────┼────────┼────────┤
        XXXXXXX ,RESET   ,RGB_M_P ,RGB_TOG ,RGB_MOD ,RGB_HUD ,XXXXXXX ,                          XXXXXXX ,RGB_SAI ,RGB_VAD ,RGB_VAI ,RGB_SAD ,RGB_M_SW,XXXXXXX ,
     //├────────┼────────┼────────┼────────┼────────┼────────┼────────┤                         ├────────┼────────┼────────┼────────┼────────┼────────┼────────┤
