@@ -21,7 +21,7 @@ accents.
 
 * Features
 - Enabled USE_SERIAL for Falba.Tech Redox keyboards.
-- Layouts: Colemak DHm.
+- Layout: Colemak DHm.
 - Added redundant ~Space~, ~Esc~, ~Ctrl~ and ~Enter~ keys. I like to have this keys on both halves.
 - Added macro to print ~->~ and ~=>~ strings.
 - Added macro to print ~:-(~ and ~:-)~ strings.
