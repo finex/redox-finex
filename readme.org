@@ -21,7 +21,7 @@ accents.
 
 * Features
 - Enabled USE_SERIAL for Falba.Tech Redox keyboards.
-- Layouts: Colemak DHm, Qwerty.
+- Layouts: Colemak DHm.
 - Added redundant ~Space~, ~Esc~, ~Ctrl~ and ~Enter~ keys. I like to have this keys on both halves.
 - Added macro to print ~->~ and ~=>~ strings.
 - Added macro to print ~:-(~ and ~:-)~ strings.
@@ -126,8 +126,7 @@ keyboard when opposite hand use the mouse.
 - 2020/12/28
   Added AwesomeWM layer, minor "Numbers" layer improvements and added "Numbers" layer toggle.
 - 2020/12/29
-  Added custom tapping term per keys. Added =LTO_ENABLE = no= and =CONSOLE_ENABLE = no= reduce firmware size.
+  Added custom tapping term per keys. Added =LTO_ENABLE = no= and =CONSOLE_ENABLE = no= reduce firmware size. Removed Qwerty layout.
 
 * Todo
 - Bring back mouse and multimedia keys.
-- Align Qwerty Layout.
