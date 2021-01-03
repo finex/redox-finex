@@ -2,8 +2,9 @@
 #+AUTHOR: FiNeX (https://www.finex.org)
 #+DATE: 02/12/2020
 #+STARTUP: inlineimages
+#+STARTUP: nofold
 
-* Table of contents :TOC_3:
+* Table of Content :TOC:
 - [[#customized-keymap-for-redox-by-leonardo-finex-finetti][Customized keymap for Redox by Leonardo (FiNeX) Finetti]]
 - [[#features][Features]]
 - [[#layout][Layout]]

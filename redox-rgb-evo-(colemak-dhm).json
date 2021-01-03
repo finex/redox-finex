@@ -84,7 +84,7 @@
       "t": "#ffffff\n\n\n\n\n\n\n\n#448f2c\n\n#296cc0",
       "a": 4
     },
-    ")\n0\n\n’\n\n\n\n\nF10\n\n*",
+    ")\n0\n\n’\n\n\n\n\nF10",
     {
       "c": "#333333",
       "t": "#ffffff",
@@ -172,7 +172,7 @@
     "Q\nq\n\n\n\nRESET\n\n\n!",
     {
       "x": 14.5,
-      "t": "#ffffff\n\n\n\n\n\n#bc4816\n#b10000\n\n#b10000\n#296cc0",
+      "t": "#ffffff\n\n\n\n\n\n#bc4816\n\n\n#b10000\n#296cc0",
       "fa": [
         0,
         0,
@@ -189,24 +189,25 @@
     ":\n;\n°\n¶\n\nRGB_M_SW\nF12\n\n\n:\n+",
     {
       "c": "#333333",
-      "t": "#ffffff\n\n\n\n#aeaeae",
+      "t": "#ffffff\n\n\n\n#aeaeae\n\n\n\n\n\n#296cc0",
       "a": 4,
       "w": 1.25
     },
-    "+\n=\n÷\n×\nAlt"
+    "+\n=\n÷\n×\nAlt\n\n\n\n\n\n="
   ],
   [
     {
       "y": -0.625,
       "x": 6.5,
-      "t": "#ffffff\n\n\n\n\n\n\n#b10000\n#448f2c\n#b10000",
+      "t": "#ffffff\n\n\n\n\n\n\n\n#448f2c\n#b10000",
       "f": 2,
       "h": 1.5
     },
     "{\n[\n“\n«\n\n\n\n\n->\n{",
     {
       "x": 4.5,
-      "f2": 0,
+      "t": "#ffffff\n\n\n\n\n\n\n\n#448f2c\n#b10000\n#296cc0",
+      "f": 2,
       "h": 1.5
     },
     "}\n]\n”\n»\n\n\n\n\n=>\n}"
@@ -263,7 +264,7 @@
       "x": 6.5,
       "t": "#ffffff\n\n\n\n\n\n\n#4e3317\n#448f2c\n\n#296cc0"
     },
-    "M\nm\n\nµ\n\nRGB_M_R\n\nM\n<span>&#9676;&#769;</span>\n\n="
+    "M\nm\n\nµ\n\nRGB_M_R\n\nM\n<span>&#9676;&#769;</span>\n\n,"
   ],
   [
     {
@@ -284,13 +285,13 @@
       "x": 14.5,
       "t": "#ffffff\n\n\n\n\n\n#bc4816\n\n#448f2c\n\n#296cc0"
     },
-    "O\no\n\n\nGui\n\nF11\n\n→\n\n-",
+    "O\no\n\n\nGui\n\nF11\n\n→\n\n*",
     {
       "c": "#333333",
-      "t": "#ffffff\n\n\n\n#aeaeae",
+      "t": "#ffffff\n\n\n\n#aeaeae\n\n\n\n\n\n#296cc0",
       "w": 1.25
     },
-    "_\n-\n\n\nCtrl"
+    "_\n-\n\n\nCtrl\n\n\n\n\n\n-"
   ],
   [
     {
@@ -429,7 +430,7 @@
       "x": 15.5,
       "t": "#ffffff\n\n\n\n\n\n\n\n\n\n#296cc0"
     },
-    "\n↑\n\n\n\n\n\n\n\n\n,",
+    "\n↑",
     {
       "t": "#ffffff"
     },
@@ -515,6 +516,7 @@
       "y": -3.9000000000000004,
       "x": -1.25,
       "c": "#bc4816",
+      "t": "#ffffff\n\n\n\n#aeaeae\n\n\n\n\n\n#296cc0",
       "w": 1.25
     },
     "Esc\nTab\n\n\n≡ Fun"
