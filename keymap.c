@@ -121,7 +121,7 @@ qk_tap_dance_action_t tap_dance_actions[] = {
 #define KC_CMIN RCTL_T(KC_MINUS)      // Minus / Right Ctrl
 #define KC_GURI LGUI_T(KC_RGHT)       // Right Arrow / Left Gui
 // -- Intenal corners:
-#define KC_SYPR LT(_SYMB, KC_PSCR)    // Print Screen / _symbols
+#define KC_HYPS HYPR_T(KC_PSCR)       // Print Screen / Hyper (Ctrl + Shift + Alt + Gui)
 #define KC_NUMB TG(_NUMB)             // Toggle _numbers layer
 // -- Thumb cluster:
 // --- Left half:
@@ -239,7 +239,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     //┌────────┬────────┬────────┬────────┬────────┬────────┐                                           ┌────────┬────────┬────────┬────────┬────────┬────────┐
        KC_ESC  ,KC_1    ,KC_2    ,KC_3    ,KC_4    ,KC_5    ,                                            KC_6    ,KC_7    ,KC_8    ,KC_9    ,KC_0    ,KC_ESC  ,
     //├────────┼────────┼────────┼────────┼────────┼────────┼────────┐                         ┌────────┼────────┼────────┼────────┼────────┼────────┼────────┤
-       KC_ATAB ,KC_Q    ,KC_W    ,KC_F    ,KC_P    ,KC_B    ,HYPR_T(KC_PSCR) ,                          KC_NUMB ,KC_J    ,KC_L    ,KC_U    ,KC_Y    ,KC_TDSC ,KC_AEQL ,
+       KC_ATAB ,KC_Q    ,KC_W    ,KC_F    ,KC_P    ,KC_B    ,KC_HYPS ,                          KC_NUMB ,KC_J    ,KC_L    ,KC_U    ,KC_Y    ,KC_TDSC ,KC_AEQL ,
     //├────────┼────────┼────────┼────────┼────────┼────────┼────────┤                         ├────────┼────────┼────────┼────────┼────────┼────────┼────────┤
        KC_CESC ,KC_GU_A ,KC_AL_R ,KC_CT_S ,KC_T_SH ,KC_G    ,KC_TDLB ,                          KC_TDRB ,KC_M    ,KC_N_SH ,KC_CT_E ,KC_AL_I ,KC_GU_O ,KC_CMIN ,
     //├────────┼────────┼────────┼────────┼────────┼────────┼────────┼────────┐       ┌────────┼────────┼────────┼────────┼────────┼────────┼────────┼────────┤
