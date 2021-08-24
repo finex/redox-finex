@@ -130,6 +130,8 @@ keyboard when opposite hand use the mouse.
   Added custom tapping term per keys. Added =LTO_ENABLE = no= and =CONSOLE_ENABLE = no= reduce firmware size. Removed Qwerty layout.
 - 2021/01/03
   Minor cleanups and improvements on "Numbers" layer.
+- 2021/08/24
+  Added new tapdance: double slash key press returns question mark.
 
 * Todo
 - Bring back mouse and multimedia keys.
