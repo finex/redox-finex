@@ -3,7 +3,7 @@
     "backcolor": "#ffffff",
     "name": "Redox RGB Evo (Colemak DHm)",
     "author": "FiNeX (https://www.finex.org)",
-    "notes": "# Ergonomic Redox Keyboard Layout #\nRevision date: 2020-12-28\nLayout: English (US, intl, with dead keys)\n\n\n## Keys Legend: ##\nThe following scheme describe the meaning of the keys symbols positions.\n\n|-----------------+---------------+-----------------|\n| Shifted key (*) | Symbols Layer | Shifted AltGr   |\n|-----------------+---------------+-----------------|\n| Functions Layer | Double Tap    | AwesomeWM Layer |\n|-----------------+---------------+-----------------|\n| Single Tap      | Numbers Layer | AltGr           |\n|-----------------+---------------+-----------------|\n|                 | Modifier      |                 |\n|-----------------+---------------+-----------------|\n\n(*): Shift is enabled with standard key or with custom home row shitfs which\nenables left top corner keycode on thumbs keys to make it easier use the\nkeyboard when opposite hand use the mouse.\n\n\n## Color Legend: ##\n- Green: Symbols & Navigation layer \n- Blue: Numbers Layer\n- Orange: Functions Layer\n- Red: Tap dance\n- Pink: Custom shift to enable shifted keys on opposite half and on same thumb cluster.\n- Brown: AwesomeWM Layer",
+    "notes": "# Ergonomic Redox Keyboard Layout #\nRevision date: 2021-08-24\nLayout: English (US, intl, with dead keys)\n\n\n## Keys Legend: ##\nThe following scheme describe the meaning of the keys symbols positions.\n\n|-----------------+---------------+-----------------|\n| Shifted key (*) | Symbols Layer | Shifted AltGr   |\n|-----------------+---------------+-----------------|\n| Functions Layer | Double Tap    | AwesomeWM Layer |\n|-----------------+---------------+-----------------|\n| Single Tap      | Numbers Layer | AltGr           |\n|-----------------+---------------+-----------------|\n|                 | Modifier      |                 |\n|-----------------+---------------+-----------------|\n\n(*): Shift is enabled with standard key or with custom home row shitfs which\nenables left top corner keycode on thumbs keys to make it easier use the\nkeyboard when opposite hand use the mouse.\n\n\n## Color Legend: ##\n- Green: Symbols & Navigation layer \n- Blue: Numbers Layer\n- Orange: Functions Layer\n- Red: Tap dance\n- Pink: Custom shift to enable shifted keys on opposite half and on same thumb cluster.\n- Brown: AwesomeWM Layer",
     "background": {
       "name": "Bamboo",
       "style": "background-image: url('/bg/wood/bamboo.jpg');"
@@ -81,7 +81,6 @@
     "!\n1\n¹\n¡\n\nCOLEMAK\n\n\nF1",
     {
       "x": 14.5,
-      "t": "#ffffff\n\n\n\n\n\n\n\n#448f2c\n\n#296cc0",
       "a": 4
     },
     ")\n0\n\n’\n\n\n\n\nF10",
@@ -206,7 +205,6 @@
     "{\n[\n“\n«\n\n\n\n\n->\n{",
     {
       "x": 4.5,
-      "t": "#ffffff\n\n\n\n\n\n\n\n#448f2c\n#b10000\n#296cc0",
       "f": 2,
       "h": 1.5
     },
@@ -357,10 +355,10 @@
     "Z\nz\n\n\n\nRGB_M_B\nMenu\n\n\\",
     {
       "x": 14.5,
-      "t": "#ffffff\n\n\n\n\n\n#bc4816\n\n#448f2c\n\n#296cc0",
+      "t": "#ffffff\n\n\n\n\n\n#bc4816\n\n#448f2c\n#b10000\n#296cc0",
       "a": 4
     },
-    "?\n/\n\n¿\n\n\nF10\n\n⇲\n\n/",
+    "?\n/\n\n¿\n\n\nF10\n\n⇲\n?\n/",
     {
       "c": "#333333",
       "t": "#ffffff\n\n\n\n#aeaeae\n\n\n\n\n\n#296cc0",
@@ -427,13 +425,9 @@
     },
     "\n␣\n\n\nGui",
     {
-      "x": 15.5,
-      "t": "#ffffff\n\n\n\n\n\n\n\n\n\n#296cc0"
+      "x": 15.5
     },
     "\n↑",
-    {
-      "t": "#ffffff"
-    },
     "\n→\n\n\nGui"
   ],
   [
@@ -516,7 +510,6 @@
       "y": -3.9000000000000004,
       "x": -1.25,
       "c": "#bc4816",
-      "t": "#ffffff\n\n\n\n#aeaeae\n\n\n\n\n\n#296cc0",
       "w": 1.25
     },
     "Esc\nTab\n\n\n≡ Fun"
