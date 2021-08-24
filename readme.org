@@ -28,7 +28,11 @@ accents.
 - Added macro to print ~:-(~ and ~:-)~ strings.
 - Added more arrows.
 - Added ~(~ and ~)~ on Shifts keys (Space Cadet Shift).
-- Tapdance: ~:~ (~;~ × 2), ~{~ (~[~ × 2), ~}~ (~]~ × 2), ~?~ (~/~ × 2).
+- Tapdance:
+  - ~:~ (~;~ × 2)
+  - ~{~ (~[~ × 2)
+  - ~}~ (~]~ × 2)
+  - ~?~ (~/~ × 2)
 - Removed Mouse and media support.
 - Added missing "Print Screen" and "Menu" keys.
 - Added missing "F11" and "F12" keys.
