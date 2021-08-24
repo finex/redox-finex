@@ -29,7 +29,7 @@ accents.
 - Added more arrows.
 - Added ~(~ and ~)~ on Shifts keys (Space Cadet Shift).
 - Tapdance:
-  - ~:~ (~;~ × 2)
+  - *~;~ × 2*: ~:~
   - ~{~ (~[~ × 2)
   - ~}~ (~]~ × 2)
   - ~?~ (~/~ × 2)
