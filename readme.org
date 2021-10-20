@@ -12,6 +12,7 @@
   - [[#color-legend][Color Legend]]
 - [[#changelog][Changelog]]
 - [[#todo][Todo]]
+- [[#finex-qmk-layouts][FiNeX QMK Layouts]]
 
 * Customized keymap for Redox by Leonardo (FiNeX) Finetti
 This keymap use the default one with some changes to suit my needs. Mainly
@@ -139,3 +140,6 @@ keyboard when opposite hand use the mouse.
 
 * Todo
 - Bring back mouse and multimedia keys.
+
+* FiNeX QMK Layouts
+All my custom QMK layouts are available on the following repo:  https://github.com/finex/qmk-keyboard-layouts-finex
