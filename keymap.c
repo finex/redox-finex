@@ -14,7 +14,7 @@ enum{
 
 // Custom keycodes
 enum custom_keycodes {
-  COLEMAKDHMK = SAFE_RANGE,
+  COLEMAKDH = SAFE_RANGE,
   ASC_SAR,
   ASC_DAR,
   ASC_SQT,
@@ -152,11 +152,11 @@ qk_tap_dance_action_t tap_dance_actions[] = {
 #define KC_SLQM TD(TD_SLQM)           // // -> ?
 
 // Clipboard (inspired by Miryoku)
-#define U_RDO AGIN
+#define U_RDO KC_AGIN
 #define U_PST S(KC_INS)
 #define U_CPY C(KC_INS)
 #define U_CUT S(KC_DEL)
-#define U_UND UNDO
+#define U_UND KC_UNDO
 
 // Send custom strings or change default base layer
 bool process_record_user(uint16_t keycode, keyrecord_t *record) {
