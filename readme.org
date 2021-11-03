@@ -24,7 +24,7 @@ accents.
 * Features
 - Enabled USE_SERIAL for Falba.Tech Redox keyboards.
 - Layout: Colemak DHm.
-- Added redundant ~Space~, ~Esc~, ~Ctrl~ and ~Enter~ keys. I like to have this keys on both halves.
+- Added redundant ~Space~, ~Esc~, ~Ctrl~, ~Del~, ~Backspace~ and ~Enter~ keys. I like to have this keys on both halves.
 - Added macro to print ~->~ and ~=>~ strings.
 - Added macro to print ~:-(~ and ~:-)~ strings.
 - Added more arrows.
@@ -34,15 +34,12 @@ accents.
   - ~[~ × 2 = ~{~
   - ~]~ × 2 = ~}~
   - ~/~ × 2 = ~?~
-- Removed Mouse and media support.
+- Removed Media support
 - Added missing "Print Screen" and "Menu" keys.
 - Added missing "F11" and "F12" keys.
-- Added ~Alt~ modifier on home row.
-- Added ~Ctrl~ modifier on home row.
-- Added ~Ctrl~ modifier on home row.
-- Added ~Shift other half~ on home keys: this allows to shift the right half pressing ~t~ on the left, and the opposite pressing ~n~.
-- Added "Numbers" layer toggle button.
+- Added ~Alt~, ~Ctrl~, ~Ctrl~ and ~Shift~ on home keys.
 - Added specific layout for "AwesomeWM" window manager.
+- Bring back virtual mouse layer.
 
 
 * Layout
@@ -54,7 +51,7 @@ setxkbmap -layout us -variant intl -option eurosign:e
 #+end_src
 
 #+CAPTION: Redox FiNeX layout
-[[https://raw.githubusercontent.com/finex/redox-finex/awesomewm/images/redox-finex.png]]
+[[https://raw.githubusercontent.com/finex/redox-finex/simpleawesome/images/redox-finex.png]]
 
 ** Keys Legend
 The following scheme describe the meaning of the keys symbols positions.

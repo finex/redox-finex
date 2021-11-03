@@ -3,7 +3,7 @@
     "backcolor": "#ffffff",
     "name": "Redox RGB Evo (Colemak DHm)",
     "author": "FiNeX (https://www.finex.org)",
-    "notes": "# Ergonomic Redox Keyboard Layout #\nRevision date: 2021-08-24\nLayout: English (US, intl, with dead keys)\n\n\n## Keys Legend: ##\nThe following scheme describe the meaning of the keys symbols positions.\n\n|-----------------+---------------+-----------------|\n| Shifted key (*) | Symbols Layer | Shifted AltGr   |\n|-----------------+---------------+-----------------|\n| Functions Layer | Double Tap    | AwesomeWM Layer |\n|-----------------+---------------+-----------------|\n| Single Tap      | Numbers Layer | AltGr           |\n|-----------------+---------------+-----------------|\n|                 | Modifier      |                 |\n|-----------------+---------------+-----------------|\n\n(*): Shift is enabled with standard key or with custom home row shitfs which\nenables left top corner keycode on thumbs keys to make it easier use the\nkeyboard when opposite hand use the mouse.\n\n\n## Color Legend: ##\n- Green: Symbols & Navigation layer \n- Blue: Numbers Layer\n- Orange: Functions Layer\n- Red: Tap dance\n- Pink: Custom shift to enable shifted keys on opposite half and on same thumb cluster.\n- Brown: AwesomeWM Layer",
+    "notes": "# Ergonomic Redox Keyboard Layout #\nRevision date: 2021-10-28\nLayout: English (US, intl, with dead keys)\n\n\n## Keys Legend: ##\nThe following scheme describe the meaning of the keys symbols positions.\n\n|-----------------+---------------+-----------------|\n| Shifted key (*) | Symbols Layer | Shifted AltGr   |\n|-----------------+---------------+-----------------|\n| Functions Layer | Double Tap    | AwesomeWM Layer |\n|-----------------+---------------+-----------------|\n| Single Tap      | Numbers Layer | AltGr           |\n|-----------------+---------------+-----------------|\n|                 | Modifier      |                 |\n|-----------------+---------------+-----------------|\n\n(*): Shift is enabled with standard key or with custom home row shitfs which\nenables left top corner keycode on thumbs keys to make it easier use the\nkeyboard when opposite hand use the mouse.\n\n\n## Color Legend: ##\n- Green: Symbols & Navigation layer \n- Blue: Numbers Layer\n- Orange: Functions Layer\n- Red: Tap dance\n- Pink: Custom shift to enable shifted keys on opposite half and on same thumb cluster.\n- Brown: AwesomeWM Layer",
     "background": {
       "name": "Bamboo",
       "style": "background-image: url('/bg/wood/bamboo.jpg');"
@@ -20,17 +20,17 @@
     {
       "x": 3.5,
       "c": "#4f4f4f",
-      "t": "#ffffff\n\n\n\n\n\n\n\n#448f2c",
+      "t": "#ffffff",
       "sm": "cherry",
       "sb": "cherry",
       "st": "MX3A-L1Nx",
       "f": 2
     },
-    "#\n3\n\n³\n\n\n\n\nF3",
+    "#\n3\n\n³",
     {
       "x": 10.5
     },
-    "*\n8\n\n¾\n\n\n\n\nF8"
+    "*\n8\n\n¾"
   ],
   [
     {
@@ -38,58 +38,55 @@
       "x": 2.5,
       "a": 0
     },
-    "@\n2\n\n²\n\nQWERTY\n\n\nF2",
+    "@\n2\n\n²\n\nQWERTY",
     {
       "x": 1,
       "a": 4
     },
-    "$\n4\n\n\n\n\n\n\nF4",
+    "$\n4",
     {
       "x": 8.5
     },
-    "&\n7\n\n½\n\n\n\n\nF7",
+    "&\n7\n\n½",
     {
       "x": 1
     },
-    "(\n9\n\n‘\n\n\n\n\nF9"
+    "(\n9\n\n‘"
   ],
   [
     {
       "y": -0.875,
       "x": 5.5
     },
-    "%\n5\n\n\n\n\n\n\nF5",
+    "%\n5\n\n€",
     {
       "x": 6.5
     },
-    "<span class='cd'>&#9676;&#770;</span>\n6\n^\n¼\n\n\n\n\nF6"
+    "<span class='cd'>&#9676;&#770;</span>\n6\n^\n¼"
   ],
   [
     {
       "y": -0.875,
       "x": 0.25,
       "c": "#333333",
-      "t": "#ffffff",
       "w": 1.25
     },
     "\nEsc",
     {
       "c": "#4f4f4f",
-      "t": "#ffffff\n\n\n\n\n\n\n\n#448f2c",
       "a": 0
     },
-    "!\n1\n¹\n¡\n\nCOLEMAK\n\n\nF1",
+    "!\n1\n¹\n¡\n\nCOLEMAK",
     {
       "x": 14.5,
       "a": 4
     },
-    ")\n0\n\n’\n\n\n\n\nF10",
+    ")\n0\n\n’",
     {
       "c": "#333333",
-      "t": "#ffffff",
       "w": 1.25
     },
-    "\nEsc"
+    "\n⌫"
   ],
   [
     {
@@ -98,10 +95,9 @@
     },
     "\nPrnt",
     {
-      "x": 4.5,
-      "c": "#296cc0"
+      "x": 4.5
     },
-    "\n≡ Num"
+    "\n⌦"
   ],
   [
     {
@@ -171,7 +167,7 @@
     "Q\nq\n\n\n\nRESET\n\n\n!",
     {
       "x": 14.5,
-      "t": "#ffffff\n\n\n\n\n\n#bc4816\n\n\n#b10000\n#296cc0",
+      "t": "#ffffff\n\n\n\n\n\n#bc4816\n\n\n#ff0000\n#296cc0",
       "fa": [
         0,
         0,
@@ -192,13 +188,13 @@
       "a": 4,
       "w": 1.25
     },
-    "+\n=\n÷\n×\nAlt\n\n\n\n\n\n="
+    "+\n=\n÷\n×\n\n\n\n\n\n\n="
   ],
   [
     {
       "y": -0.625,
       "x": 6.5,
-      "t": "#ffffff\n\n\n\n\n\n\n\n#448f2c\n#b10000",
+      "t": "#ffffff\n\n\n\n\n\n\n\n#448f2c\n#ff0000",
       "f": 2,
       "h": 1.5
     },
@@ -233,19 +229,16 @@
     "R\nr\n\n®\nAlt\n\n\n\n-\n\n↓",
     {
       "x": 1,
-      "c": "#743850",
       "t": "#ffffff\n\n\n\n#aeaeae\n\n\n\n#448f2c"
     },
-    "T\nt\n\n\n≡ R⇧\n\n\n\n\"",
+    "T\nt\n\n\nShift\n\n\n\n\"",
     {
       "x": 8.5,
-      "c": "#74386d",
       "t": "#ffffff\n\n\n\n#aeaeae\n\n#bc4816\n#4e3317\n#448f2c\n\n#296cc0"
     },
-    "N\nn\n\n\n≡ L⇧\n\nF4\n4\n←\n\n4",
+    "N\nn\n\n\nShift\n\nF4\n4\n←\n\n4",
     {
       "x": 1,
-      "c": "#4f4f4f",
       "t": "#ffffff\n\n\n\n\n\n#bc4816\n#4e3317\n#448f2c\n\n#296cc0"
     },
     "I\ni\n\n\nAlt\n\nF6\n6\n↑\n\n6"
@@ -289,7 +282,7 @@
       "t": "#ffffff\n\n\n\n#aeaeae\n\n\n\n\n\n#296cc0",
       "w": 1.25
     },
-    "_\n-\n\n\nCtrl\n\n\n\n\n\n-"
+    "_\n-\n\n\n\n\n\n\n\n\n-"
   ],
   [
     {
@@ -355,8 +348,9 @@
     "Z\nz\n\n\n\nRGB_M_B\nMenu\n\n\\",
     {
       "x": 14.5,
-      "t": "#ffffff\n\n\n\n\n\n#bc4816\n\n#448f2c\n#b10000\n#296cc0",
-      "a": 4
+      "t": "#ffffff\n\n\n\n\n\n#bc4816\n\n#448f2c\n#ff0000\n#296cc0",
+      "a": 4,
+      "f": 2
     },
     "?\n/\n\n¿\n\n\nF10\n\n⇲\n?\n/",
     {
@@ -379,16 +373,14 @@
     {
       "y": -0.37509999999999977,
       "x": 3.5,
-      "t": "#ffffff",
-      "a": 7
+      "t": "#ffffff"
     },
-    "",
+    "\n⏎\n\n\nAlt Gr",
     {
       "x": 10.5,
-      "t": "#ffffff\n\n\n\n\n\n\n\n\n\n#296cc0",
-      "a": 4
+      "t": "#ffffff\n\n\n\n\n\n\n\n\n\n#296cc0"
     },
-    "\n←\n\n\nAlt Gr\n\n\n\n\n\n0"
+    "\n←\n\n\n\n\n\n\n\n\n0"
   ],
   [
     {
@@ -428,7 +420,7 @@
       "x": 15.5
     },
     "\n↑",
-    "\n→\n\n\nGui"
+    "\n→"
   ],
   [
     {
@@ -441,7 +433,7 @@
       "t": "#ffffff\n\n\n\n#aeaeae",
       "w": 1.25
     },
-    "Tab\nEsc\n\n\n≡ Num"
+    "\nEsc\n\n\n≡ Num"
   ],
   [
     {
@@ -471,11 +463,11 @@
       "t": "#ffffff\n\n\n\n#aeaeae",
       "h": 1.5
     },
-    "␣\n⌫\n\n\nCtrl",
+    "\n⌫\n\n\nCtrl",
     {
       "h": 1.5
     },
-    "⏎\n⌦\n\n\nGui"
+    "\n⌦\n\n\nGui"
   ],
   [
     {
@@ -495,12 +487,12 @@
       "t": "#ffffff\n\n\n\n#aeaeae",
       "h": 1.5
     },
-    "⌦\n⏎\n\n\n≡ Win",
+    "\n⏎\n\n\n≡ Win",
     {
       "c": "#448f2c",
       "h": 1.5
     },
-    "⌫\n␣\n\n\n≡ Sym"
+    "\n␣\n\n\n≡ Sym"
   ],
   [
     {
@@ -512,6 +504,6 @@
       "c": "#bc4816",
       "w": 1.25
     },
-    "Esc\nTab\n\n\n≡ Fun"
+    "\nTab\n\n\n≡ Fun"
   ]
 ]
