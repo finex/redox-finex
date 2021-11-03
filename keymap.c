@@ -135,7 +135,7 @@ qk_tap_dance_action_t tap_dance_actions[] = {
 #define KC_CBSP LCTL_T(KC_BSPC)       // Backspace / Left Ctrl
 #define KC_GUDE LGUI_T(KC_DEL)        // Del / Left Gui
 #define KC_SYSP LT(_SYMB, KC_SPC)     // Space / _symbols
-#define KC_MOSP LT(_MOUS, KC_SPC)     // Space / _mouse
+#define KC_MOBS LT(_MOUS, KC_BSPC)    // Backspace / _mouse
 #define KC_AWEN LT(_AWES, KC_ENT)     // Enter / AwesomeWM layer
 #define KC_FUTA LT(_FUNC, KC_TAB)     // Tab / _functions
 #define KC_GU_A LGUI_T(KC_A)          // A / Left Gui
@@ -253,7 +253,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     //├────────┼────────┼────────┼────────┼────────┼────────┼────────┼────────┐       ┌────────┼────────┼────────┼────────┼────────┼────────┼────────┼────────┤
        KC_LSPO ,KC_Z    ,KC_X    ,KC_C    ,KC_D    ,KC_V    ,KC_ADPU ,KC_PGDN ,        KC_HOME ,KC_ADEN ,KC_K    ,KC_H    ,KC_COMM ,KC_DOT  ,KC_SLQM ,KC_RSPC ,
     //├────────┼────────┼────────┼────────┼────┬───┴────┬───┼────────┼────────┤       ├────────┼────────┼───┬────┴───┬────┼────────┼────────┼────────┼────────┤
-       KC_GUSP ,KC_HYPR ,KC_MEH  ,KC_RAEN ,     KC_NUES ,    KC_MOSP ,KC_GUDE ,        KC_AWEN ,KC_SYSP ,    KC_FUTA ,     KC_LEFT ,KC_DOWN ,KC_UP   ,KC_RGHT
+       KC_GUSP ,KC_HYPR ,KC_MEH  ,KC_RAEN ,     KC_NUES ,    KC_MOBS ,KC_GUDE ,        KC_AWEN ,KC_SYSP ,    KC_FUTA ,     KC_LEFT ,KC_DOWN ,KC_UP   ,KC_RGHT
     //└────────┴────────┴────────┴────────┘    └────────┘   └────────┴────────┘       └────────┴────────┘   └────────┘    └────────┴────────┴────────┴────────┘
   ),
 
