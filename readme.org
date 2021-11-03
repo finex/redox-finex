@@ -134,6 +134,8 @@ keyboard when opposite hand use the mouse.
   Minor cleanups and improvements on "Numbers" layer.
 - 2021/08/24
   Added new tapdance: double slash key press returns question mark.
+- 2021/11/03
+  Created simpleawesome layout
 
 * Todo
 - Bring back mouse and multimedia keys.
