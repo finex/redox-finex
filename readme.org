@@ -34,12 +34,11 @@ accents.
   - ~[~ × 2 = ~{~
   - ~]~ × 2 = ~}~
   - ~/~ × 2 = ~?~
-- Removed Media support
+- Removed media and mouse support
 - Added missing "Print Screen" and "Menu" keys.
 - Added missing "F11" and "F12" keys.
 - Added ~Alt~, ~Ctrl~, ~Ctrl~ and ~Shift~ on home keys.
 - Added specific layout for "AwesomeWM" window manager.
-- Bring back virtual mouse layer.
 
 
 * Layout
@@ -136,6 +135,8 @@ keyboard when opposite hand use the mouse.
   Added new tapdance: double slash key press returns question mark.
 - 2021/11/03
   Created simpleawesome layout
+- 2021/11/05
+  Split mouse features to mouseawesome and keep this branch without mouse support.
 
 * Todo
 - Bring back mouse and multimedia keys.
