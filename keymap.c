@@ -216,28 +216,28 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
   return true;
 };
 
-// Fine tuning of TAPPING_TERM valuer on some home row modifiers to avoid errors during typing.
-uint16_t get_tapping_term(uint16_t keycode, keyrecord_t *record) {
-  switch (keycode) {
-  // Ring fingers
-  case KC_AL_I:
-  case KC_AL_R:
-    return TAPPING_TERM + 200;
-  // Pinkies
-  case KC_GU_O:
-  case KC_GU_A:
-    return TAPPING_TERM + 50;
-  // Middle fingers
-  case KC_CT_S:
-  case KC_CT_E:
-    return TAPPING_TERM - 30;
-  // Right thumb for "symbols" layer
-  case KC_SYSP:
-    return TAPPING_TERM - 50;
-  default:
-    return TAPPING_TERM;
-  }
-}
+/* // Fine tuning of TAPPING_TERM valuer on some home row modifiers to avoid errors during typing. */
+/* uint16_t get_tapping_term(uint16_t keycode, keyrecord_t *record) { */
+/*   switch (keycode) { */
+/*   // Ring fingers */
+/*   case QHAI: */
+/*   case QHAR: */
+/*     return TAPPING_TERM + 200; */
+/*   // Pinkies */
+/*   case QHGO: */
+/*   case QHGA: */
+/*     return TAPPING_TERM + 50; */
+/*   // Middle fingers */
+/*   case QHCS: */
+/*   case QHCE: */
+/*     return TAPPING_TERM - 30; */
+/*   // Right thumb for "symbols" layer */
+/*   case LT_NUBS: */
+/*     return TAPPING_TERM - 50; */
+/*   default: */
+/*     return TAPPING_TERM; */
+/*   } */
+/* } */
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 

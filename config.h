@@ -43,4 +43,4 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define QMK_KEYS_PER_SCAN 4
 // Custom tapping term
 #define TAPPING_TERM 200
-#define TAPPING_TERM_PER_KEY
+/* #define TAPPING_TERM_PER_KEY */
