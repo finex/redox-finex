@@ -3,11 +3,13 @@
 // Layer names
 enum{
   _COLEMAKDH, // Base Colemak Mod-DH
-  _SYMB, // Symbols
-  _NUMB, // Numbers
-  _FUNC, // Functions keys
-  _AWES, // AwesomeWM layer
-  // - Adjust layer:
+  _BUTT,
+  _MEDI,
+  _NAVI,
+  _MOUS,
+  _SYMB,
+  _NUMB,
+  _FUNC,
   _ADJUST
 };
 
@@ -33,8 +35,7 @@ enum custom_keycodes {
 enum tap_dance{
   TD_SCLN, // ;; -> :
   TD_LBRC, // [[ -> {
-  TD_RBRC, // ]] -> }
-  TD_SLQM  // // -> ?
+  TD_RBRC  // ]] -> }
 };
 
 // Semicolon to Colon
@@ -91,63 +92,67 @@ void dance_rbrc_reset (qk_tap_dance_state_t *state, void *user_data) {
   }
 }
 
-// Slash to question mark
-void dance_slqm_finished (qk_tap_dance_state_t *state, void *user_data) {
-  if (state->count == 1) {
-    register_code (KC_SLSH);
-  } else {
-    register_code (KC_RSFT);
-    register_code (KC_SLSH);
-  }
-}
-void dance_slqm_reset (qk_tap_dance_state_t *state, void *user_data) {
-  if (state->count == 1) {
-    unregister_code (KC_SLSH);
-  } else {
-    unregister_code (KC_RSFT);
-    unregister_code (KC_SLSH);
-  }
-}
 
 //Tap Dance Definitions
 qk_tap_dance_action_t tap_dance_actions[] = {
   [TD_SCLN] = ACTION_TAP_DANCE_FN_ADVANCED(NULL, dance_scln_finished, dance_scln_reset),
   [TD_LBRC] = ACTION_TAP_DANCE_FN_ADVANCED(NULL, dance_lbrc_finished, dance_lbrc_reset),
   [TD_RBRC] = ACTION_TAP_DANCE_FN_ADVANCED(NULL, dance_rbrc_finished, dance_rbrc_reset),
-  [TD_SLQM] = ACTION_TAP_DANCE_FN_ADVANCED(NULL, dance_slqm_finished, dance_slqm_reset)
 };
 
-// Shortcuts to make keymap more readable
-// - Adjustment Layer:
-#define KC_ADEN LT(_ADJUST, KC_END)   // End / _ADJUST layer
-#define KC_ADPU LT(_ADJUST, KC_PGUP)  // Page Up / _ADJUST layer
-// - Custom home row layers:
-#define KC_N_SH RSFT_T(KC_N)       // N key or right SHIFT
-#define KC_T_SH LSFT_T(KC_T)       // T key or left SHIFT
-// - Other keys/modifiers:
-#define KC_ATAB RALT_T(KC_TAB)        // Tab / Alt Gr
-#define KC_CESC LCTL_T(KC_ESC)        // Esc / Left Ctrl
-#define KC_GUSP RGUI_T(KC_SPC)        // Space / Right Gui
-#define KC_AEQL LALT_T(KC_EQL)        // Equals / Left Alt
-#define KC_CMIN RCTL_T(KC_MINUS)      // Minus / Right Ctrl
-#define KC_NUES LT(_NUMB, KC_ESC)     // Esc / _numbers
-#define KC_CBSP LCTL_T(KC_BSPC)       // Backspace / Left Ctrl
-#define KC_GUDE LGUI_T(KC_DEL)        // Del / Left Gui
-#define KC_SYSP LT(_SYMB, KC_SPC)     // Space / _symbols
-#define KC_AWEN LT(_AWES, KC_ENT)     // Enter / AwesomeWM layer
-#define KC_FUTA LT(_FUNC, KC_TAB)     // Tab / _functions
-#define KC_GU_A LGUI_T(KC_A)          // A / Left Gui
-#define KC_CT_S LCTL_T(KC_S)          // R / Left Ctrl
-#define KC_AL_R LALT_T(KC_R)          // S / Left Alt
-#define KC_GU_O RGUI_T(KC_O)          // O / Right Gui
-#define KC_AL_I LALT_T(KC_I)          // E / Left Alt (left alt because used as Emacs M- )
-#define KC_CT_E RCTL_T(KC_E)          // I / Right Ctrl
-#define KC_RAEN RALT_T(KC_ENT)        // Enter / Right Alt
+
+
+// Layers
+// - Toggle
+#define TG_NUMB TG(_NUMB)
+#define TG_BUTT TG(_BUTT)
+// - Layer / Tap
+#define LT_ADEN LT(_ADJUST, KC_END)
+#define LT_ADPU LT(_ADJUST, KC_PGUP)
+#define LT_MEES LT(_MEDI, KC_ESC)
+#define LT_NASP LT(_NAVI, KC_SPACE)
+#define LT_MOTA LT(_MOUS, KC_TAB)
+#define LT_SYEN LT(_SYMB, KC_ENTER)
+#define LT_NUBS LT(_NUMB, KC_BSPACE)
+#define LT_FUDE LT(_FUNC, KC_DEL)
+
+// Clipboard keys
+#define U_RDO KC_AGIN
+#define U_PST S(KC_INS)
+#define U_CPY C(KC_INS)
+#define U_CUT S(KC_DEL)
+#define U_UND KC_UNDO
+
+// Home row mod tap
+// - Left
+#define QHGA LGUI_T(KC_A)
+#define QHAR LALT_T(KC_R)
+#define QHCS LCTL_T(KC_S)
+#define QHST LSFT_T(KC_T)
+// - Right
+#define QHGO LGUI_T(KC_O)
+#define QHAI LALT_T(KC_I)
+#define QHCE LCTL_T(KC_E)
+#define QHSN LSFT_T(KC_N)
+
+// Mod tap
+#define HYP_PRS HYPR_T(KC_PSCR)
+
+
+#define KC_AW1 LGUI(KC_1)
+#define KC_AW2 LGUI(KC_2)
+#define KC_AW3 LGUI(KC_3)
+#define KC_AW4 LGUI(KC_4)
+#define KC_AW5 LGUI(KC_5)
+#define KC_AW6 LGUI(KC_6)
+#define KC_AW7 LGUI(KC_7)
+#define KC_AW8 LGUI(KC_8)
+#define KC_AW9 LGUI(KC_9)
+
 // Tap dance keys:
 #define KC_TDSC TD(TD_SCLN)           // ;; -> :
 #define KC_TDLB TD(TD_LBRC)           // [[ -> {
 #define KC_TDRB TD(TD_RBRC)           // ]] -> }
-#define KC_SLQM TD(TD_SLQM)           // // -> ?
 
 
 // Send custom strings or change default base layer
@@ -237,77 +242,127 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   // Colemak Mod-DH
   [_COLEMAKDH] = LAYOUT(
     //┌────────┬────────┬────────┬────────┬────────┬────────┐                                           ┌────────┬────────┬────────┬────────┬────────┬────────┐
-       KC_ESC  ,KC_1    ,KC_2    ,KC_3    ,KC_4    ,KC_5    ,                                            KC_6    ,KC_7    ,KC_8    ,KC_9    ,KC_0    ,KC_BSPC ,
+       KC_ESC  ,KC_1    ,KC_2    ,KC_3    ,KC_4    ,KC_5    ,                                            KC_6    ,KC_7    ,KC_8    ,KC_9    ,KC_0    ,KC_ESC  ,
     //├────────┼────────┼────────┼────────┼────────┼────────┼────────┐                         ┌────────┼────────┼────────┼────────┼────────┼────────┼────────┤
-       KC_ATAB ,KC_Q    ,KC_W    ,KC_F    ,KC_P    ,KC_B    ,KC_PSCR ,                          KC_DEL  ,KC_J    ,KC_L    ,KC_U    ,KC_Y    ,KC_TDSC ,KC_AEQL ,
+       TG_BUTT ,KC_Q    ,KC_W    ,KC_F    ,KC_P    ,KC_B    ,XXXXXXX ,                          XXXXXXX ,KC_J    ,KC_L    ,KC_U    ,KC_Y    ,KC_TDSC ,TG_NUMB ,
     //├────────┼────────┼────────┼────────┼────────┼────────┼────────┤                         ├────────┼────────┼────────┼────────┼────────┼────────┼────────┤
-       KC_CESC ,KC_GU_A ,KC_AL_R ,KC_CT_S ,KC_T_SH ,KC_G    ,KC_TDLB ,                          KC_TDRB ,KC_M    ,KC_N_SH ,KC_CT_E ,KC_AL_I ,KC_GU_O ,KC_CMIN ,
+       KC_GRV  ,QHGA    ,QHAR    ,QHCS    ,QHST    ,KC_G    ,KC_TDLB ,                          KC_TDRB ,KC_M    ,QHSN    ,QHCE    ,QHAI    ,QHGO    ,KC_QUOT ,
     //├────────┼────────┼────────┼────────┼────────┼────────┼────────┼────────┐       ┌────────┼────────┼────────┼────────┼────────┼────────┼────────┼────────┤
-       KC_LSPO ,KC_Z    ,KC_X    ,KC_C    ,KC_D    ,KC_V    ,KC_ADPU ,KC_PGDN ,        KC_HOME ,KC_ADEN ,KC_K    ,KC_H    ,KC_COMM ,KC_DOT  ,KC_SLQM ,KC_RSPC ,
+       KC_LSPO ,KC_Z    ,QHLX    ,KC_C    ,KC_D    ,KC_V    ,KC_ADPU ,KC_PGDN ,        KC_HOME ,KC_ADEN ,KC_K    ,KC_H    ,KC_COMM ,QHLD    ,KC_SLSH ,KC_RSPC ,
     //├────────┼────────┼────────┼────────┼────┬───┴────┬───┼────────┼────────┤       ├────────┼────────┼───┬────┴───┬────┼────────┼────────┼────────┼────────┤
-       KC_GUSP ,KC_HYPR ,KC_MEH  ,KC_RAEN ,     KC_NUES ,    KC_CBSP ,KC_GUDE ,        KC_AWEN ,KC_SYSP ,    KC_FUTA ,     KC_LEFT ,KC_DOWN ,KC_UP   ,KC_RGHT
+       XXXXXXX ,XXXXXXX ,HYP_PRS ,KC_ENT  ,     LT_MEES ,    LT_NASP ,LT_MOTA ,        LT_SYEN , LT_NUBS,    LT_FUDE ,     KC_LEFT ,KC_DOWN ,KC_UP   ,KC_RGHT
     //└────────┴────────┴────────┴────────┘    └────────┘   └────────┴────────┘       └────────┴────────┘   └────────┘    └────────┴────────┴────────┴────────┘
   ),
 
-  // Symbols, home row arrows, function keys and macros layer
+  // Symbols and macros layer
   [_SYMB] = LAYOUT(
     //┌────────┬────────┬────────┬────────┬────────┬────────┐                                           ┌────────┬────────┬────────┬────────┬────────┬────────┐
-       _______ ,_______ ,_______ ,_______ ,_______ ,_______ ,                                            _______ ,_______ ,_______ ,_______ ,_______ ,_______ ,
+       _______ ,XXXXXXX ,XXXXXXX ,XXXXXXX ,XXXXXXX ,XXXXXXX ,                                            XXXXXXX ,XXXXXXX ,XXXXXXX ,XXXXXXX ,XXXXXXX ,_______ ,
     //├────────┼────────┼────────┼────────┼────────┼────────┼────────┐                         ┌────────┼────────┼────────┼────────┼────────┼────────┼────────┤
-       _______ ,KC_EXLM ,KC_AT   ,KC_HASH ,KC_DLR  ,KC_PERC ,_______ ,                          _______ ,ASC_CIRC,KC_AMPR ,KC_ASTR ,KC_PLUS ,_______ ,_______ ,
+       _______ ,KC_LCBR, KC_AMPR, KC_ASTR, KC_LPRN, KC_RCBR ,XXXXXXX ,                          XXXXXXX ,XXXXXXX ,XXXXXXX ,XXXXXXX ,XXXXXXX ,XXXXXXX ,_______ ,
     //├────────┼────────┼────────┼────────┼────────┼────────┼────────┤                         ├────────┼────────┼────────┼────────┼────────┼────────┼────────┤
-       _______ ,KC_PIPE ,KC_PMNS ,ASC_SQT ,ASC_DQT ,KC_GRV  ,ASC_SAR ,                          ASC_DAR ,KC_QUOT ,KC_LEFT ,KC_DOWN ,KC_UP   ,KC_RGHT ,_______ ,
+       XXXXXXX ,KC_COLN, KC_DLR  ,KC_PERC ,KC_CIRC ,KC_PLUS ,ASC_SAR ,                          ASC_DAR ,XXXXXXX ,KC_LSFT, KC_LCTL, KC_LALT, KC_LGUI ,XXXXXXX ,
     //├────────┼────────┼────────┼────────┼────────┼────────┼────────┼────────┐       ┌────────┼────────┼────────┼────────┼────────┼────────┼────────┼────────┤
-       _______ ,KC_BSLS ,KC_UNDS ,KC_COLN ,ASC_TILD,KC_EQL  ,ASC_SAD ,ASC_HAP ,        _______ ,_______ ,ASC_BKT ,KC_PGUP ,KC_PGDN ,KC_HOME ,KC_END  ,_______ ,
+       XXXXXXX ,KC_TILD, KC_EXLM ,KC_AT   ,KC_HASH ,KC_PIPE ,ASC_SAD ,ASC_HAP ,        XXXXXXX ,XXXXXXX ,XXXXXXX ,XXXXXXX ,XXXXXXX ,XXXXXXX ,XXXXXXX ,XXXXXXX ,
     //├────────┼────────┼────────┼────────┼────┬───┴────┬───┼────────┼────────┤       ├────────┼────────┼───┬────┴───┬────┼────────┼────────┼────────┼────────┤
-       _______ ,_______ ,_______ ,_______ ,     _______ ,    _______ ,_______ ,        _______ ,_______ ,    _______ ,     _______ ,_______ ,_______ ,_______
+       XXXXXXX ,XXXXXXX ,XXXXXXX ,XXXXXXX ,     KC_LPRN ,    KC_RPRN ,KC_UNDS ,        XXXXXXX ,XXXXXXX ,    XXXXXXX ,     XXXXXXX ,XXXXXXX ,XXXXXXX ,XXXXXXX
     //└────────┴────────┴────────┴────────┘    └────────┘   └────────┴────────┘       └────────┴────────┘   └────────┘    └────────┴────────┴────────┴────────┘
   ),
 
-  // Numeric keypad layer
+  // Numeric layer
   [_NUMB] = LAYOUT(
     //┌────────┬────────┬────────┬────────┬────────┬────────┐                                           ┌────────┬────────┬────────┬────────┬────────┬────────┐
-       _______ ,_______ ,_______ ,_______ ,_______ ,_______ ,                                            _______ ,_______ ,_______ ,_______ ,_______ ,_______ ,
+       _______ ,XXXXXXX ,XXXXXXX ,XXXXXXX ,XXXXXXX ,XXXXXXX ,                                            XXXXXXX ,XXXXXXX ,XXXXXXX ,XXXXXXX ,XXXXXXX ,_______ ,
     //├────────┼────────┼────────┼────────┼────────┼────────┼────────┐                         ┌────────┼────────┼────────┼────────┼────────┼────────┼────────┤
-       _______ ,_______ ,KC_UP   ,_______ ,_______ ,_______ ,_______ ,                          _______ ,KC_PENT ,KC_KP_7 ,KC_KP_8 ,KC_KP_9 ,KC_PPLS ,KC_PEQL ,
+       _______ ,KC_LBRC ,KC_7    ,KC_8    ,KC_9    ,KC_RBRC ,XXXXXXX ,                          XXXXXXX ,XXXXXXX ,XXXXXXX ,XXXXXXX ,XXXXXXX ,XXXXXXX ,_______ ,
     //├────────┼────────┼────────┼────────┼────────┼────────┼────────┤                         ├────────┼────────┼────────┼────────┼────────┼────────┼────────┤
-       _______ ,KC_LEFT ,KC_DOWN ,KC_RIGHT,_______ ,_______ ,_______ ,                          XXXXXXX ,KC_COMM ,KC_KP_4 ,KC_KP_5 ,KC_KP_6 ,KC_PAST ,KC_PMNS ,
+       XXXXXXX ,KC_SCLN ,KC_4    ,KC_5    ,KC_6    ,KC_LSCR ,XXXXXXX ,                          XXXXXXX ,XXXXXXX ,KC_LSFT, KC_LCTL, KC_LALT, KC_LGUI ,XXXXXXX ,
     //├────────┼────────┼────────┼────────┼────────┼────────┼────────┼────────┐       ┌────────┼────────┼────────┼────────┼────────┼────────┼────────┼────────┤
-       _______ ,_______ ,_______ ,_______ ,_______ ,_______ ,_______ ,_______ ,        _______ ,_______ ,S(KC_9) ,KC_KP_1 ,KC_KP_2 ,KC_KP_3 ,KC_PSLS ,S(KC_0) ,
+       XXXXXXX ,KC_DQUO ,KC_1    ,KC_2    ,KC_3    ,KC_BSLS ,XXXXXXX ,XXXXXXX ,        XXXXXXX ,XXXXXXX ,XXXXXXX ,XXXXXXX ,XXXXXXX ,XXXXXXX ,XXXXXXX ,XXXXXXX ,
     //├────────┼────────┼────────┼────────┼────┬───┴────┬───┼────────┼────────┤       ├────────┼────────┼───┬────┴───┬────┼────────┼────────┼────────┼────────┤
-       _______ ,_______ ,_______ ,_______ ,     _______ ,    _______ ,_______ ,        KC_PENT ,KC_KP_0 ,    KC_PDOT ,     KC_KP_0 ,KC_PDOT ,XXXXXXX ,XXXXXXX
+       XXXXXXX ,XXXXXXX ,XXXXXXX ,XXXXXXX ,     KC_DOT  ,    KC_0    ,KC_MINS ,        XXXXXXX ,XXXXXXX ,    XXXXXXX ,     XXXXXXX ,XXXXXXX ,XXXXXXX ,XXXXXXX
     //└────────┴────────┴────────┴────────┘    └────────┘   └────────┴────────┘       └────────┴────────┘   └────────┘    └────────┴────────┴────────┴────────┘
   ),
 
-  // Function layer and some extra keys on right hand
+  // Function layer
   [_FUNC] = LAYOUT(
     //┌────────┬────────┬────────┬────────┬────────┬────────┐                                           ┌────────┬────────┬────────┬────────┬────────┬────────┐
-       _______ ,_______ ,_______ ,_______ ,_______ ,_______ ,                                            _______ ,_______ ,_______ ,_______ ,_______ ,_______ ,
+       _______ ,XXXXXXX ,XXXXXXX ,XXXXXXX ,XXXXXXX ,XXXXXXX ,                                            XXXXXXX ,XXXXXXX ,XXXXXXX ,XXXXXXX ,XXXXXXX ,_______ ,
     //├────────┼────────┼────────┼────────┼────────┼────────┼────────┐                         ┌────────┼────────┼────────┼────────┼────────┼────────┼────────┤
-       _______ ,_______ ,_______ ,_______ ,_______ ,_______ ,_______ ,                          _______ ,XXXXXXX ,KC_F7   ,KC_F8   ,KC_F9   ,KC_F12  ,_______ ,
+       _______ ,KC_F12  ,KC_F7   ,KC_F8   ,KC_F9   ,XXXXXXX ,XXXXXXX ,                          XXXXXXX ,XXXXXXX ,XXXXXXX ,XXXXXXX ,XXXXXXX ,XXXXXXX ,_______ ,
     //├────────┼────────┼────────┼────────┼────────┼────────┼────────┤                         ├────────┼────────┼────────┼────────┼────────┼────────┼────────┤
-       _______ ,_______ ,_______ ,_______ ,_______ ,KC_EXEC ,XXXXXXX ,                          XXXXXXX ,XXXXXXX ,KC_F4   ,KC_F5   ,KC_F6   ,KC_F11  ,_______ ,
+       XXXXXXX ,KC_F11  ,KC_F4   ,KC_F5   ,KC_F6   ,KC_CAPS ,XXXXXXX ,                          XXXXXXX ,XXXXXXX ,KC_LSFT, KC_LCTL, KC_LALT, KC_LGUI ,XXXXXXX ,
     //├────────┼────────┼────────┼────────┼────────┼────────┼────────┼────────┐       ┌────────┼────────┼────────┼────────┼────────┼────────┼────────┼────────┤
-       _______ ,KC_MENU ,KC_NLCK ,KC_INS  ,KC_CAPS ,KC_APP  ,_______ ,_______ ,        _______ ,_______ ,XXXXXXX ,KC_F1   ,KC_F2   ,KC_F3   ,KC_F10  ,_______ ,
+       XXXXXXX ,KC_F10  ,KC_F1   ,KC_F2   ,KC_F3   ,KC_INS  ,XXXXXXX ,XXXXXXX ,        XXXXXXX ,XXXXXXX ,XXXXXXX ,XXXXXXX ,XXXXXXX ,KC_ALGR ,XXXXXXX ,XXXXXXX ,
     //├────────┼────────┼────────┼────────┼────┬───┴────┬───┼────────┼────────┤       ├────────┼────────┼───┬────┴───┬────┼────────┼────────┼────────┼────────┤
-       _______ ,_______ ,_______ ,XXXXXXX ,     _______ ,    _______ ,_______ ,        _______ ,_______ ,    _______ ,     _______ ,XXXXXXX ,XXXXXXX ,_______
+       XXXXXXX ,XXXXXXX ,XXXXXXX ,XXXXXXX ,     KC_APP  ,    KC_SPC  , KC_TAB ,        XXXXXXX ,XXXXXXX ,    XXXXXXX ,     XXXXXXX ,XXXXXXX ,XXXXXXX ,XXXXXXX
     //└────────┴────────┴────────┴────────┘    └────────┘   └────────┴────────┘       └────────┴────────┘   └────────┘    └────────┴────────┴────────┴────────┘
   ),
 
-  // AwesomeWM layer
-  [_AWES] = LAYOUT(
+
+  // Navigation layer
+  [_NAVI] = LAYOUT(
     //┌────────┬────────┬────────┬────────┬────────┬────────┐                                           ┌────────┬────────┬────────┬────────┬────────┬────────┐
-       _______ ,_______ ,_______ ,_______ ,_______ ,_______ ,                                            _______ ,_______ ,_______ ,_______ ,_______ ,_______ ,
+       _______ ,XXXXXXX ,XXXXXXX ,XXXXXXX ,XXXXXXX ,XXXXXXX ,                                            XXXXXXX ,XXXXXXX ,XXXXXXX ,XXXXXXX ,XXXXXXX ,_______ ,
     //├────────┼────────┼────────┼────────┼────────┼────────┼────────┐                         ┌────────┼────────┼────────┼────────┼────────┼────────┼────────┤
-       _______ ,_______ ,_______ ,_______ ,_______ ,_______ ,_______ ,                          _______ ,LGUI(KC_ENT) ,LGUI(KC_7), LGUI(KC_8), LGUI(KC_9),_______ ,_______ ,
+       _______ ,XXXXXXX ,XXXXXXX ,XXXXXXX ,XXXXXXX ,XXXXXXX ,XXXXXXX ,                          XXXXXXX ,U_RDO   ,U_PST   ,U_CPY   ,U_CUT   ,U_UND   ,_______ ,
     //├────────┼────────┼────────┼────────┼────────┼────────┼────────┤                         ├────────┼────────┼────────┼────────┼────────┼────────┼────────┤
-       _______ ,_______ ,_______ ,_______ ,_______ ,_______ ,_______ ,                          _______ ,LGUI(KC_M)   ,LGUI(KC_4), LGUI(KC_5), LGUI(KC_6),_______ ,_______ ,
+       XXXXXXX ,KC_LGUI, KC_LALT ,KC_LCTL ,KC_LSFT ,XXXXXXX ,XXXXXXX ,                          XXXXXXX ,XXXXXXX ,KC_LEFT ,KC_DOWN ,KC_UP   ,KC_RGHT ,XXXXXXX ,
     //├────────┼────────┼────────┼────────┼────────┼────────┼────────┼────────┐       ┌────────┼────────┼────────┼────────┼────────┼────────┼────────┼────────┤
-       _______ ,_______ ,_______ ,_______ ,_______ ,_______ ,_______ ,_______ ,        _______ ,_______ ,LGUI(KC_SPC) ,LGUI(KC_1), LGUI(KC_2), LGUI(KC_3),_______ ,_______ ,
+       XXXXXXX ,XXXXXXX ,KC_ALGR ,XXXXXXX ,XXXXXXX ,XXXXXXX ,XXXXXXX ,XXXXXXX ,        XXXXXXX ,XXXXXXX ,XXXXXXX ,KC_HOME ,KC_PGDN ,KC_PGUP ,KC_END  ,XXXXXXX ,
     //├────────┼────────┼────────┼────────┼────┬───┴────┬───┼────────┼────────┤       ├────────┼────────┼───┬────┴───┬────┼────────┼────────┼────────┼────────┤
-       _______ ,_______ ,_______ ,XXXXXXX ,     _______ ,    _______ ,_______ ,        _______ ,_______ ,    _______ ,     _______ ,_______ ,_______ ,_______
+       XXXXXXX ,XXXXXXX ,XXXXXXX ,XXXXXXX ,     XXXXXXX ,    XXXXXXX ,XXXXXXX ,        KC_ENT  ,KC_BSPC ,    KC_DEL  ,     XXXXXXX ,XXXXXXX ,XXXXXXX ,XXXXXXX
     //└────────┴────────┴────────┴────────┘    └────────┘   └────────┴────────┘       └────────┴────────┘   └────────┘    └────────┴────────┴────────┴────────┘
   ),
+
+
+  // Mouse layer
+  [_MOUS] = LAYOUT(
+    //┌────────┬────────┬────────┬────────┬────────┬────────┐                                           ┌────────┬────────┬────────┬────────┬────────┬────────┐
+       _______ ,XXXXXXX ,XXXXXXX ,XXXXXXX ,XXXXXXX ,XXXXXXX ,                                            XXXXXXX ,XXXXXXX ,XXXXXXX ,XXXXXXX ,XXXXXXX ,_______ ,
+    //├────────┼────────┼────────┼────────┼────────┼────────┼────────┐                         ┌────────┼────────┼────────┼────────┼────────┼────────┼────────┤
+       _______ ,XXXXXXX ,XXXXXXX ,XXXXXXX ,XXXXXXX ,XXXXXXX ,XXXXXXX ,                          XXXXXXX ,U_RDO   ,U_PST   ,U_CPY   ,U_CUT   ,U_UND   ,_______ ,
+    //├────────┼────────┼────────┼────────┼────────┼────────┼────────┤                         ├────────┼────────┼────────┼────────┼────────┼────────┼────────┤
+       XXXXXXX ,KC_LGUI, KC_LALT ,KC_LCTL ,KC_LSFT ,XXXXXXX ,XXXXXXX ,                          XXXXXXX ,XXXXXXX ,KC_MS_L, KC_MS_D, KC_MS_U, KC_MS_R ,XXXXXXX ,
+    //├────────┼────────┼────────┼────────┼────────┼────────┼────────┼────────┐       ┌────────┼────────┼────────┼────────┼────────┼────────┼────────┼────────┤
+       XXXXXXX ,XXXXXXX ,KC_ALGR ,XXXXXXX ,XXXXXXX ,XXXXXXX ,XXXXXXX ,XXXXXXX ,        XXXXXXX ,XXXXXXX ,XXXXXXX ,KC_WH_L, KC_WH_D, KC_WH_U, KC_WH_R ,XXXXXXX ,
+    //├────────┼────────┼────────┼────────┼────┬───┴────┬───┼────────┼────────┤       ├────────┼────────┼───┬────┴───┬────┼────────┼────────┼────────┼────────┤
+       XXXXXXX ,XXXXXXX ,XXXXXXX ,XXXXXXX ,     XXXXXXX ,    XXXXXXX ,XXXXXXX ,        KC_BTN1 ,KC_BTN3 ,    KC_BTN2 ,     XXXXXXX ,XXXXXXX ,XXXXXXX ,XXXXXXX
+    //└────────┴────────┴────────┴────────┘    └────────┘   └────────┴────────┘       └────────┴────────┘   └────────┘    └────────┴────────┴────────┴────────┘
+  ),
+
+  // Media layer
+  [_MEDI] = LAYOUT(
+    //┌────────┬────────┬────────┬────────┬────────┬────────┐                                           ┌────────┬────────┬────────┬────────┬────────┬────────┐
+       _______ ,XXXXXXX ,XXXXXXX ,XXXXXXX ,XXXXXXX ,XXXXXXX ,                                            XXXXXXX ,XXXXXXX ,XXXXXXX ,XXXXXXX ,XXXXXXX ,_______ ,
+    //├────────┼────────┼────────┼────────┼────────┼────────┼────────┐                         ┌────────┼────────┼────────┼────────┼────────┼────────┼────────┤
+       _______ ,XXXXXXX ,KC_AW7  ,KC_AW8  ,KC_AW9  ,XXXXXXX ,XXXXXXX ,                          XXXXXXX ,U_RDO   ,U_PST   ,U_CPY   ,U_CUT   ,U_UND   ,_______ ,
+    //├────────┼────────┼────────┼────────┼────────┼────────┼────────┤                         ├────────┼────────┼────────┼────────┼────────┼────────┼────────┤
+       XXXXXXX ,XXXXXXX ,KC_AW4  ,KC_AW5  ,KC_AW6  ,XXXXXXX ,XXXXXXX ,                          XXXXXXX ,KC_MPRV ,KC_VOLD ,KC_VOLU ,KC_MNXT ,XXXXXXX ,XXXXXXX ,
+    //├────────┼────────┼────────┼────────┼────────┼────────┼────────┼────────┐       ┌────────┼────────┼────────┼────────┼────────┼────────┼────────┼────────┤
+       XXXXXXX ,XXXXXXX ,KC_AW1  ,KC_AW2  ,KC_AW3  ,XXXXXXX ,XXXXXXX ,XXXXXXX ,        XXXXXXX ,XXXXXXX ,XXXXXXX ,XXXXXXX ,XXXXXXX ,XXXXXXX ,XXXXXXX ,XXXXXXX ,
+    //├────────┼────────┼────────┼────────┼────┬───┴────┬───┼────────┼────────┤       ├────────┼────────┼───┬────┴───┬────┼────────┼────────┼────────┼────────┤
+       XXXXXXX ,XXXXXXX ,XXXXXXX ,XXXXXXX ,     XXXXXXX ,    XXXXXXX ,XXXXXXX ,        KC_MSTP ,KC_MPLY,     KC_MUTE ,     XXXXXXX ,XXXXXXX ,XXXXXXX ,XXXXXXX
+    //└────────┴────────┴────────┴────────┘    └────────┘   └────────┴────────┘       └────────┴────────┘   └────────┘    └────────┴────────┴────────┴────────┘
+  ),
+
+
+
+  // Buttons layer
+  [_BUTT] = LAYOUT(
+    //┌────────┬────────┬────────┬────────┬────────┬────────┐                                           ┌────────┬────────┬────────┬────────┬────────┬────────┐
+       _______ ,XXXXXXX ,XXXXXXX ,XXXXXXX ,XXXXXXX ,XXXXXXX ,                                            XXXXXXX ,XXXXXXX ,XXXXXXX ,XXXXXXX ,XXXXXXX ,_______ ,
+    //├────────┼────────┼────────┼────────┼────────┼────────┼────────┐                         ┌────────┼────────┼────────┼────────┼────────┼────────┼────────┤
+       _______ ,U_UND   ,U_CUT   ,U_CPY   ,U_PST   ,U_RDO   ,XXXXXXX ,                          XXXXXXX ,U_RDO   ,U_PST   ,U_CPY   ,U_CUT   ,U_UND   ,_______ ,
+    //├────────┼────────┼────────┼────────┼────────┼────────┼────────┤                         ├────────┼────────┼────────┼────────┼────────┼────────┼────────┤
+       XXXXXXX ,KC_LGUI ,KC_LALT ,KC_LCTL ,KC_LSFT ,XXXXXXX ,XXXXXXX ,                          XXXXXXX ,XXXXXXX ,KC_RSFT ,KC_RCTL ,KC_LALT, KC_RGUI ,XXXXXXX ,
+    //├────────┼────────┼────────┼────────┼────────┼────────┼────────┼────────┐       ┌────────┼────────┼────────┼────────┼────────┼────────┼────────┼────────┤
+       XXXXXXX ,U_UND   ,U_CUT   ,U_CPY   ,U_PST   ,U_RDO   ,XXXXXXX ,XXXXXXX ,        XXXXXXX ,XXXXXXX ,U_RDO   ,U_PST   ,U_CPY   ,U_CUT   ,U_UND   ,XXXXXXX ,
+    //├────────┼────────┼────────┼────────┼────┬───┴────┬───┼────────┼────────┤       ├────────┼────────┼───┬────┴───┬────┼────────┼────────┼────────┼────────┤
+       XXXXXXX ,XXXXXXX ,XXXXXXX ,XXXXXXX ,     KC_BTN2 ,    KC_BTN3 ,KC_BTN1 ,        KC_BTN1 ,KC_BTN3 ,    KC_BTN2  ,     XXXXXXX ,XXXXXXX ,XXXXXXX ,XXXXXXX
+    //└────────┴────────┴────────┴────────┘    └────────┘   └────────┴────────┘       └────────┴────────┘   └────────┘    └────────┴────────┴────────┴────────┘
+  ),
+
 
   // Adjust layer (RGB, Reset and base layer switch)
   [_ADJUST] = LAYOUT(
