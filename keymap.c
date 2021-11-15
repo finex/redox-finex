@@ -129,11 +129,13 @@ qk_tap_dance_action_t tap_dance_actions[] = {
 #define QHAR LALT_T(KC_R)
 #define QHCS LCTL_T(KC_S)
 #define QHST LSFT_T(KC_T)
+#define QHLX RALT_T(KC_X)
 // - Right
 #define QHGO LGUI_T(KC_O)
 #define QHAI LALT_T(KC_I)
-#define QHCE LCTL_T(KC_E)
+#define QHCE RCTL_T(KC_E)
 #define QHSN LSFT_T(KC_N)
+#define QHLD RALT_T(KC_DOT)
 
 // Mod tap
 #define HYP_PRS HYPR_T(KC_PSCR)
@@ -248,7 +250,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     //├────────┼────────┼────────┼────────┼────────┼────────┼────────┤                         ├────────┼────────┼────────┼────────┼────────┼────────┼────────┤
        KC_GRV  ,QHGA    ,QHAR    ,QHCS    ,QHST    ,KC_G    ,KC_TDLB ,                          KC_TDRB ,KC_M    ,QHSN    ,QHCE    ,QHAI    ,QHGO    ,KC_QUOT ,
     //├────────┼────────┼────────┼────────┼────────┼────────┼────────┼────────┐       ┌────────┼────────┼────────┼────────┼────────┼────────┼────────┼────────┤
-       KC_LSPO ,KC_Z    ,QHLX    ,KC_C    ,KC_D    ,KC_V    ,KC_ADPU ,KC_PGDN ,        KC_HOME ,KC_ADEN ,KC_K    ,KC_H    ,KC_COMM ,QHLD    ,KC_SLSH ,KC_RSPC ,
+       KC_LSPO ,KC_Z    ,QHLX    ,KC_C    ,KC_D    ,KC_V    ,TG_ADPU ,KC_PGDN ,        KC_HOME ,TG_ADEN ,KC_K    ,KC_H    ,KC_COMM ,QHLD    ,KC_SLSH ,KC_RSPC ,
     //├────────┼────────┼────────┼────────┼────┬───┴────┬───┼────────┼────────┤       ├────────┼────────┼───┬────┴───┬────┼────────┼────────┼────────┼────────┤
        XXXXXXX ,XXXXXXX ,HYP_PRS ,KC_ENT  ,     LT_MEES ,    LT_NASP ,LT_MOTA ,        LT_SYEN , LT_NUBS,    LT_FUDE ,     KC_LEFT ,KC_DOWN ,KC_UP   ,KC_RGHT
     //└────────┴────────┴────────┴────────┘    └────────┘   └────────┴────────┘       └────────┴────────┘   └────────┘    └────────┴────────┴────────┴────────┘
