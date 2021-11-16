@@ -131,10 +131,10 @@ qk_tap_dance_action_t tap_dance_actions[] = {
 #define QHST LSFT_T(KC_T)
 #define QHLX RALT_T(KC_X)
 // - Right
-#define QHGO LGUI_T(KC_O)
+#define QHGO RGUI_T(KC_O)
 #define QHAI LALT_T(KC_I)
 #define QHCE RCTL_T(KC_E)
-#define QHSN LSFT_T(KC_N)
+#define QHSN RSFT_T(KC_N)
 #define QHLD RALT_T(KC_DOT)
 
 // Mod tap
