@@ -39,6 +39,7 @@ accents.
 - Added missing "F11" and "F12" keys.
 - Added ~Alt~, ~Ctrl~, ~Ctrl~ and ~Shift~ on home keys.
 - Added specific layout for "AwesomeWM" window manager.
+- Added clipboard, undo/redo and select all macro on left hand.
 
 
 * Layout
@@ -137,6 +138,9 @@ keyboard when opposite hand use the mouse.
   Created simpleawesome layout
 - 2021/11/05
   Split mouse features to mouseawesome and keep this branch without mouse support.
+- 2021/11/20
+  Added "number" layer toggle button
+  Added clipboard, undo/redo and "select all" on left hand (and minor change to function layer)
 
 * Todo
 - Bring back mouse and multimedia keys.
