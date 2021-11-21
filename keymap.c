@@ -149,17 +149,18 @@ qk_tap_dance_action_t tap_dance_actions[] = {
 #define KC_TDLB TD(TD_LBRC)           // [[ -> {
 #define KC_TDRB TD(TD_RBRC)           // ]] -> }
 /* #define KC_SLQM TD(TD_SLQM)           // // -> ? */
+#define TG_NUM TG(_NUM)
 
 // Awesome WM macros
-#define AW_1 LGUI(KC_1)
-#define AW_2 LGUI(KC_2)
-#define AW_3 LGUI(KC_3)
-#define AW_4 LGUI(KC_4)
-#define AW_5 LGUI(KC_5)
-#define AW_6 LGUI(KC_6)
-#define AW_7 LGUI(KC_7)
-#define AW_8 LGUI(KC_8)
-#define AW_9 LGUI(KC_9)
+#define KC_AW1 LGUI(KC_1)
+#define KC_AW2 LGUI(KC_2)
+#define KC_AW3 LGUI(KC_3)
+#define KC_AW4 LGUI(KC_4)
+#define KC_AW5 LGUI(KC_5)
+#define KC_AW6 LGUI(KC_6)
+#define KC_AW7 LGUI(KC_7)
+#define KC_AW8 LGUI(KC_8)
+#define KC_AW9 LGUI(KC_9)
 
 
 // Clipboard, Undo/Redo and "select all"
