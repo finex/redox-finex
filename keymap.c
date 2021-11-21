@@ -6,9 +6,9 @@ enum{
   _SYMB, // Symbols
   _NUMB, // Numbers
   _FUNC, // Functions keys
-  _AWES, // AwesomeWM layer
-  // - Adjust layer:
-  _ADJUST
+  _AWES, // AwesomeWM
+  _MOUS, // Mouse
+  _ADJUST // Adjust
 };
 
 // Custom keycodes
@@ -91,30 +91,30 @@ void dance_rbrc_reset (qk_tap_dance_state_t *state, void *user_data) {
   }
 }
 
-// Slash to question mark
-void dance_slqm_finished (qk_tap_dance_state_t *state, void *user_data) {
-  if (state->count == 1) {
-    register_code (KC_SLSH);
-  } else {
-    register_code (KC_RSFT);
-    register_code (KC_SLSH);
-  }
-}
-void dance_slqm_reset (qk_tap_dance_state_t *state, void *user_data) {
-  if (state->count == 1) {
-    unregister_code (KC_SLSH);
-  } else {
-    unregister_code (KC_RSFT);
-    unregister_code (KC_SLSH);
-  }
-}
+/* // Slash to question mark */
+/* void dance_slqm_finished (qk_tap_dance_state_t *state, void *user_data) { */
+/*   if (state->count == 1) { */
+/*     register_code (KC_SLSH); */
+/*   } else { */
+/*     register_code (KC_RSFT); */
+/*     register_code (KC_SLSH); */
+/*   } */
+/* } */
+/* void dance_slqm_reset (qk_tap_dance_state_t *state, void *user_data) { */
+/*   if (state->count == 1) { */
+/*     unregister_code (KC_SLSH); */
+/*   } else { */
+/*     unregister_code (KC_RSFT); */
+/*     unregister_code (KC_SLSH); */
+/*   } */
+/* } */
 
 //Tap Dance Definitions
 qk_tap_dance_action_t tap_dance_actions[] = {
   [TD_SCLN] = ACTION_TAP_DANCE_FN_ADVANCED(NULL, dance_scln_finished, dance_scln_reset),
   [TD_LBRC] = ACTION_TAP_DANCE_FN_ADVANCED(NULL, dance_lbrc_finished, dance_lbrc_reset),
-  [TD_RBRC] = ACTION_TAP_DANCE_FN_ADVANCED(NULL, dance_rbrc_finished, dance_rbrc_reset),
-  [TD_SLQM] = ACTION_TAP_DANCE_FN_ADVANCED(NULL, dance_slqm_finished, dance_slqm_reset)
+  [TD_RBRC] = ACTION_TAP_DANCE_FN_ADVANCED(NULL, dance_rbrc_finished, dance_rbrc_reset)
+  /* [TD_SLQM] = ACTION_TAP_DANCE_FN_ADVANCED(NULL, dance_slqm_finished, dance_slqm_reset) */
 };
 
 // Shortcuts to make keymap more readable
@@ -132,10 +132,11 @@ qk_tap_dance_action_t tap_dance_actions[] = {
 #define KC_CMIN RCTL_T(KC_MINUS)      // Minus / Right Ctrl
 #define KC_NUES LT(_NUMB, KC_ESC)     // Esc / _numbers
 #define KC_CBSP LCTL_T(KC_BSPC)       // Backspace / Left Ctrl
-#define KC_GUDE LGUI_T(KC_DEL)        // Del / Left Gui
+/* #define KC_GUDE LGUI_T(KC_DEL)        // Del / Left Gui */
 #define KC_SYSP LT(_SYMB, KC_SPC)     // Space / _symbols
-#define KC_AWEN LT(_AWES, KC_ENT)     // Enter / AwesomeWM layer
+#define KC_AWEN LT(_AWES, KC_ENT)     // Enter / AwesomeWM
 #define KC_FUTA LT(_FUNC, KC_TAB)     // Tab / _functions
+#define KC_MODE LT(_FUNC, KC_DEL)     // Del / _mouse
 #define KC_GU_A LGUI_T(KC_A)          // A / Left Gui
 #define KC_CT_S LCTL_T(KC_S)          // R / Left Ctrl
 #define KC_AL_R LALT_T(KC_R)          // S / Left Alt
@@ -147,7 +148,7 @@ qk_tap_dance_action_t tap_dance_actions[] = {
 #define KC_TDSC TD(TD_SCLN)           // ;; -> :
 #define KC_TDLB TD(TD_LBRC)           // [[ -> {
 #define KC_TDRB TD(TD_RBRC)           // ]] -> }
-#define KC_SLQM TD(TD_SLQM)           // // -> ?
+/* #define KC_SLQM TD(TD_SLQM)           // // -> ? */
 
 // Awesome WM macros
 #define AW_1 LGUI(KC_1)
@@ -262,9 +263,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     //├────────┼────────┼────────┼────────┼────────┼────────┼────────┤                         ├────────┼────────┼────────┼────────┼────────┼────────┼────────┤
        KC_CESC ,KC_GU_A ,KC_AL_R ,KC_CT_S ,KC_T_SH ,KC_G    ,KC_TDLB ,                          KC_TDRB ,KC_M    ,KC_N_SH ,KC_CT_E ,KC_AL_I ,KC_GU_O ,KC_CMIN ,
     //├────────┼────────┼────────┼────────┼────────┼────────┼────────┼────────┐       ┌────────┼────────┼────────┼────────┼────────┼────────┼────────┼────────┤
-       KC_LSPO ,KC_Z    ,KC_X    ,KC_C    ,KC_D    ,KC_V    ,KC_ADPU ,KC_PGDN ,        KC_HOME ,KC_ADEN ,KC_K    ,KC_H    ,KC_COMM ,KC_DOT  ,KC_SLQM ,KC_RSPC ,
+       KC_LSPO ,KC_Z    ,KC_X    ,KC_C    ,KC_D    ,KC_V    ,KC_ADPU ,KC_PGDN ,        KC_HOME ,KC_ADEN ,KC_K    ,KC_H    ,KC_COMM ,KC_DOT  ,KC_SLSH ,KC_RSPC ,
     //├────────┼────────┼────────┼────────┼────┬───┴────┬───┼────────┼────────┤       ├────────┼────────┼───┬────┴───┬────┼────────┼────────┼────────┼────────┤
-       KC_GUSP ,KC_HYPR ,TG_NUM  ,KC_RAEN ,     KC_NUES ,    KC_CBSP ,KC_GUDE ,        KC_AWEN ,KC_SYSP ,    KC_FUTA ,     KC_LEFT ,KC_DOWN ,KC_UP   ,KC_RGHT
+       KC_GUSP ,KC_HYPR ,TG_NUM  ,KC_RAEN ,     KC_NUES ,    KC_CBSP ,KC_MODE ,        KC_AWEN ,KC_SYSP ,    KC_FUTA ,     KC_LEFT ,KC_DOWN ,KC_UP   ,KC_RGHT
     //└────────┴────────┴────────┴────────┘    └────────┘   └────────┴────────┘       └────────┴────────┘   └────────┘    └────────┴────────┴────────┴────────┘
   ),
 
@@ -277,7 +278,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     //├────────┼────────┼────────┼────────┼────────┼────────┼────────┤                         ├────────┼────────┼────────┼────────┼────────┼────────┼────────┤
        _______ ,KC_PIPE ,KC_PMNS ,ASC_SQT ,ASC_DQT ,KC_GRV  ,ASC_SAR ,                          ASC_DAR ,KC_QUOT ,KC_LEFT ,KC_DOWN ,KC_UP   ,KC_RGHT ,_______ ,
     //├────────┼────────┼────────┼────────┼────────┼────────┼────────┼────────┐       ┌────────┼────────┼────────┼────────┼────────┼────────┼────────┼────────┤
-       _______ ,KC_BSLS ,KC_UNDS ,KC_COLN ,ASC_TILD,KC_EQL  ,ASC_SAD ,ASC_HAP ,        _______ ,_______ ,ASC_BKT ,KC_PGUP ,KC_PGDN ,KC_HOME ,KC_END  ,_______ ,
+       _______ ,KC_BSLS ,KC_UNDS ,KC_COLN ,ASC_TILD,KC_EQL  ,ASC_SAD ,ASC_HAP ,        _______ ,_______ ,ASC_BKT ,KC_HOME ,KC_PGDN ,KC_PGUP ,KC_END  ,_______ ,
     //├────────┼────────┼────────┼────────┼────┬───┴────┬───┼────────┼────────┤       ├────────┼────────┼───┬────┴───┬────┼────────┼────────┼────────┼────────┤
        _______ ,_______ ,_______ ,_______ ,     _______ ,    _______ ,_______ ,        _______ ,_______ ,    _______ ,     _______ ,_______ ,_______ ,_______
     //└────────┴────────┴────────┴────────┘    └────────┘   └────────┴────────┘       └────────┴────────┘   └────────┘    └────────┴────────┴────────┴────────┘
@@ -313,7 +314,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     //└────────┴────────┴────────┴────────┘    └────────┘   └────────┴────────┘       └────────┴────────┘   └────────┘    └────────┴────────┴────────┴────────┘
   ),
 
-  // AwesomeWM layer
+  // AwesomeWM
   [_AWES] = LAYOUT(
     //┌────────┬────────┬────────┬────────┬────────┬────────┐                                           ┌────────┬────────┬────────┬────────┬────────┬────────┐
        _______ ,_______ ,_______ ,_______ ,_______ ,_______ ,                                            _______ ,_______ ,_______ ,_______ ,_______ ,_______ ,
@@ -325,6 +326,21 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
        _______ ,U_UND   ,U_CUT   ,U_CPY   ,U_PST   ,U_RDO   ,_______ ,_______ ,        _______ ,_______ ,_______ ,KC_AW1  ,KC_AW2  ,KC_AW3  ,_______ ,_______ ,
     //├────────┼────────┼────────┼────────┼────┬───┴────┬───┼────────┼────────┤       ├────────┼────────┼───┬────┴───┬────┼────────┼────────┼────────┼────────┤
        _______ ,_______ ,_______ ,_______ ,     _______ ,    _______ ,_______ ,        _______ ,_______ ,    _______ ,     _______ ,_______ ,_______ ,_______
+    //└────────┴────────┴────────┴────────┘    └────────┘   └────────┴────────┘       └────────┴────────┘   └────────┘    └────────┴────────┴────────┴────────┘
+  ),
+
+  // Mouse
+  [_MOUS] = LAYOUT(
+    //┌────────┬────────┬────────┬────────┬────────┬────────┐                                           ┌────────┬────────┬────────┬────────┬────────┬────────┐
+       _______ ,_______ ,_______ ,_______ ,_______ ,_______ ,                                            _______ ,_______ ,_______ ,_______ ,_______ ,_______ ,
+    //├────────┼────────┼────────┼────────┼────────┼────────┼────────┐                         ┌────────┼────────┼────────┼────────┼────────┼────────┼────────┤
+       _______ ,U_UND   ,U_CUT   ,U_CPY   ,U_PST   ,U_RDO   ,_______ ,                          _______ ,U_RDO   ,U_PST   ,U_CPY   ,U_CUT   ,U_UND   ,_______ ,
+    //├────────┼────────┼────────┼────────┼────────┼────────┼────────┤                         ├────────┼────────┼────────┼────────┼────────┼────────┼────────┤
+       _______ ,_______ ,_______ ,_______ ,_______ ,_______ ,_______ ,                          _______ ,_______ ,KC_MS_L ,KC_MS_D ,KC_MS_U ,KC_MS_R ,_______ ,
+    //├────────┼────────┼────────┼────────┼────────┼────────┼────────┼────────┐       ┌────────┼────────┼────────┼────────┼────────┼────────┼────────┼────────┤
+       _______ ,_______ ,_______ ,_______ ,_______ ,_______ ,_______ ,_______ ,        _______ ,_______ ,_______ ,KC_WH_L ,KC_WH_D ,KC_WH_U ,KC_WH_R ,_______ ,
+    //├────────┼────────┼────────┼────────┼────┬───┴────┬───┼────────┼────────┤       ├────────┼────────┼───┬────┴───┬────┼────────┼────────┼────────┼────────┤
+       _______ ,_______ ,_______ ,XXXXXXX ,     _______ ,    _______ ,_______ ,        KC_BTN1 ,KC_BTN3 ,    KC_BTN2 ,     _______ ,_______ ,_______ ,_______
     //└────────┴────────┴────────┴────────┘    └────────┘   └────────┴────────┘       └────────┴────────┘   └────────┘    └────────┴────────┴────────┴────────┘
   ),
 

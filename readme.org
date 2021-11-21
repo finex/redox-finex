@@ -56,21 +56,19 @@ setxkbmap -layout us -variant intl -option eurosign:e
 ** Keys Legend
 The following scheme describe the meaning of the keys symbols positions.
 
-|-----------------+---------------+-----------------|
-|                 |               |                 |
-|-----------------+---------------+-----------------|
-| Shifted key (*) | Symbols Layer | Shifted AltGr   |
-|-----------------+---------------+-----------------|
-| Functions Layer | Double Tap    | AwesomeWM Layer |
-|-----------------+---------------+-----------------|
-| Single Tap      | Numbers Layer | AltGr           |
-|-----------------+---------------+-----------------|
-|                 | Modifier      |                 |
-|-----------------+---------------+-----------------|
+|-------------+-------------+---------------|
+|             |             |               |
+|-------------+-------------+---------------|
+| Shifted key | Symbols     | Shifted AltGr |
+|-------------+-------------+---------------|
+| Functions   | Double Tap  | Mouse         |
+|-------------+-------------+---------------|
+| Single Tap  | Numbers (*) | AltGr         |
+|-------------+-------------+---------------|
+|             | Modifier    |               |
+|-------------+-------------+---------------|
 
-(*): Shift is enabled with standard key or with custom home row shitfs which
-enables left top corner keycode on thumbs keys to make it easier use the
-keyboard when opposite hand use the mouse.
+(*): Numeric pad position is also used on Awesome WM layer with the "gui" modifier: LGUI(KC_[1..9]).
 
 ** Color Legend
 - Green: Symbols & Navigation layer
@@ -141,9 +139,13 @@ keyboard when opposite hand use the mouse.
 - 2021/11/20
   Added "number" layer toggle button
   Added clipboard, undo/redo and "select all" on left hand (and minor change to function layer)
+- 2021/11/21
+  Merge mouse layer.
 
 * Todo
-- Bring back mouse and multimedia keys.
+- Move numeric pad on left hand.
+- Rework a bit the layout to fully have all symbols on left hand.
+- Update the layout in order to allow the creation of a common base usable with the Kyria keyboard.
 
 * FiNeX QMK Layouts
 All my custom QMK layouts are available on the following repo:  https://github.com/finex/qmk-keyboard-layouts-finex
