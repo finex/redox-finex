@@ -149,7 +149,7 @@ qk_tap_dance_action_t tap_dance_actions[] = {
 #define KC_TDLB TD(TD_LBRC)           // [[ -> {
 #define KC_TDRB TD(TD_RBRC)           // ]] -> }
 /* #define KC_SLQM TD(TD_SLQM)           // // -> ? */
-#define TG_NUM TG(_NUM)
+#define TG_NUM TG(_NUMB)
 
 // Awesome WM macros
 #define KC_AW1 LGUI(KC_1)
