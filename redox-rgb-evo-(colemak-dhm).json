@@ -56,13 +56,11 @@
   [
     {
       "y": -0.875,
-      "x": 5.5,
-      "t": "#ffffff\n\n\n\n\n\n#bc4816"
+      "x": 5.5
     },
     "%\n5\n\n€",
     {
-      "x": 6.5,
-      "t": "#ffffff"
+      "x": 6.5
     },
     "<span class='cd'>&#9676;&#770;</span>\n6\n^\n¼"
   ],
@@ -71,7 +69,6 @@
       "y": -0.875,
       "x": 0.25,
       "c": "#333333",
-      "t": "#ffffff\n\n\n\n\n\n#bc4816",
       "w": 1.25
     },
     "\nEsc",
@@ -82,7 +79,6 @@
     "!\n1\n¹\n¡\n\nCOLEMAK",
     {
       "x": 14.5,
-      "t": "#ffffff",
       "a": 4
     },
     ")\n0\n\n’",
@@ -95,13 +91,11 @@
   [
     {
       "y": -0.625,
-      "x": 6.5,
-      "t": "#ffffff\n\n\n\n\n\n#bc4816"
+      "x": 6.5
     },
     "\nPrnt",
     {
-      "x": 4.5,
-      "t": "#ffffff"
+      "x": 4.5
     },
     "\n⌦"
   ],
@@ -113,7 +107,7 @@
       "t": "#ffffff\n\n\n\n\n\n\n\n#448f2c\n\n#296cc0",
       "a": 0
     },
-    "F\nf\n\n\n\nRGB_TOG\n\n\n#\n\n↓",
+    "F\nf\n\n\n\nRGB_TOG\n\n\n#",
     {
       "x": 10.5,
       "t": "#ffffff\n\n\n\n\n\n#bc4816\n#4e3317\n#448f2c\n\n#296cc0"
@@ -160,12 +154,12 @@
     {
       "y": -0.875,
       "x": 5.5,
-      "t": "#ffffff\n\n\n\n\n\n\n\n#448f2c\n\n#296cc0"
+      "t": "#ffffff\n\n\n\n\n\n\n\n#448f2c\n\n#296cc0",
+      "f": 2
     },
     "B\nb\n\n\n\nRGB_HUD\n\n\n%\n\nCaps",
     {
       "x": 6.5,
-      "t": "#ffffff\n\n\n\n\n\n\n#4e3317\n#448f2c\n\n#296cc0",
       "f": 2
     },
     "J\nj\n\n\n\nRGB_SAI\n\n\n^\n\n⏎"
@@ -175,7 +169,7 @@
       "y": -0.875,
       "x": 0.25,
       "c": "#333333",
-      "t": "#ffffff\n\n\n\n#aeaeae\n\n#bc4816",
+      "t": "#ffffff\n\n\n\n#aeaeae",
       "a": 4,
       "w": 1.25
     },
@@ -183,10 +177,9 @@
     {
       "c": "#4f4f4f",
       "t": "#ffffff\n\n\n\n\n\n\n\n#448f2c\n\n#296cc0",
-      "a": 0,
-      "f": 2
+      "a": 0
     },
-    "Q\nq\n\n\n\nRESET\n\n\n!\n\n↑",
+    "Q\nq\n\n\n\nRESET\n\n\n!",
     {
       "x": 14.5,
       "t": "#ffffff\n\n\n\n\n\n#bc4816\n\n\n#ff0000\n#296cc0",
@@ -216,14 +209,13 @@
     {
       "y": -0.625,
       "x": 6.5,
-      "t": "#ffffff\n\n\n\n\n\n#bc4816\n\n#448f2c\n#ff0000\n#296cc0",
+      "t": "#ffffff\n\n\n\n\n\n\n\n#448f2c\n#ff0000",
       "f": 2,
       "h": 1.5
     },
     "{\n[\n“\n«\n\n\n\n\n->\n{",
     {
       "x": 4.5,
-      "t": "#ffffff\n\n\n\n\n\n\n\n#448f2c\n#ff0000",
       "f": 2,
       "h": 1.5
     },
@@ -286,12 +278,12 @@
       "y": -0.875,
       "x": 5.5,
       "t": "#ffffff\n\n\n\n\n\n\n\n#448f2c\n\n#296cc0",
-      "a": 0
+      "a": 0,
+      "f": 2
     },
     "G\ng\n\n\n\nRGB_M_S\n\n\n<span>&#9676;&#768;</span>\n\nIns",
     {
       "x": 6.5,
-      "t": "#ffffff\n\n\n\n\n\n\n#4e3317\n#448f2c\n\n#296cc0",
       "f": 2
     },
     "M\nm\n\nµ\n\nRGB_M_R\n\n\n<span>&#9676;&#769;</span>\n\n,"
@@ -301,7 +293,7 @@
       "y": -0.875,
       "x": 0.25,
       "c": "#333333",
-      "t": "#ffffff\n\n\n\n#aeaeae\n\n#bc4816",
+      "t": "#ffffff\n\n\n\n#aeaeae",
       "a": 4,
       "w": 1.25
     },
@@ -332,7 +324,8 @@
       "x": 3.5,
       "c": "#4f4f4f",
       "t": "#ffffff\n\n\n\n\n\n\n\n#448f2c\n\n#296cc0",
-      "a": 0
+      "a": 0,
+      "f": 2
     },
     "C\nc\n\n©\n\nRGB_M_X\n\n\n:\n\nCopy",
     {
@@ -348,11 +341,13 @@
       "y": -0.875,
       "x": 2.5,
       "t": "#ffffff\n\n\n\n\n\n\n\n#448f2c\n\n#296cc0",
-      "a": 0
+      "a": 0,
+      "f": 2
     },
     "X\nx\n\n\n\nRGB_M_K\n\n\n_\n\nCut",
     {
-      "x": 1
+      "x": 1,
+      "f": 2
     },
     "D\nd\n\n\n\nRGB_M_G\n\n\n~\n\nPaste",
     {
@@ -373,12 +368,12 @@
       "y": -0.875,
       "x": 5.5,
       "t": "#ffffff\n\n\n\n\n\n\n\n#448f2c\n\n#296cc0",
-      "a": 0
+      "a": 0,
+      "f": 2
     },
     "V\nv\n\n\n\nRGB_HUI\n\n\n=\n\nRedo",
     {
       "x": 6.5,
-      "t": "#ffffff\n\n\n\n\n\n\n#4e3317\n#448f2c\n\n#296cc0",
       "a": 4,
       "f": 2
     },
@@ -388,8 +383,8 @@
     {
       "y": -0.875,
       "x": 1.5,
-      "t": "#ffffff\n\n\n\n\n\n\n\n#448f2c\n\n#296cc0",
-      "a": 0
+      "a": 0,
+      "f": 2
     },
     "Z\nz\n\n\n\nRGB_M_B\n\n\n\\\n\nUndo",
     {
@@ -411,7 +406,7 @@
     {
       "y": -0.9999000000000002,
       "x": 0.25,
-      "t": "#ffffff\n\n\n\n#aeaeae\n\n#bc4816",
+      "t": "#ffffff\n\n\n\n#aeaeae",
       "w": 1.25
     },
     "\n(\n\n\nShift"
@@ -420,7 +415,7 @@
     {
       "y": -0.37509999999999977,
       "x": 3.5,
-      "t": "#ffffff\n\n\n\n\n\n#bc4816"
+      "t": "#ffffff"
     },
     "\n⏎\n\n\nAlt Gr",
     {
@@ -435,14 +430,8 @@
       "y": -0.8799999999999999,
       "x": 2.5,
       "c": "#296cc0",
-      "t": "#ffffff\n\n\n\n\n\n#bc4816",
-      "fa": [
-        0,
-        1,
-        0,
-        0,
-        0
-      ]
+      "t": "#ffffff",
+      "f2": 1
     },
     "\n⎇ Num"
   ],
@@ -461,7 +450,8 @@
       "y": -0.7549999999999999,
       "x": 1.5,
       "t": "#ffffff",
-      "a": 7
+      "a": 7,
+      "f": 2
     },
     "\n\n\n\nHyper"
   ],
@@ -469,14 +459,12 @@
     {
       "y": -0.9950000000000001,
       "x": 0.5,
-      "t": "#ffffff\n\n\n\n\n\n#bc4816",
       "a": 4,
       "f": 2
     },
     "\n␣\n\n\nGui",
     {
       "x": 15.5,
-      "t": "#ffffff",
       "f": 2
     },
     "\n▲",
@@ -493,7 +481,7 @@
       "y": -0.75,
       "x": -1.25,
       "c": "#296cc0",
-      "t": "#ffffff\n\n\n\n#aeaeae\n\n#bc4816",
+      "t": "#ffffff\n\n\n\n#aeaeae",
       "f": 2,
       "w": 1.25
     },
@@ -506,16 +494,16 @@
       "ry": 4.25,
       "y": -1,
       "c": "#333333",
-      "t": "#ffffff\n\n\n\n\n\n#bc4816\n\n#448f2c",
+      "t": "#ffffff\n\n\n\n\n\n\n\n#448f2c",
       "fa": [
         0,
         0,
+        1,
+        1,
         0,
-        0,
-        0,
-        0,
-        0,
-        0,
+        1,
+        1,
+        1,
         1
       ]
     },
@@ -524,7 +512,7 @@
   ],
   [
     {
-      "t": "#ffffff\n\n\n\n#aeaeae\n\n#bc4816",
+      "t": "#ffffff\n\n\n\n#aeaeae",
       "h": 1.5
     },
     "\n⌫\n\n\nCtrl",
