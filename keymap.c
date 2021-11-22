@@ -358,7 +358,7 @@ td_state_t cur_dance(qk_tap_dance_state_t *state) {
         else if (state->pressed) return TD_DOUBLE_HOLD;
         else return TD_DOUBLE_TAP;
     }
-​
+
     // Assumes no one is trying to type the same letter three times (at least not quickly).
     // If your tap dance key is 'KC_W', and you want to type "www." quickly - then you will need to add
     // an exception here to return a 'TD_TRIPLE_SINGLE_TAP', and define that enum just like 'TD_DOUBLE_SINGLE_TAP'
@@ -367,14 +367,14 @@ td_state_t cur_dance(qk_tap_dance_state_t *state) {
         else return TD_TRIPLE_HOLD;
     } else return TD_UNKNOWN;
 }
-​
+
 // Create an instance of 'td_tap_t' for the 'del' tap dance.
 static td_tap_t deltap_state = {
     .is_press_action = true,
     .state = TD_NONE
 };
 
-​// Tap dance DEL/GUI/MOUSE
+// Tap dance DEL/GUI/MOUSE
 void del_finished(qk_tap_dance_state_t *state, void *user_data) {
     xtap_state.state = cur_dance(state);
     switch (xtap_state.state) {
@@ -388,7 +388,7 @@ void del_finished(qk_tap_dance_state_t *state, void *user_data) {
         case TD_DOUBLE_SINGLE_TAP: tap_code(KC_DEL); register_code(KC_DEL);
     }
 }
-​
+
 void del_reset(qk_tap_dance_state_t *state, void *user_data) {
     switch (xtap_state.state) {
         case TD_SINGLE_TAP: unregister_code(KC_DEL); break;
@@ -402,7 +402,7 @@ void del_reset(qk_tap_dance_state_t *state, void *user_data) {
 
 
 
-​// Tap dance SEMICOLON/COLON
+// Tap dance SEMICOLON/COLON
 void scl_finished(qk_tap_dance_state_t *state, void *user_data) {
     xtap_state.state = cur_dance(state);
     switch (xtap_state.state) {
@@ -413,7 +413,7 @@ void scl_finished(qk_tap_dance_state_t *state, void *user_data) {
         case TD_DOUBLE_SINGLE_TAP: tap_code(KC_SCLN); register_code(KC_SCLN);
     }
 }
-​
+
 void scl_reset(qk_tap_dance_state_t *state, void *user_data) {
     switch (xtap_state.state) {
         case TD_SINGLE_TAP: unregister_code(KC_SCL); break;
@@ -426,7 +426,7 @@ void scl_reset(qk_tap_dance_state_t *state, void *user_data) {
 }
 
 
-​// Tap dance LEFT BRACKET/LEFT CURLY BRACE
+// Tap dance LEFT BRACKET/LEFT CURLY BRACE
 void lbr_finished(qk_tap_dance_state_t *state, void *user_data) {
     xtap_state.state = cur_dance(state);
     switch (xtap_state.state) {
@@ -437,7 +437,7 @@ void lbr_finished(qk_tap_dance_state_t *state, void *user_data) {
         case TD_DOUBLE_SINGLE_TAP: tap_code(KC_LBRC); register_code(KC_LBRC);
     }
 }
-​
+
 void lbr_reset(qk_tap_dance_state_t *state, void *user_data) {
     switch (xtap_state.state) {
         case TD_SINGLE_TAP: unregister_code(KC_LBRC); break;
@@ -449,9 +449,9 @@ void lbr_reset(qk_tap_dance_state_t *state, void *user_data) {
     xtap_state.state = TD_NONE;
 }
 
-​
 
-​// Tap dance RIGHT BRACKET/RIGHT CURLY BRACE
+
+// Tap dance RIGHT BRACKET/RIGHT CURLY BRACE
 void rbr_finished(qk_tap_dance_state_t *state, void *user_data) {
     xtap_state.state = cur_dance(state);
     switch (xtap_state.state) {
@@ -462,7 +462,7 @@ void rbr_finished(qk_tap_dance_state_t *state, void *user_data) {
         case TD_DOUBLE_SINGLE_TAP: tap_code(KC_RBRC); register_code(KC_RBRC);
     }
 }
-​
+
 void rbr_reset(qk_tap_dance_state_t *state, void *user_data) {
     switch (xtap_state.state) {
         case TD_SINGLE_TAP: unregister_code(KC_RBRC); break;
