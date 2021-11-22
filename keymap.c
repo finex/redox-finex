@@ -376,8 +376,8 @@ static td_tap_t deltap_state = {
     .state = TD_NONE
 };
 void del_finished(qk_tap_dance_state_t *state, void *user_data) {
-    xtap_state.state = cur_dance(state);
-    switch (xtap_state.state) {
+    deltap_state.state = cur_dance(state);
+    switch (deltap_state.state) {
         case TD_SINGLE_TAP: register_code(KC_DEL); break;
         case TD_SINGLE_HOLD: register_code(KC_LGUI); break;
         case TD_DOUBLE_TAP: register_code(KC_DEL); break;
@@ -389,14 +389,14 @@ void del_finished(qk_tap_dance_state_t *state, void *user_data) {
     }
 }
 void del_reset(qk_tap_dance_state_t *state, void *user_data) {
-    switch (xtap_state.state) {
+    switch (deltap_state.state) {
         case TD_SINGLE_TAP: unregister_code(KC_DEL); break;
         case TD_SINGLE_HOLD: unregister_code(KC_LGUI); break;
         case TD_DOUBLE_TAP: unregister_code(KC_DEL); break;
         case TD_DOUBLE_HOLD: layer_off(_MOUS);
         case TD_DOUBLE_SINGLE_TAP: unregister_code(KC_DEL);
     }
-    xtap_state.state = TD_NONE;
+    deltap_state.state = TD_NONE;
 }
 
 
