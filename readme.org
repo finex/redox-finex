@@ -61,7 +61,7 @@ The following scheme describe the meaning of the keys symbols positions.
 |-------------+-------------+---------------|
 | Shifted key | Symbols     | Shifted AltGr |
 |-------------+-------------+---------------|
-| Functions   | Double Tap  | Mouse         |
+| Functions   | Tap dance   | Mouse         |
 |-------------+-------------+---------------|
 | Single Tap  | Numbers (*) | AltGr         |
 |-------------+-------------+---------------|

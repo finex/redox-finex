@@ -3,7 +3,7 @@
     "backcolor": "#ffffff",
     "name": "Redox RGB Evo (Colemak DHm)",
     "author": "FiNeX (https://www.finex.org)",
-    "notes": "# Ergonomic Redox Keyboard Layout #\nRevision date: 2021-11-20\nLayout: English (US, intl, with dead keys)\n\n\n## Keys Legend: ##\nThe following scheme describe the meaning of the keys symbols positions.\n\n|-----------------+---------------+-----------------|\n| Shifted key (*) | Symbols Layer | Shifted AltGr   |\n|-----------------+---------------+-----------------|\n| Functions Layer | Double Tap    | AwesomeWM Layer |\n|-----------------+---------------+-----------------|\n| Single Tap      | Numbers Layer | AltGr           |\n|-----------------+---------------+-----------------|\n|                 | Modifier      |                 |\n|-----------------+---------------+-----------------|\n\n(*): Shift is enabled with standard key or with custom home row shitfs which\nenables left top corner keycode on thumbs keys to make it easier use the\nkeyboard when opposite hand use the mouse.\n\n\n## Color Legend: ##\n- Green: Symbols & Navigation layer \n- Blue: Numbers Layer\n- Orange: Functions Layer\n- Red: Tap dance\n- Pink: Custom shift to enable shifted keys on opposite half and on same thumb cluster.\n- Brown: AwesomeWM Layer",
+    "notes": "# Ergonomic Redox Keyboard Layout #\nRevision date: 2021-11-22\nLayout: English (US, intl, with dead keys)\n\n\n## Keys Legend: ##\nThe following scheme describe the meaning of the keys symbols positions.\n\n|-------------+-------------+---------------|\n| Shifted key | Symbols     | Shifted AltGr |\n|-------------+-------------+---------------|\n| Functions   | Tap dance   | Mouse         |\n|-------------+-------------+---------------|\n| Single Tap  | Numbers (*) | AltGr         |\n|-------------+-------------+---------------|\n|             | Modifier    | Adjust        |\n|-------------+-------------+---------------|\n\n\n(*): Numeric pad position is also used on Awesome WM layer with the \"gui\" modifier: LGUI(KC_[1..9]).\n\n\n## Color Legend: ##\n- Green: Symbols & Navigation layer \n- Blue: Numbers Layer on right, one hand layer on left\n- Orange: Functions Layer\n- Red: Tap dance\n- Pink: AwesomeWM Layer\n- Yellow: Mouse Layer",
     "background": {
       "name": "Bamboo",
       "style": "background-image: url('/bg/wood/bamboo.jpg');"
@@ -13,14 +13,14 @@
     "switchBrand": "cherry",
     "switchType": "MX3A-L1xx",
     "plate": true,
-    "css": "* {\n    font-family: 'Iosevka SS04', sans-serif;\n} \n\n.keylabel10{\n    margin-top:0px;\n    font-size:8px!important;\n    color: #cccccc!important;\n}\n\n.keylabel1,\n.keylabel7,\n.keylabel5{\n    font-weight: 700;\n}\n.keylabel11{\n    margin-top:1px;\n    font-size:6px!important;\n    color: #777!important;\n}",
+    "css": "* {\n    font-family: 'Iosevka SS04', sans-serif;\n} \n\n.keylabel10{\n    margin-top:0px;\n    font-size:8px!important;\n    color: #cccccc;\n    font-weight: bold;\n}\n\n.keylabel1,\n.keylabel7,\n.keylabel5{\n    font-weight: 700;\n}\n.keylabel11{\n    margin-top:1px;\n    font-size:6px!important;\n    color:#777!important;\n}\n.awesome{\n    padding-left: 2px;\n    color:#ee07de;\n}",
     "pcb": false
   },
   [
     {
       "x": 3.5,
       "c": "#4f4f4f",
-      "t": "#ffffff",
+      "t": "#ffffff\n\n\n\n\n\n\n\n#06a809",
       "sm": "cherry",
       "sb": "cherry",
       "st": "MX3A-L1Nx",
@@ -91,7 +91,8 @@
   [
     {
       "y": -0.625,
-      "x": 6.5
+      "x": 6.5,
+      "t": "#ffffff\n\n\n\n\n\n\n\n#06a809\n\n#0094ff"
     },
     "\nPrnt",
     {
@@ -104,21 +105,30 @@
       "y": -0.75,
       "x": 3.5,
       "c": "#4f4f4f",
-      "t": "#ffffff\n\n\n\n\n\n\n\n#448f2c\n\n#296cc0",
       "a": 0
     },
     "F\nf\n\n\n\nRGB_TOG\n\n\n#",
     {
       "x": 10.5,
-      "t": "#ffffff\n\n\n\n\n\n#bc4816\n#4e3317\n#448f2c\n\n#296cc0"
+      "t": "#ffffff\n\n\n\n\n\n#f24900\n#fff100\n#06a809\n\n#0094ff",
+      "fa": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ]
     },
-    "U\nu\n\n\n\nRGB_VAI\nF8\n8\n*\n\n8"
+    "U\nu\n\n\n\nRGB_VAI\nF8\nCopy\n*\n\n8<span class=\"awesome\">8</span>"
   ],
   [
     {
       "y": -0.875,
       "x": 2.5,
-      "t": "#ffffff\n\n\n\n\n\n\n\n#448f2c\n\n#296cc0"
+      "t": "#ffffff\n\n\n\n\n\n\n\n#06a809\n\n#0094ff"
     },
     "W\nw\n\n\n\nRGB_M_P\n\n\n@\n\n▼",
     {
@@ -131,58 +141,16 @@
         0,
         0,
         0,
-        0,
+        1,
         0,
         0,
         1
       ]
     },
-    "P\np\n\n\n\nRGB_MOD\n\n\n$\n\nNlck",
+    "P\np\n\n\n\nRGB_MOD\n\n\n$\n\nNum<br/>Lock",
     {
       "x": 8.5,
-      "t": "#ffffff\n\n\n\n\n\n#bc4816\n#4e3317\n#448f2c\n\n#296cc0",
-      "f": 2
-    },
-    "L\nl\nØ\nø\n\nRGB_VAD\nF7\n7\n&\n\n7",
-    {
-      "x": 1,
-      "f": 2
-    },
-    "Y\ny\n\n\n\nRGB_SAD\nF9\n9\n+\n\n9"
-  ],
-  [
-    {
-      "y": -0.875,
-      "x": 5.5,
-      "t": "#ffffff\n\n\n\n\n\n\n\n#448f2c\n\n#296cc0",
-      "f": 2
-    },
-    "B\nb\n\n\n\nRGB_HUD\n\n\n%\n\nCaps",
-    {
-      "x": 6.5,
-      "f": 2
-    },
-    "J\nj\n\n\n\nRGB_SAI\n\n\n^\n\n⏎"
-  ],
-  [
-    {
-      "y": -0.875,
-      "x": 0.25,
-      "c": "#333333",
-      "t": "#ffffff\n\n\n\n#aeaeae",
-      "a": 4,
-      "w": 1.25
-    },
-    "\nTab\n\n\nAlt Gr",
-    {
-      "c": "#4f4f4f",
-      "t": "#ffffff\n\n\n\n\n\n\n\n#448f2c\n\n#296cc0",
-      "a": 0
-    },
-    "Q\nq\n\n\n\nRESET\n\n\n!",
-    {
-      "x": 14.5,
-      "t": "#ffffff\n\n\n\n\n\n#bc4816\n\n\n#ff0000\n#296cc0",
+      "t": "#ffffff\n\n\n\n\n\n#f24900\n#fff100\n#06a809\n\n#0094ff",
       "fa": [
         0,
         0,
@@ -191,15 +159,87 @@
         0,
         0,
         0,
+        1
+      ]
+    },
+    "L\nl\nØ\nø\n\nRGB_VAD\nF7\nCut\n&\n\n7<span class=\"awesome\">7</span>",
+    {
+      "x": 1
+    },
+    "Y\ny\n\n\n\nRGB_SAD\nF9\nPaste\n+\n\n9<span class=\"awesome\">9</span>"
+  ],
+  [
+    {
+      "y": -0.875,
+      "x": 5.5,
+      "t": "#ffffff\n\n\n\n\n\n\n\n#06a809\n\n#0094ff",
+      "fa": [
         0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1
+      ]
+    },
+    "B\nb\n\n\n\nRGB_HUD\n\n\n%\n\nCaps",
+    {
+      "x": 6.5,
+      "t": "#ffffff\n\n\n\n\n\n\n#fff100\n#06a809\n\n#0094ff",
+      "fa": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    "J\nj\n\n\n\nRGB_SAI\n\n↶\n^\n\n⏎"
+  ],
+  [
+    {
+      "y": -0.875,
+      "x": 0.25,
+      "c": "#333333",
+      "t": "#ffffff\n\n\n\n#aeaeae\n\n\n\n#06a809",
+      "a": 4,
+      "w": 1.25
+    },
+    "\nTab\n\n\nAlt Gr",
+    {
+      "c": "#4f4f4f",
+      "t": "#ffffff\n\n\n\n\n\n\n\n#06a809\n\n#0094ff",
+      "a": 0
+    },
+    "Q\nq\n\n\n\nRESET\n\n\n!",
+    {
+      "x": 14.5,
+      "t": "#ffffff\n\n\n\n\n\n#f24900\n#fff100\n#06a809\n#ff0000\n#0094ff",
+      "fa": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
         0,
         4
       ]
     },
-    ":\n;\n°\n¶\n\nRGB_M_SW\nF12\n\n\n:\n+",
+    ":\n;\n°\n¶\n\nRGB_M_SW\nF12\n↷\n\n:\n+",
     {
       "c": "#333333",
-      "t": "#ffffff\n\n\n\n\n\n\n\n\n\n#296cc0",
+      "t": "#ffffff\n\n\n\n\n\n\n\n#06a809\n\n#0094ff",
       "a": 4,
       "w": 1.25
     },
@@ -209,7 +249,7 @@
     {
       "y": -0.625,
       "x": 6.5,
-      "t": "#ffffff\n\n\n\n\n\n\n\n#448f2c\n#ff0000",
+      "t": "#ffffff\n\n\n\n\n\n\n\n#06a809\n#ff0000\n#0094ff",
       "f": 2,
       "h": 1.5
     },
@@ -226,25 +266,26 @@
       "y": -0.75,
       "x": 3.5,
       "c": "#4f4f4f",
-      "t": "#ffffff\n\n\n\n#aeaeae\n\n\n\n#448f2c\n\n#296cc0"
+      "t": "#ffffff\n\n\n\n#aeaeae\n\n\n\n#06a809\n\n#0094ff"
     },
     "S\ns\n\n\nCtrl\n\n\n\n'\n\n▶",
     {
       "x": 10.5,
-      "t": "#ffffff\n\n\n\n#aeaeae\n\n#bc4816\n#4e3317\n#448f2c\n\n#296cc0"
+      "t": "#ffffff\n\n\n\n#aeaeae\n\n#f24900\n#fff100\n#06a809\n\n#0094ff",
+      "f": 2
     },
-    "E\ne\n\n€\nCtrl\n\nF5\n5\n▼\n\n5"
+    "E\ne\n\n€\nCtrl\n\nF5\n⬇\n▼\n\n5<span class=\"awesome\">5</span>"
   ],
   [
     {
       "y": -0.875,
       "x": 2.5,
-      "t": "#ffffff\n\n\n\n\n\n\n\n#448f2c\n\n#296cc0"
+      "t": "#ffffff\n\n\n\n\n\n\n\n#06a809\n\n#0094ff"
     },
     "R\nr\n\n®\nAlt\n\n\n\n-\n\n▼",
     {
       "x": 1,
-      "t": "#ffffff\n\n\n\n#aeaeae\n\n\n\n#448f2c\n\n#296cc0",
+      "t": "#ffffff\n\n\n\n#aeaeae\n\n\n\n#06a809\n\n#0094ff",
       "fa": [
         0,
         0,
@@ -253,7 +294,7 @@
         0,
         0,
         0,
-        0,
+        1,
         0,
         4,
         1
@@ -262,24 +303,23 @@
     "T\nt\n\n\nShift\n\n\n\n\"\n\nAll",
     {
       "x": 8.5,
-      "t": "#ffffff\n\n\n\n#aeaeae\n\n#bc4816\n#4e3317\n#448f2c\n\n#296cc0",
+      "t": "#ffffff\n\n\n\n#aeaeae\n\n#f24900\n#fff100\n#06a809\n\n#0094ff",
       "f": 2
     },
-    "N\nn\n\n\nShift\n\nF4\n4\n◀\n\n4",
+    "N\nn\n\n\nShift\n\nF4\n⬅\n◀\n\n4<span class=\"awesome\">4</span>",
     {
       "x": 1,
-      "t": "#ffffff\n\n\n\n\n\n#bc4816\n#4e3317\n#448f2c\n\n#296cc0",
+      "t": "#ffffff\n\n\n\n\n\n#f24900\n#fff100\n#06a809\n\n#0094ff",
       "f": 2
     },
-    "I\ni\n\n\nAlt\n\nF6\n6\n▲\n\n6"
+    "I\ni\n\n\nAlt\n\nF6\n⬆\n▲\n\n6<span class=\"awesome\">6</span>"
   ],
   [
     {
       "y": -0.875,
       "x": 5.5,
-      "t": "#ffffff\n\n\n\n\n\n\n\n#448f2c\n\n#296cc0",
-      "a": 0,
-      "f": 2
+      "t": "#ffffff\n\n\n\n\n\n\n\n#06a809\n\n#0094ff",
+      "a": 0
     },
     "G\ng\n\n\n\nRGB_M_S\n\n\n<span>&#9676;&#768;</span>\n\nIns",
     {
@@ -293,26 +333,26 @@
       "y": -0.875,
       "x": 0.25,
       "c": "#333333",
-      "t": "#ffffff\n\n\n\n#aeaeae",
+      "t": "#ffffff\n\n\n\n#aeaeae\n\n\n\n#06a809",
       "a": 4,
       "w": 1.25
     },
     "\nEsc\n\n\nCtrl",
     {
       "c": "#4f4f4f",
-      "t": "#ffffff\n\n\n\n\n\n\n\n#448f2c\n\n#296cc0",
+      "t": "#ffffff\n\n\n\n\n\n\n\n#06a809\n\n#0094ff",
       "f": 2
     },
     "A\na\n\n\nGui\n\n\n\n|\n\n◀",
     {
       "x": 14.5,
-      "t": "#ffffff\n\n\n\n\n\n#bc4816\n\n#448f2c\n\n#296cc0",
+      "t": "#ffffff\n\n\n\n\n\n#f24900\n#fff100\n#06a809\n\n#0094ff",
       "f": 2
     },
-    "O\no\n\n\nGui\n\nF11\n\n▶\n\n*",
+    "O\no\n\n\nGui\n\nF11\n➡\n▶\n\n*",
     {
       "c": "#333333",
-      "t": "#ffffff\n\n\n\n\n\n\n\n\n\n#296cc0",
+      "t": "#ffffff\n\n\n\n\n\n\n\n#06a809\n\n#0094ff",
       "f": 2,
       "w": 1.25
     },
@@ -323,55 +363,50 @@
       "y": -0.375,
       "x": 3.5,
       "c": "#4f4f4f",
-      "t": "#ffffff\n\n\n\n\n\n\n\n#448f2c\n\n#296cc0",
-      "a": 0,
-      "f": 2
+      "a": 0
     },
     "C\nc\n\n©\n\nRGB_M_X\n\n\n:\n\nCopy",
     {
       "x": 10.5,
-      "t": "#ffffff\n\n\n\n\n\n#bc4816\n#4e3317\n#448f2c\n\n#296cc0",
+      "t": "#ffffff\n\n\n\n\n\n#f24900\n#fff100\n#06a809\n\n#0094ff",
       "a": 4,
       "f": 2
     },
-    "<\n,\n\n\n\n\nF2\n2\n▽\n\n2"
+    "<\n,\n\n\n\n\nF2\n⇩\n↓\n\n2<span class=\"awesome\">2</span>"
   ],
   [
     {
       "y": -0.875,
       "x": 2.5,
-      "t": "#ffffff\n\n\n\n\n\n\n\n#448f2c\n\n#296cc0",
-      "a": 0,
-      "f": 2
+      "t": "#ffffff\n\n\n\n\n\n\n\n#06a809\n\n#0094ff",
+      "a": 0
     },
     "X\nx\n\n\n\nRGB_M_K\n\n\n_\n\nCut",
     {
-      "x": 1,
-      "f": 2
+      "x": 1
     },
     "D\nd\n\n\n\nRGB_M_G\n\n\n~\n\nPaste",
     {
       "x": 8.5,
-      "t": "#ffffff\n\n\n\n\n\n#bc4816\n#4e3317\n#448f2c\n\n#296cc0",
+      "t": "#ffffff\n\n\n\n\n\n#f24900\n#fff100\n#06a809\n\n#0094ff",
       "a": 4,
       "f": 2
     },
-    "H\nh\n\n\n\n\nF1\n1\n△\n\n1",
+    "H\nh\n\n\n\n\nF1\n⇦\n⇤\n\n1<span class=\"awesome\">1</span>",
     {
       "x": 1,
       "f": 2
     },
-    ">\n.\n\n\n\n\nF3\n3\n⇱\n\n3"
+    ">\n.\n\n\n\n\nF3\n⇧\n↑\n\n3<span class=\"awesome\">3</span>"
   ],
   [
     {
       "y": -0.875,
       "x": 5.5,
-      "t": "#ffffff\n\n\n\n\n\n\n\n#448f2c\n\n#296cc0",
-      "a": 0,
-      "f": 2
+      "t": "#ffffff\n\n\n\n\n\n\n\n#06a809\n\n#0094ff",
+      "a": 0
     },
-    "V\nv\n\n\n\nRGB_HUI\n\n\n=\n\nRedo",
+    "V\nv\n\n\n\nRGB_HUI\n\n\n=\n\n↷",
     {
       "x": 6.5,
       "a": 4,
@@ -383,20 +418,19 @@
     {
       "y": -0.875,
       "x": 1.5,
-      "a": 0,
-      "f": 2
+      "a": 0
     },
-    "Z\nz\n\n\n\nRGB_M_B\n\n\n\\\n\nUndo",
+    "Z\nz\n\n\n\nRGB_M_B\n\n\n\\\n\n↶",
     {
       "x": 14.5,
-      "t": "#ffffff\n\n\n\n\n\n#bc4816\n\n#448f2c\n#ff0000\n#296cc0",
+      "t": "#ffffff\n\n\n\n\n\n#f24900\n#fff100\n#06a809\n\n#0094ff",
       "a": 4,
       "f": 2
     },
-    "?\n/\n\n¿\n\n\nF10\n\n⇲\n?\n/",
+    "?\n/\n\n¿\n\n\nF10\n⇨\n⇥<span class=\"mouse\"></span>\n\n/",
     {
       "c": "#333333",
-      "t": "#ffffff\n\n\n\n#aeaeae\n\n\n\n\n\n#296cc0",
+      "t": "#ffffff\n\n\n\n#aeaeae\n\n\n\n#06a809\n\n#0094ff",
       "f": 2,
       "w": 1.25
     },
@@ -406,7 +440,7 @@
     {
       "y": -0.9999000000000002,
       "x": 0.25,
-      "t": "#ffffff\n\n\n\n#aeaeae",
+      "t": "#ffffff\n\n\n\n#aeaeae\n\n\n\n#06a809",
       "w": 1.25
     },
     "\n(\n\n\nShift"
@@ -414,13 +448,12 @@
   [
     {
       "y": -0.37509999999999977,
-      "x": 3.5,
-      "t": "#ffffff"
+      "x": 3.5
     },
     "\n⏎\n\n\nAlt Gr",
     {
       "x": 10.5,
-      "t": "#ffffff\n\n\n\n\n\n\n\n\n\n#296cc0",
+      "t": "#ffffff\n\n\n\n\n\n\n\n#06a809\n\n#0094ff",
       "f": 2
     },
     "\n◀\n\n\n\n\n\n\n\n\n0"
@@ -429,18 +462,15 @@
     {
       "y": -0.8799999999999999,
       "x": 2.5,
-      "c": "#296cc0",
-      "t": "#ffffff",
-      "f2": 1
+      "t": "#ffffff\n#0094ff\n\n\n#aeaeae\n\n\n\n#06a809"
     },
-    "\n⎇ Num"
+    "\n<strong>⎇ Num</strong>"
   ],
   [
     {
       "y": -0.9950000000000001,
       "x": 16,
-      "c": "#333333",
-      "t": "#ffffff\n\n\n\n\n\n\n\n\n\n#296cc0",
+      "t": "#ffffff\n\n\n\n\n\n\n\n#06a809\n\n#0094ff",
       "f": 2
     },
     "\n▼\n\n\n\n\n\n\n\n\n."
@@ -449,9 +479,8 @@
     {
       "y": -0.7549999999999999,
       "x": 1.5,
-      "t": "#ffffff",
-      "a": 7,
-      "f": 2
+      "t": "#ffffff\n\n\n\n#aeaeae",
+      "a": 7
     },
     "\n\n\n\nHyper"
   ],
@@ -459,12 +488,14 @@
     {
       "y": -0.9950000000000001,
       "x": 0.5,
+      "t": "#ffffff\n\n\n\n#aeaeae\n\n\n\n#06a809",
       "a": 4,
-      "f": 2
+      "f2": 1
     },
     "\n␣\n\n\nGui",
     {
       "x": 15.5,
+      "t": "#ffffff\n\n\n\n\n\n\n\n#06a809\n\n#0094ff",
       "f": 2
     },
     "\n▲",
@@ -480,8 +511,7 @@
       "ry": 5.25,
       "y": -0.75,
       "x": -1.25,
-      "c": "#296cc0",
-      "t": "#ffffff\n\n\n\n#aeaeae",
+      "t": "#ffffff\n\n\n\n#0094ff\n\n\n\n#06a809",
       "f": 2,
       "w": 1.25
     },
@@ -493,8 +523,7 @@
       "rx": 6.5,
       "ry": 4.25,
       "y": -1,
-      "c": "#333333",
-      "t": "#ffffff\n\n\n\n\n\n\n\n#448f2c",
+      "t": "#ffffff\n\n\n\n#aeaeae\n\n\n\n#06a809",
       "fa": [
         0,
         0,
@@ -507,19 +536,35 @@
         1
       ]
     },
-    "\n↑\n\n\n≡ Adj\n\n\n\n:-(",
+    "\n↑\n\n\n⌥ Adj\n\n\n\n:-(",
+    {
+      "t": "#ffffff\n\n\n\n\n\n\n\n#06a809"
+    },
     "\n↓\n\n\n\n\n\n\n:-)"
   ],
   [
     {
-      "t": "#ffffff\n\n\n\n#aeaeae",
+      "t": "#ffffff\n\n\n\n#aeaeae\n\n\n\n#06a809",
       "h": 1.5
     },
     "\n⌫\n\n\nCtrl",
     {
+      "t": "#ffffff\n\n\n\n#aeaeae\n\n\n\n#06a809\n#fff100",
+      "fa": [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
       "h": 1.5
     },
-    "\n⌦\n\n\nGui"
+    "\n⌦\n\n\nGui\n\n\n\n\n<strong>⌥ Mouse</strong>"
   ],
   [
     {
@@ -527,24 +572,28 @@
       "rx": 13,
       "y": -1,
       "x": -2,
-      "t": "#ffffff"
+      "t": "#ffffff\n\n\n\n\n\n\n\n#06a809"
     },
-    "⇥",
-    "⇥\n\n\n\n≡ Adj"
+    "⇤",
+    {
+      "t": "#ffffff\n\n\n\n#aeaeae\n\n\n\n#06a809\n\n#0094ff"
+    },
+    "⇥\n\n\n\n⌥ Adj"
   ],
   [
     {
       "x": -2,
-      "c": "#4e3317",
-      "t": "#ffffff\n\n\n\n#aeaeae",
+      "t": "#ffffff\n\n\n\n#ee07de\n\n\n#fff100\n#06a809",
+      "f": 2,
       "h": 1.5
     },
-    "\n⏎\n\n\n⌥ Win",
+    "\n⏎\n\n\n⌥ Awes\n\n\n1",
     {
-      "c": "#448f2c",
+      "t": "#ffffff\n\n\n\n#06a809\n\n\n#fff100\n#06a809",
+      "f": 2,
       "h": 1.5
     },
-    "\n␣\n\n\n⌥ Sym"
+    "\n␣\n\n\n⌥ Symb\n\n\n3"
   ],
   [
     {
@@ -553,9 +602,10 @@
       "ry": 8,
       "y": -3.9000000000000004,
       "x": -1.25,
-      "c": "#bc4816",
+      "t": "#ffffff\n\n\n\n#f24900\n\n\n#fff100\n#06a809",
+      "f": 2,
       "w": 1.25
     },
-    "\nTab\n\n\n⌥ Fun"
+    "\nTab\n\n\n⌥ Func\n\n\n2"
   ]
 ]
