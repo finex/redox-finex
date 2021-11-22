@@ -368,13 +368,13 @@ td_state_t cur_dance(qk_tap_dance_state_t *state) {
     } else return TD_UNKNOWN;
 }
 
+
+// Tap dance DEL/GUI/MOUSE
 // Create an instance of 'td_tap_t' for the 'del' tap dance.
 static td_tap_t deltap_state = {
     .is_press_action = true,
     .state = TD_NONE
 };
-
-// Tap dance DEL/GUI/MOUSE
 void del_finished(qk_tap_dance_state_t *state, void *user_data) {
     xtap_state.state = cur_dance(state);
     switch (xtap_state.state) {
@@ -388,7 +388,6 @@ void del_finished(qk_tap_dance_state_t *state, void *user_data) {
         case TD_DOUBLE_SINGLE_TAP: tap_code(KC_DEL); register_code(KC_DEL);
     }
 }
-
 void del_reset(qk_tap_dance_state_t *state, void *user_data) {
     switch (xtap_state.state) {
         case TD_SINGLE_TAP: unregister_code(KC_DEL); break;
@@ -403,9 +402,14 @@ void del_reset(qk_tap_dance_state_t *state, void *user_data) {
 
 
 // Tap dance SEMICOLON/COLON
+// Create an instance of 'td_tap_t' for the 'scl' tap dance.
+static td_tap_t scltap_state = {
+    .is_press_action = true,
+    .state = TD_NONE
+};
 void scl_finished(qk_tap_dance_state_t *state, void *user_data) {
-    xtap_state.state = cur_dance(state);
-    switch (xtap_state.state) {
+    scltap_state.state = cur_dance(state);
+    switch (scltap_state.state) {
         case TD_SINGLE_TAP: register_code(KC_SCLN); break;
         case TD_SINGLE_HOLD: register_code(KC_SCLN); break;
         case TD_DOUBLE_TAP: register_code (KC_COLN); break;
@@ -415,21 +419,26 @@ void scl_finished(qk_tap_dance_state_t *state, void *user_data) {
 }
 
 void scl_reset(qk_tap_dance_state_t *state, void *user_data) {
-    switch (xtap_state.state) {
+    switch (scltap_state.state) {
         case TD_SINGLE_TAP: unregister_code(KC_SCL); break;
         case TD_SINGLE_HOLD: unregister_code(KC_LGUI); break;
         case TD_DOUBLE_TAP: unregister_code (KC_COLN); break;
         case TD_DOUBLE_HOLD: unregister_code (KC_COLN);
         case TD_DOUBLE_SINGLE_TAP: unregister_code(KC_DEL);
     }
-    xtap_state.state = TD_NONE;
+    scltap_state.state = TD_NONE;
 }
 
 
 // Tap dance LEFT BRACKET/LEFT CURLY BRACE
+// Create an instance of 'td_tap_t' for the 'lbr' tap dance.
+static td_tap_t lbrtap_state = {
+    .is_press_action = true,
+    .state = TD_NONE
+};
 void lbr_finished(qk_tap_dance_state_t *state, void *user_data) {
-    xtap_state.state = cur_dance(state);
-    switch (xtap_state.state) {
+    lbrtap_state.state = cur_dance(state);
+    switch (lbrtap_state.state) {
         case TD_SINGLE_TAP: register_code(KC_LBRC); break;
         case TD_SINGLE_HOLD: register_code(KC_LBRC); break;
         case TD_DOUBLE_TAP: register_code (KC_LCBR); break;
@@ -439,22 +448,27 @@ void lbr_finished(qk_tap_dance_state_t *state, void *user_data) {
 }
 
 void lbr_reset(qk_tap_dance_state_t *state, void *user_data) {
-    switch (xtap_state.state) {
+    switch (lbrtap_state.state) {
         case TD_SINGLE_TAP: unregister_code(KC_LBRC); break;
         case TD_SINGLE_HOLD: unregister_code(KC_LBRC); break;
         case TD_DOUBLE_TAP: unregister_code (KC_LCBR); break;
         case TD_DOUBLE_HOLD: unregister_code (KC_LBRC);
         case TD_DOUBLE_SINGLE_TAP: unregister_code(KC_LBRC);
     }
-    xtap_state.state = TD_NONE;
+    lbrtap_state.state = TD_NONE;
 }
 
 
 
 // Tap dance RIGHT BRACKET/RIGHT CURLY BRACE
+// Create an instance of 'td_tap_t' for the 'rbr' tap dance.
+static td_tap_t rbrtap_state = {
+    .is_press_action = true,
+    .state = TD_NONE
+};
 void rbr_finished(qk_tap_dance_state_t *state, void *user_data) {
-    xtap_state.state = cur_dance(state);
-    switch (xtap_state.state) {
+    rbrtap_state.state = cur_dance(state);
+    switch (rbrtap_state.state) {
         case TD_SINGLE_TAP: register_code(KC_RBRC); break;
         case TD_SINGLE_HOLD: register_code(KC_RBRC); break;
         case TD_DOUBLE_TAP: register_code (KC_RCBR); break;
@@ -464,14 +478,14 @@ void rbr_finished(qk_tap_dance_state_t *state, void *user_data) {
 }
 
 void rbr_reset(qk_tap_dance_state_t *state, void *user_data) {
-    switch (xtap_state.state) {
+    switch (rbrtap_state.state) {
         case TD_SINGLE_TAP: unregister_code(KC_RBRC); break;
         case TD_SINGLE_HOLD: unregister_code(KC_RBRC); break;
         case TD_DOUBLE_TAP: unregister_code (KC_RCBR); break;
         case TD_DOUBLE_HOLD: unregister_code (KC_RBRC);
         case TD_DOUBLE_SINGLE_TAP: unregister_code(KC_RBRC);
     }
-    xtap_state.state = TD_NONE;
+    rbrtap_state.state = TD_NONE;
 }
 
 
