@@ -35,12 +35,12 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 
 /* Fine tuning */
-// Reduce errors on fast typing
+// - Reduce errors on fast typing
 #define IGNORE_MOD_TAP_INTERRUPT
-// Enable rapid switch from tap to hold, disables double tap hold auto-repeat.
+// - Enable rapid switch from tap to hold, disables double tap hold auto-repeat.
 #define TAPPING_FORCE_HOLD
-// Recommended for heavy chording
+// - Recommended for heavy chording
 #define QMK_KEYS_PER_SCAN 4
-// Custom tapping term
+// - Custom tapping term
 #define TAPPING_TERM 200
 #define TAPPING_TERM_PER_KEY

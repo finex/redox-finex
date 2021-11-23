@@ -6,12 +6,13 @@
 
 * Table of Content :TOC:
 - [[#customized-keymap-for-redox-by-leonardo-finex-finetti][Customized keymap for Redox by Leonardo (FiNeX) Finetti]]
-- [[#features][Features]]
+- [[#features-and-differences-from-default-layout][Features and differences from default layout]]
 - [[#layout][Layout]]
   - [[#keys-legend][Keys Legend]]
   - [[#color-legend][Color Legend]]
 - [[#changelog][Changelog]]
 - [[#todo][Todo]]
+- [[#credits][Credits]]
 - [[#finex-qmk-layouts][FiNeX QMK Layouts]]
 
 * Customized keymap for Redox by Leonardo (FiNeX) Finetti
@@ -21,7 +22,7 @@ number keys to the second row, adding other symbols and ~◌̀~ ~◌́~ dead key
 accents.
 
 
-* Features
+* Features and differences from default layout
 - Enabled USE_SERIAL for Falba.Tech Redox keyboards.
 - Layout: Colemak DHm.
 - Added redundant ~Space~, ~Esc~, ~Ctrl~, ~Del~, ~Backspace~ and ~Enter~ keys. I like to have this keys on both halves.
@@ -33,14 +34,13 @@ accents.
   - ~;~ × 2 = ~:~
   - ~[~ × 2 = ~{~
   - ~]~ × 2 = ~}~
-  - ~/~ × 2 = ~?~
-- Removed media and mouse support
-- Added missing "Print Screen" and "Menu" keys.
+  - Double tap hold on ~DEL~ activate mouse layer
+- Removed media layer
+- Added missing "Print Screen" key.
 - Added missing "F11" and "F12" keys.
 - Added ~Alt~, ~Ctrl~, ~Ctrl~ and ~Shift~ on home keys.
 - Added specific layout for "AwesomeWM" window manager.
 - Added clipboard, undo/redo and select all macro on left hand.
-
 
 * Layout
 This keyboard layout is intended to be used with English (US, intl, with dead keys) settings on PC.
@@ -65,7 +65,7 @@ The following scheme describe the meaning of the keys symbols positions.
 |-------------+-------------+---------------|
 | Single Tap  | Numbers (*) | AltGr         |
 |-------------+-------------+---------------|
-|             | Modifier    |               |
+|             | Modifier    | Adjust        |
 |-------------+-------------+---------------|
 
 (*): Numeric pad position is also used on Awesome WM layer with the "gui" modifier: LGUI(KC_[1..9]).
@@ -141,11 +141,17 @@ The following scheme describe the meaning of the keys symbols positions.
   Added clipboard, undo/redo and "select all" on left hand (and minor change to function layer)
 - 2021/11/21
   Merge mouse layer.
+- 2021/11/24
+  Updated mouse layer: activate with double tap hold.
+  Cleanup source code.
 
 * Todo
 - Move numeric pad on left hand.
 - Rework a bit the layout to fully have all symbols on left hand.
 - Update the layout in order to allow the creation of a common base usable with the Kyria keyboard.
+
+* Credits
+Thanks to [[https://github.com/manna-harbour/][Manna Harbour]], [[https://github.com/sdothum][Steven Hum]] and [[https://github.com/benvallack][Ben Vallack]] for many ideas I used to improve the layout like the home row, per key tapping term and multiple tap dance functions.
 
 * FiNeX QMK Layouts
 All my custom QMK layouts are available on the following repo:  https://github.com/finex/qmk-keyboard-layouts-finex
