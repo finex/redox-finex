@@ -171,7 +171,7 @@ uint16_t get_tapping_term(uint16_t keycode, keyrecord_t *record) {
 
   // Left thumb for delete/gui/mouse combo
   case TD_DGUM:
-    return TAPPING_TERM - 100;
+    return TAPPING_TERM - 50;
 
   // All other keys
   default:
