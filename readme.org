@@ -1,6 +1,6 @@
-#+TITLE: Redox RGB Evo (Colemak DHm)
-#+AUTHOR: FiNeX (https://www.finex.org)
-#+DATE: 02/12/2020
+#+TITLE: Redox FiNeX Evo2 (Colemak DHm)
+#+AUTHOR: Leonardo (FiNeX) Finetti - https://www.leonardofinetti.it
+#+DATE: 05/12/2021
 #+STARTUP: inlineimages
 #+STARTUP: nofold
 
@@ -11,7 +11,6 @@
   - [[#keys-legend][Keys Legend]]
   - [[#color-legend][Color Legend]]
 - [[#changelog][Changelog]]
-- [[#todo][Todo]]
 - [[#credits][Credits]]
 - [[#finex-qmk-layouts][FiNeX QMK Layouts]]
 
@@ -41,6 +40,7 @@ accents.
 - Added ~Alt~, ~Ctrl~, ~Ctrl~ and ~Shift~ on home keys.
 - Added specific layout for "AwesomeWM" window manager.
 - Added clipboard, undo/redo and select all macro on left hand.
+- Customized Mouse layer.
 
 * Layout
 This keyboard layout is intended to be used with English (US, intl, with dead keys) settings on PC.
@@ -51,33 +51,32 @@ setxkbmap -layout us -variant intl -option eurosign:e
 #+end_src
 
 #+CAPTION: Redox FiNeX layout
-[[https://raw.githubusercontent.com/finex/redox-finex/simpleawesome/images/redox-finex.png]]
+[[https://raw.githubusercontent.com/finex/redox-finex/evo2/images/redox-finex.png]]
 
 ** Keys Legend
 The following scheme describe the meaning of the keys symbols positions.
 
-|-------------+-------------+---------------|
-|             |             |               |
-|-------------+-------------+---------------|
-| Shifted key | Symbols     | Shifted AltGr |
-|-------------+-------------+---------------|
-| Functions   | Tap dance   | Mouse         |
-|-------------+-------------+---------------|
-| Single Tap  | Numbers (*) | AltGr         |
-|-------------+-------------+---------------|
-|             | Modifier    | Adjust        |
-|-------------+-------------+---------------|
+|-------------+---------------+---------------|
+|             |               |               |
+|-------------+---------------+---------------|
+| Shifted key | Symbols / Nav | Shifted AltGr |
+|-------------+---------------+---------------|
+| Functions   | Tap dance     | Mouse         |
+|-------------+---------------+---------------|
+| Single Tap  | Numbers (*)   | AltGr         |
+|-------------+---------------+---------------|
+|             | Modifier      | Adjust        |
+|-------------+---------------+---------------|
 
 (*): Numeric pad position is also used on Awesome WM layer with the "gui" modifier: LGUI(KC_[1..9]).
 
 ** Color Legend
-- Green: Symbols & Navigation layer
-- Blue: Numbers Layer
+- Green: Symbols (left) & Navigation layer (right)
+- Blue: Numbers Layer on right, one hand layer on left
 - Orange: Functions Layer
 - Red: Tap dance
-- Pink: Custom shift to enable shifted keys on opposite half and on same thumb
-  cluster
-- Brown: AwesomeWM layer
+- Pink: AwesomeWM Layer
+- Yellow: Mouse
 
 * Changelog
 - 2018/11/13
@@ -144,11 +143,9 @@ The following scheme describe the meaning of the keys symbols positions.
 - 2021/11/24
   Updated mouse layer: activate with double tap hold.
   Cleanup source code.
+- 2021/12/05
+  Moved numbers on left half, swapped some thumbs keys and minor updates. Now the layout can be easily remapped on Kyria keyboard.
 
-* Todo
-- Move numeric pad on left hand.
-- Rework a bit the layout to fully have all symbols on left hand.
-- Update the layout in order to allow the creation of a common base usable with the Kyria keyboard.
 
 * Credits
 Thanks to [[https://github.com/manna-harbour/][Manna Harbour]], [[https://github.com/sdothum][Steven Hum]] and [[https://github.com/benvallack][Ben Vallack]] for many ideas I used to improve the layout like the home row, per key tapping term and multiple tap dance functions.
