@@ -56,17 +56,17 @@ setxkbmap -layout us -variant intl -option eurosign:e
 ** Keys Legend
 The following scheme describe the meaning of the keys symbols positions.
 
-|-------------+---------------+---------------|
-|             |               |               |
-|-------------+---------------+---------------|
-| Shifted key | Symbols / Nav | Shifted AltGr |
-|-------------+---------------+---------------|
-| Functions   | Tap dance     | Mouse         |
-|-------------+---------------+---------------|
-| Single Tap  | Numbers (*)   | AltGr         |
-|-------------+---------------+---------------|
-|             | Modifier      | Adjust        |
-|-------------+---------------+---------------|
+|-------------+----------------------+---------------|
+|             |                      |               |
+|-------------+----------------------+---------------|
+| Shifted key | Symbols / Navigation | Shifted AltGr |
+|-------------+----------------------+---------------|
+| Functions   | Tap dance            | Mouse         |
+|-------------+----------------------+---------------|
+| Single Tap  | Numbers (*)          | AltGr         |
+|-------------+----------------------+---------------|
+|             | Modifier             | Adjust        |
+|-------------+----------------------+---------------|
 
 (*): Numeric pad position is also used on Awesome WM layer with the "gui" modifier: LGUI(KC_[1..9]).
 
