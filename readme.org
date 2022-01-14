@@ -145,6 +145,8 @@ The following scheme describe the meaning of the keys symbols positions.
   Cleanup source code.
 - 2021/12/05
   Moved numbers on left half, swapped some thumbs keys and minor updates. Now the layout can be easily remapped on Kyria keyboard.
+- 2022/01/14
+  Enable ~TAPPING_FORCE_HOLD_PER_KEY~ on home row mods.
 
 
 * Credits
