@@ -439,8 +439,8 @@ bool get_tapping_force_hold(uint16_t keycode, keyrecord_t *record) {
   case KC_CT_E:
   case KC_AL_I:
   case KC_GU_O:
-    return false;
-  default:
     return true;
+  default:
+    return false;
   }
 }
