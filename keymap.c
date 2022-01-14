@@ -431,14 +431,14 @@ qk_tap_dance_action_t tap_dance_actions[] = {
 
 bool get_tapping_force_hold(uint16_t keycode, keyrecord_t *record) {
   switch (keycode) {
-  case : KC_LS_T
-  case : KC_CT_S
-  case : KC_AL_R
-  case : KC_GU_A
-  case : KC_RS_N
-  case : KC_CT_E
-  case : KC_AL_I
-  case : KC_GU_O
+  case KC_LS_T:
+  case KC_CT_S:
+  case KC_AL_R:
+  case KC_GU_A:
+  case KC_RS_N:
+  case KC_CT_E:
+  case KC_AL_I:
+  case KC_GU_O:
     return false;
   default:
     return true;
