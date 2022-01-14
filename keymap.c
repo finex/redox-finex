@@ -427,3 +427,20 @@ qk_tap_dance_action_t tap_dance_actions[] = {
   [DANCE_3] = ACTION_TAP_DANCE_FN_ADVANCED(NULL, dance_3_finished, dance_3_reset),
   [DANCE_4] = ACTION_TAP_DANCE_FN_ADVANCED(NULL, dance_4_finished, dance_4_reset)
 };
+
+
+bool get_tapping_force_hold(uint16_t keycode, keyrecord_t *record) {
+  switch (keycode) {
+  case : KC_LS_T
+  case : KC_CT_S
+  case : KC_AL_R
+  case : KC_GU_A
+  case : KC_RS_N
+  case : KC_CT_E
+  case : KC_AL_I
+  case : KC_GU_O
+    return false;
+  default:
+    return true;
+  }
+}
