@@ -429,6 +429,7 @@ qk_tap_dance_action_t tap_dance_actions[] = {
 };
 
 
+// Enable tapping_force_hold only for home row mods
 bool get_tapping_force_hold(uint16_t keycode, keyrecord_t *record) {
   switch (keycode) {
   case KC_LS_T:

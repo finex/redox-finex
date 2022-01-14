@@ -39,8 +39,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define IGNORE_MOD_TAP_INTERRUPT
 // - Enable rapid switch from tap to hold, disables double tap hold auto-repeat.
 // #define TAPPING_FORCE_HOLD
+// - enable TAPPING_FORCE_HOLD only on single keys (home row mods) in order to allow auto-repeat on all other keys (like backspace or space).
 #define TAPPING_FORCE_HOLD_PER_KEY
-
 
 // - Recommended for heavy chording
 #define QMK_KEYS_PER_SCAN 4

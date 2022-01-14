@@ -140,12 +140,15 @@ The following scheme describe the meaning of the keys symbols positions.
   Added "number" layer toggle button
   Added clipboard, undo/redo and "select all" on left hand (and minor change to function layer)
 - 2021/11/21
-  Merge mouse layer.
+  Merge mouse layer back.
 - 2021/11/24
   Updated mouse layer: activate with double tap hold.
   Cleanup source code.
+- 2022/01/14
+  Enable ~TAPPING_FORCE_HOLD_PER_KEY~ on home row mods.
 
 * Todo
+Simple Awesome layout is quite good. The following task are planned on "evo2" branch.
 - Move numeric pad on left hand.
 - Rework a bit the layout to fully have all symbols on left hand.
 - Update the layout in order to allow the creation of a common base usable with the Kyria keyboard.
