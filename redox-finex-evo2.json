@@ -196,7 +196,7 @@
         1
       ]
     },
-    "\nb\n\n\n\nRGB_HUD\nCaps<br/>Lock\n\n%\n\n÷",
+    "\nb\n\n\n\nRGB_HUD\nNum<br/>Lock\n\n%\n\n-",
     {
       "x": 6.5,
       "t": "#ffffff\n\n\n\n\n\n\n#fff100\n#06a809",
@@ -236,7 +236,6 @@
         0,
         1,
         0,
-        1,
         1
       ]
     },
@@ -277,7 +276,7 @@
     "{\n[\n“\n«\n\n\n\n\n->\n{\n=>",
     {
       "x": 4.5,
-      "t": "#ffffff\n\n\n\n\n\n\n\n#06a809\n#ff0000",
+      "t": "#ffffff\n\n\n\n\n\n\n\n\n#ff0000",
       "f": 2,
       "h": 1.5
     },
@@ -306,7 +305,7 @@
       "t": "#ffffff\n\n\n\n#aeaeae\n\n\n#fff100\n#06a809",
       "f": 2
     },
-    "E\ne\n\n€\nCtrl\n\n\n⬇\n▼"
+    "E\ne\n\n€\nCtrl\n\n\n⬇\n▼\n\n<span class=\"awesome\"><span>&#9676;&#769;</span></span>"
   ],
   [
     {
@@ -317,8 +316,7 @@
     "R\nr\n\n®\nAlt\n\nF4\n▼\n-\n\n4<span class=\"awesome\">4</span>",
     {
       "x": 1,
-      "t": "#ffffff\n\n\n\n#aeaeae\n\n#f24900\n\n#06a809\n\n#0094ff",
-      "f": 2
+      "t": "#ffffff\n\n\n\n#aeaeae\n\n#f24900\n\n#06a809\n\n#0094ff"
     },
     "T\nt\n\n\nShift\n\nF6\n\n\"\n\n6<span class=\"awesome\">6</span>",
     {
@@ -326,7 +324,7 @@
       "t": "#ffffff\n\n\n\n#aeaeae\n\n\n#fff100\n#06a809",
       "f": 2
     },
-    "N\nn\n\n\nShift\n\n\n⬅\n◀",
+    "N\nn\n\n\nShift\n\n\n⬅\n◀\n\n<span class=\"awesome\"><span>&#9676;&#768;</span></span>",
     {
       "x": 1,
       "f": 2
@@ -340,10 +338,10 @@
       "t": "#ffffff\n\n\n\n\n\n#f24900\n\n#06a809\n\n#0094ff",
       "a": 0
     },
-    "G\ng\n\n\n\nRGB_M_S\nIns\n\n<span>&#9676;&#768;</span>\n\n<span>&#9676;&#769;</span>",
+    "G\ng\n\n\n\nRGB_M_S\nIns\n\n&\n\n+",
     {
       "x": 6.5,
-      "t": "#ffffff\n\n\n\n\n\n\n\n#06a809"
+      "t": "#ffffff"
     },
     "M\nm\n\nµ\n\nRGB_M_R"
   ],
@@ -361,7 +359,7 @@
       "c": "#4f4f4f",
       "t": "#ffffff\n\n\n\n#aeaeae\n\n#f24900\n#fff100\n#06a809\n\n#0094ff"
     },
-    "A\na\n\n\nGui\n\nF11\n◀\n|",
+    "A\na\n\n\nGui\n\nF11\n◀\n|\n\n/",
     {
       "x": 14.5,
       "t": "#ffffff\n\n\n\n#aeaeae\n\n\n#fff100\n#06a809",
@@ -383,7 +381,7 @@
       "t": "#ffffff\n\n\n\n\n\n#f24900\n#fff100\n#06a809\n\n#0094ff",
       "a": 0
     },
-    "C\nc\n\n©\n\nRGB_M_X\nF2\nCopy\n&\n\n2<span class=\"awesome\">2</span>",
+    "C\nc\n\n©\n\nRGB_M_X\nF2\nCopy\n^\n\n2<span class=\"awesome\">2</span>",
     {
       "x": 10.5,
       "t": "#ffffff\n\n\n\n\n\n\n#fff100\n#06a809",
@@ -424,7 +422,7 @@
       "t": "#ffffff\n\n\n\n\n\n#f24900\n#fff100\n#06a809\n\n#0094ff",
       "a": 0
     },
-    "V\nv\n\n\n\nRGB_HUI\nNum<br/>Lock\n↷\n^\n\n=",
+    "V\nv\n\n\n\nRGB_HUI\nCaps<br/>Lock\n↷\n=\n\n*",
     {
       "x": 6.5,
       "t": "#ffffff",
@@ -541,7 +539,7 @@
       ],
       "w": 1.25
     },
-    "\nEsc\n\n\n⌥Awm\n\n\n⎋Mou\n\n\n−"
+    "\nEsc\n\n\n⌥Awm\n\n\n⎋Mou\n\n\n,"
   ],
   [
     {
@@ -583,13 +581,13 @@
       ],
       "h": 1.5
     },
-    "\n␣\n\n\n⌥Nav\n\n\n⌦\n\n\n+",
+    "\n␣\n\n\n⌥Nav\n\n\n⌦",
     {
       "t": "#f65cd4\n#ffffff\n\n\n#aeaeae\n\n\n\n\n\n#0094ff",
       "f": 2,
       "h": 1.5
     },
-    "\n⭾\n\n\nGui <span class=\"mouse\"><small>⌥</small>Mou</span>\n\n\n\n\n\n×"
+    "\n⭾\n\n\nGui <span class=\"mouse\"><small>⌥</small>Mou</span>"
   ],
   [
     {
@@ -637,7 +635,6 @@
       "y": -3.9000000000000004,
       "x": -1.25,
       "t": "#f65cd4\n#ffffff\n\n\n#f24900\n\n\n#fff100",
-      "f2": 1,
       "w": 1.25
     },
     "\n⌦\n\n\n⌥Fun\n\n\n2"
