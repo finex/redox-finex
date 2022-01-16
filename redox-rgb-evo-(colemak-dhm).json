@@ -259,37 +259,11 @@
       "y": -0.875,
       "x": 5.5,
       "t": "#ffffff\n\n\n\n\n\n\n\n#06a809\n\n#0094ff",
-      "a": 0,
-      "fa": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        1,
-        1,
-        4,
-        0,
-        4
-      ]
+      "a": 0
     },
-    "G\ng\n\n\n\nRGB_M_S\n\n\n<span>&#9676;&#768;</span>\n\n<span class=\"awesome\"><span>&#9676;&#769;</span></span>",
+    "G\ng\n\n\n\nRGB_M_S\n\n\n<span>&#9676;&#768;</span>\n\nIns<span class=\"awesome\"><span>&#9676;&#769;</span></span>",
     {
-      "x": 6.5,
-      "fa": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        1,
-        1,
-        4,
-        0,
-        1
-      ]
+      "x": 6.5
     },
     "M\nm\n\nµ\n\nRGB_M_R\n\n\n\n\n,"
   ],
@@ -305,20 +279,7 @@
     "\nEsc\n\n\nCtrl",
     {
       "c": "#4f4f4f",
-      "t": "#ffffff\n\n\n\n\n\n\n\n#06a809\n\n#0094ff",
-      "fa": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        1,
-        1,
-        1,
-        0,
-        1
-      ]
+      "t": "#ffffff\n\n\n\n\n\n\n\n#06a809\n\n#0094ff"
     },
     "A\na\n\n\nGui\n\n\n\n|\n\n◀",
     {
