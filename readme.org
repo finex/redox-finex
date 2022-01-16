@@ -40,7 +40,7 @@ accents.
 - Added missing "F11" and "F12" keys.
 - Added ~Alt~, ~Ctrl~, ~Ctrl~ and ~Shift~ on home keys.
 - Added specific layout for "AwesomeWM" window manager.
-- Added clipboard, undo/redo and select all macro on left hand.
+- Added clipboard and undo/redo keycodes.
 
 * Layout
 This keyboard layout is intended to be used with English (US, intl, with dead keys) settings on PC.
@@ -146,6 +146,8 @@ The following scheme describe the meaning of the keys symbols positions.
   Cleanup source code.
 - 2022/01/14
   Enable ~TAPPING_FORCE_HOLD_PER_KEY~ on home row mods.
+- 2022/01/16
+  Moved all symbols on left hand and temporary moved accents to awesomewm layer. Removed dedicated backtick (~`~) key, just press two times the grave accent if the keyboard layout setting is us-intl.
 
 * Todo
 Simple Awesome layout is quite good. The following task are planned on "evo2" branch.
