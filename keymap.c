@@ -140,6 +140,9 @@ qk_tap_dance_action_t tap_dance_actions[] = {
 // Mod tap
 #define HYP_PRS HYPR_T(KC_PSCR)
 
+ststs   ````
+
+
 
 #define KC_AW1 LGUI(KC_1)
 #define KC_AW2 LGUI(KC_2)
@@ -234,7 +237,7 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
 /*   // Right thumb for "symbols" layer */
 /*   case LT_NUBS: */
 /*     return TAPPING_TERM - 50; */
-/*   default: *x/
+/*   default: */
 /*     return TAPPING_TERM; */
 /*   } */
 /* } */
@@ -246,7 +249,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     //┌────────┬────────┬────────┬────────┬────────┬────────┐                                           ┌────────┬────────┬────────┬────────┬────────┬────────┐
        KC_ESC  ,KC_1    ,KC_2    ,KC_3    ,KC_4    ,KC_5    ,                                            KC_6    ,KC_7    ,KC_8    ,KC_9    ,KC_0    ,KC_ESC  ,
     //├────────┼────────┼────────┼────────┼────────┼────────┼────────┐                         ┌────────┼────────┼────────┼────────┼────────┼────────┼────────┤
-       TG_BUTT ,KC_Q    ,KC_W    ,KC_F    ,KC_P    ,KC_B    ,KC_PSCR ,                          XXXXXXX ,KC_J    ,KC_L    ,KC_U    ,KC_Y    ,ASC_SQT ,TG_NUMB ,
+       TG_BUTT ,KC_Q    ,KC_W    ,KC_F    ,KC_P    ,KC_B    ,KC_PSCR ,                          XXXXXXX ,KC_J    ,KC_L    ,KC_U    ,KC_Y    ,KC_QUOT ,TG_NUMB ,
     //├────────┼────────┼────────┼────────┼────────┼────────┼────────┤                         ├────────┼────────┼────────┼────────┼────────┼────────┼────────┤
        KC_GRV  ,QHGA    ,QHAR    ,QHCS    ,QHST    ,KC_G    ,KC_TDLB ,                          KC_TDRB ,KC_M    ,QHSN    ,QHCE    ,QHAI    ,QHGO    ,KC_QUOT ,
     //├────────┼────────┼────────┼────────┼────────┼────────┼────────┼────────┐       ┌────────┼────────┼────────┼────────┼────────┼────────┼────────┼────────┤
@@ -265,7 +268,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     //├────────┼────────┼────────┼────────┼────────┼────────┼────────┤                         ├────────┼────────┼────────┼────────┼────────┼────────┼────────┤
        XXXXXXX ,KC_COLN, KC_DLR  ,KC_PERC ,ASC_CIRC,KC_PLUS ,ASC_SAR ,                          ASC_DAR ,XXXXXXX ,KC_RSFT, KC_RCTL, KC_LALT, KC_RGUI ,XXXXXXX ,
     //├────────┼────────┼────────┼────────┼────────┼────────┼────────┼────────┐       ┌────────┼────────┼────────┼────────┼────────┼────────┼────────┼────────┤
-       XXXXXXX ,ASC_TILD, KC_EXLM ,KC_AT  ,KC_HASH ,KC_PIPE ,ASC_SAD ,ASC_HAP ,        XXXXXXX ,XXXXXXX ,XXXXXXX ,XXXXXXX ,XXXXXXX ,XXXXXXX ,XXXXXXX ,XXXXXXX ,
+       XXXXXXX ,KC_TILD ,KC_EXLM ,KC_AT   ,KC_HASH ,KC_PIPE ,ASC_SAD ,ASC_HAP ,        XXXXXXX ,XXXXXXX ,XXXXXXX ,XXXXXXX ,XXXXXXX ,XXXXXXX ,XXXXXXX ,XXXXXXX ,
     //├────────┼────────┼────────┼────────┼────┬───┴────┬───┼────────┼────────┤       ├────────┼────────┼───┬────┴───┬────┼────────┼────────┼────────┼────────┤
        XXXXXXX ,XXXXXXX ,XXXXXXX ,XXXXXXX ,     KC_LPRN ,    KC_RPRN ,KC_UNDS ,        XXXXXXX ,XXXXXXX ,    XXXXXXX ,     XXXXXXX ,XXXXXXX ,XXXXXXX ,XXXXXXX
     //└────────┴────────┴────────┴────────┘    └────────┘   └────────┴────────┘       └────────┴────────┘   └────────┘    └────────┴────────┴────────┴────────┘
@@ -280,7 +283,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     //├────────┼────────┼────────┼────────┼────────┼────────┼────────┤                         ├────────┼────────┼────────┼────────┼────────┼────────┼────────┤
        XXXXXXX ,KC_SCLN ,KC_4    ,KC_5    ,KC_6    ,KC_EQL  ,XXXXXXX ,                          XXXXXXX ,XXXXXXX ,KC_RSFT, KC_RCTL, KC_LALT, KC_RGUI ,XXXXXXX ,
     //├────────┼────────┼────────┼────────┼────────┼────────┼────────┼────────┐       ┌────────┼────────┼────────┼────────┼────────┼────────┼────────┼────────┤
-       XXXXXXX ,ASC_DQT ,KC_1    ,KC_2    ,KC_3    ,KC_BSLS ,XXXXXXX ,XXXXXXX ,        XXXXXXX ,XXXXXXX ,XXXXXXX ,XXXXXXX ,XXXXXXX ,XXXXXXX ,XXXXXXX ,XXXXXXX ,
+       XXXXXXX ,KC_GRV  ,KC_1    ,KC_2    ,KC_3    ,KC_BSLS ,XXXXXXX ,XXXXXXX ,        XXXXXXX ,XXXXXXX ,XXXXXXX ,XXXXXXX ,XXXXXXX ,XXXXXXX ,XXXXXXX ,XXXXXXX ,
     //├────────┼────────┼────────┼────────┼────┬───┴────┬───┼────────┼────────┤       ├────────┼────────┼───┬────┴───┬────┼────────┼────────┼────────┼────────┤
        XXXXXXX ,XXXXXXX ,XXXXXXX ,XXXXXXX ,     KC_DOT  ,    KC_0    ,KC_MINS ,        XXXXXXX ,XXXXXXX ,    XXXXXXX ,     XXXXXXX ,XXXXXXX ,XXXXXXX ,XXXXXXX
     //└────────┴────────┴────────┴────────┘    └────────┘   └────────┴────────┘       └────────┴────────┘   └────────┘    └────────┴────────┴────────┴────────┘
