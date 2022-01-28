@@ -150,6 +150,8 @@ The following scheme describe the meaning of the keys symbols positions.
   Moved all symbols on left hand and temporary moved accents to awesomewm layer. Removed dedicated backtick (~`~) key, just press two times the grave accent if the keyboard layout setting is us-intl.
 - 2022/01/19
   Temporarily Added ~*~ and ~+~ back on right hand using AwesomeWM Layer.
+- 2022/01/28
+  Misc updats: moved accents to function layer to avoid errors on "enter" button. Moved ~*~ and ~+~ on left hand only (numbers layer).
 
 * Todo
 Simple Awesome layout is quite good. The following task are planned on "evo2" branch.
