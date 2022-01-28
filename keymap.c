@@ -4,7 +4,7 @@
 enum{
   _COLEMAKDH, // Base Colemak Mod-DH
   _BUTT,
-  _MEDI,
+  _AWES,
   _NAVI,
   _MOUS,
   _SYMB,
@@ -109,7 +109,7 @@ qk_tap_dance_action_t tap_dance_actions[] = {
 // - Layer / Tap
 #define LT_ADEN LT(_ADJUST, KC_END)
 #define LT_ADPU LT(_ADJUST, KC_PGUP)
-#define LT_MEES LT(_MEDI, KC_ESC)
+#define LT_AWES LT(_AWES, KC_ESC)
 #define LT_NASP LT(_NAVI, KC_SPACE)
 #define LT_MOTA LT(_MOUS, KC_TAB)
 #define LT_SYEN LT(_SYMB, KC_ENTER)
@@ -234,7 +234,7 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
 /*   // Right thumb for "symbols" layer */
 /*   case LT_NUBS: */
 /*     return TAPPING_TERM - 50; */
-/*   default: */
+/*   default: *x/
 /*     return TAPPING_TERM; */
 /*   } */
 /* } */
@@ -246,13 +246,13 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     //┌────────┬────────┬────────┬────────┬────────┬────────┐                                           ┌────────┬────────┬────────┬────────┬────────┬────────┐
        KC_ESC  ,KC_1    ,KC_2    ,KC_3    ,KC_4    ,KC_5    ,                                            KC_6    ,KC_7    ,KC_8    ,KC_9    ,KC_0    ,KC_ESC  ,
     //├────────┼────────┼────────┼────────┼────────┼────────┼────────┐                         ┌────────┼────────┼────────┼────────┼────────┼────────┼────────┤
-       TG_BUTT ,KC_Q    ,KC_W    ,KC_F    ,KC_P    ,KC_B    ,XXXXXXX ,                          XXXXXXX ,KC_J    ,KC_L    ,KC_U    ,KC_Y    ,KC_TDSC ,TG_NUMB ,
+       TG_BUTT ,KC_Q    ,KC_W    ,KC_F    ,KC_P    ,KC_B    ,KC_PSCR ,                          XXXXXXX ,KC_J    ,KC_L    ,KC_U    ,KC_Y    ,ASC_SQT ,TG_NUMB ,
     //├────────┼────────┼────────┼────────┼────────┼────────┼────────┤                         ├────────┼────────┼────────┼────────┼────────┼────────┼────────┤
        KC_GRV  ,QHGA    ,QHAR    ,QHCS    ,QHST    ,KC_G    ,KC_TDLB ,                          KC_TDRB ,KC_M    ,QHSN    ,QHCE    ,QHAI    ,QHGO    ,KC_QUOT ,
     //├────────┼────────┼────────┼────────┼────────┼────────┼────────┼────────┐       ┌────────┼────────┼────────┼────────┼────────┼────────┼────────┼────────┤
        KC_LSPO ,KC_Z    ,QHLX    ,KC_C    ,KC_D    ,KC_V    ,LT_ADPU ,KC_PGDN ,        KC_HOME ,LT_ADEN ,KC_K    ,KC_H    ,KC_COMM ,QHLD    ,KC_SLSH ,KC_RSPC ,
     //├────────┼────────┼────────┼────────┼────┬───┴────┬───┼────────┼────────┤       ├────────┼────────┼───┬────┴───┬────┼────────┼────────┼────────┼────────┤
-       XXXXXXX ,XXXXXXX ,HYP_PRS ,KC_ENT  ,     LT_MEES ,    LT_NASP ,LT_MOTA ,        LT_SYEN , LT_NUBS,    LT_FUDE ,     KC_LEFT ,KC_DOWN ,KC_UP   ,KC_RGHT
+       XXXXXXX ,KC_HYPR ,KC_MEH  ,KC_ENT  ,     LT_AWES ,    LT_NASP ,LT_MOTA ,        LT_SYEN ,LT_NUBS ,    LT_FUDE ,     KC_LEFT ,KC_DOWN ,KC_UP   ,KC_RGHT
     //└────────┴────────┴────────┴────────┘    └────────┘   └────────┴────────┘       └────────┴────────┘   └────────┘    └────────┴────────┴────────┴────────┘
   ),
 
@@ -334,17 +334,17 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   ),
 
   // Media layer
-  [_MEDI] = LAYOUT(
+  [_AWES] = LAYOUT(
     //┌────────┬────────┬────────┬────────┬────────┬────────┐                                           ┌────────┬────────┬────────┬────────┬────────┬────────┐
        _______ ,XXXXXXX ,XXXXXXX ,XXXXXXX ,XXXXXXX ,XXXXXXX ,                                            XXXXXXX ,XXXXXXX ,XXXXXXX ,XXXXXXX ,XXXXXXX ,_______ ,
     //├────────┼────────┼────────┼────────┼────────┼────────┼────────┐                         ┌────────┼────────┼────────┼────────┼────────┼────────┼────────┤
-       _______ ,XXXXXXX ,KC_AW7  ,KC_AW8  ,KC_AW9  ,XXXXXXX ,XXXXXXX ,                          XXXXXXX ,U_RDO   ,U_PST   ,U_CPY   ,U_CUT   ,U_UND   ,_______ ,
+       _______ ,XXXXXXX ,KC_AW7  ,KC_AW8  ,KC_AW9  ,XXXXXXX ,XXXXXXX ,                          XXXXXXX ,XXXXXXX ,XXXXXXX ,XXXXXXX ,XXXXXXX ,XXXXXXX ,_______ ,
     //├────────┼────────┼────────┼────────┼────────┼────────┼────────┤                         ├────────┼────────┼────────┼────────┼────────┼────────┼────────┤
-       XXXXXXX ,XXXXXXX ,KC_AW4  ,KC_AW5  ,KC_AW6  ,XXXXXXX ,XXXXXXX ,                          XXXXXXX ,KC_MPRV ,KC_VOLD ,KC_VOLU ,KC_MNXT ,XXXXXXX ,XXXXXXX ,
+       XXXXXXX ,XXXXXXX ,KC_AW4  ,KC_AW5  ,KC_AW6  ,XXXXXXX ,XXXXXXX ,                          XXXXXXX ,XXXXXXX ,XXXXXXX ,XXXXXXX ,XXXXXXX ,XXXXXXX ,XXXXXXX ,
     //├────────┼────────┼────────┼────────┼────────┼────────┼────────┼────────┐       ┌────────┼────────┼────────┼────────┼────────┼────────┼────────┼────────┤
        XXXXXXX ,XXXXXXX ,KC_AW1  ,KC_AW2  ,KC_AW3  ,XXXXXXX ,XXXXXXX ,XXXXXXX ,        XXXXXXX ,XXXXXXX ,XXXXXXX ,XXXXXXX ,XXXXXXX ,XXXXXXX ,XXXXXXX ,XXXXXXX ,
     //├────────┼────────┼────────┼────────┼────┬───┴────┬───┼────────┼────────┤       ├────────┼────────┼───┬────┴───┬────┼────────┼────────┼────────┼────────┤
-       XXXXXXX ,XXXXXXX ,XXXXXXX ,XXXXXXX ,     XXXXXXX ,    XXXXXXX ,XXXXXXX ,        KC_MSTP ,KC_MPLY,     KC_MUTE ,     XXXXXXX ,XXXXXXX ,XXXXXXX ,XXXXXXX
+       XXXXXXX ,XXXXXXX ,XXXXXXX ,XXXXXXX ,     XXXXXXX ,    XXXXXXX ,XXXXXXX ,        XXXXXXX ,XXXXXXX ,    XXXXXXX ,     XXXXXXX ,XXXXXXX ,XXXXXXX ,XXXXXXX
     //└────────┴────────┴────────┴────────┘    └────────┘   └────────┴────────┘       └────────┴────────┘   └────────┘    └────────┴────────┴────────┴────────┘
   ),
 
