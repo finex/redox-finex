@@ -147,36 +147,12 @@
     "W\nw\n\n\n\nRGB_M_P\n\n\n@\n\n▼",
     {
       "x": 1,
-      "t": "#ffffff\n\n\n\n\n\n#f24900\n\n#06a809\n\n#ee07de",
-      "fa": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        1,
-        1,
-        1
-      ]
+      "t": "#ffffff\n\n\n\n\n\n#f24900\n\n#06a809\n\n#ee07de"
     },
-    "P\np\n\n\n\nRGB_MOD\nNum<br/>Lock\n\n$\n\n*",
+    "P\np\n\n\n\nRGB_MOD\nNum<br/>Lock\n\n$",
     {
       "x": 8.5,
-      "t": "#ffffff\n\n\n\n\n\n#f24900\n#fff100\n\n\n#0094ff",
-      "fa": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        1,
-        1,
-        1,
-        0,
-        1
-      ]
+      "t": "#ffffff\n\n\n\n\n\n#f24900\n#fff100\n\n\n#0094ff"
     },
     "L\nl\nØ\nø\n\nRGB_VAD\nF7\nCut\n\n\n7<span class=\"awesome\">7</span>",
     {
@@ -245,12 +221,38 @@
       "y": -0.75,
       "x": 3.5,
       "c": "#4f4f4f",
-      "t": "#ffffff\n\n\n\n#aeaeae\n\n\n\n#06a809\n\n#0094ff"
+      "t": "#ffffff\n\n\n\n#aeaeae\n\n#f24900\n\n#06a809\n\n#0094ff",
+      "fa": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        1
+      ]
     },
-    "S\ns\n\n\nCtrl\n\n\n\n'\n\n▶<span class=\"awesome\"><span>&#9676;&#769;</span></span>",
+    "S\ns\n\n\nCtrl\n\n<span>&#9676;&#769;</span>\n\n'\n\n▶",
     {
       "x": 10.5,
-      "t": "#ffffff\n\n\n\n#aeaeae\n\n#f24900\n#fff100\n#06a809\n\n#0094ff"
+      "t": "#ffffff\n\n\n\n#aeaeae\n\n#f24900\n#fff100\n#06a809\n\n#0094ff",
+      "fa": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1
+      ]
     },
     "E\ne\n\n€\nCtrl\n\nF5\n⬇\n▼\n\n5<span class=\"awesome\">5</span>"
   ],
@@ -262,12 +264,39 @@
     },
     "R\nr\n\n®\nAlt\n\n\n\n-\n\n▼",
     {
-      "x": 1
+      "x": 1,
+      "t": "#ffffff\n\n\n\n#aeaeae\n\n#f24900\n\n#06a809\n\n#0094ff",
+      "fa": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        1
+      ]
     },
-    "T\nt\n\n\nShift\n\n\n\n\"\n\n<span class=\"awesome\"><span>&#9676;&#768;</span></span>",
+    "T\nt\n\n\nShift\n\n<span>&#9676;&#768;</span>\n\n\"",
     {
       "x": 8.5,
-      "t": "#ffffff\n\n\n\n#aeaeae\n\n#f24900\n#fff100\n#06a809\n\n#0094ff"
+      "t": "#ffffff\n\n\n\n#aeaeae\n\n#f24900\n#fff100\n#06a809\n\n#0094ff",
+      "fa": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1
+      ]
     },
     "N\nn\n\n\nShift\n\nF4\n⬅\n◀\n\n4<span class=\"awesome\">4</span>",
     {
@@ -280,38 +309,14 @@
       "y": -0.875,
       "x": 5.5,
       "t": "#ffffff\n\n\n\n\n\n#f24900\n\n#06a809\n\n#ee07de",
-      "a": 0,
-      "fa": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        1,
-        1,
-        1
-      ]
+      "a": 0
     },
-    "G\ng\n\n\n\nRGB_M_S\nIns\n\n&\n\n+",
+    "G\ng\n\n\n\nRGB_M_S\nIns\n\n&",
     {
       "x": 6.5,
-      "t": "#ffffff\n\n\n\n\n\n\n\n\n\n#0094ff",
-      "fa": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        1,
-        1,
-        1,
-        0,
-        1
-      ]
+      "t": "#ffffff\n\n\n\n\n\n\n\n\n\n#0094ff"
     },
-    "M\nm\n\nµ\n\nRGB_M_R\n\n\n\n\n-"
+    "M\nm\n\nµ\n\nRGB_M_R\n\n\n\n\n*"
   ],
   [
     {
@@ -332,7 +337,7 @@
       "x": 14.5,
       "t": "#ffffff\n\n\n\n#aeaeae\n\n#f24900\n#fff100\n#06a809\n\n#0094ff"
     },
-    "O\no\n\n\nGui\n\nF11\n➡\n▶\n\n*",
+    "O\no\n\n\nGui\n\nF11\n➡\n▶\n\n-",
     {
       "c": "#333333",
       "t": "#ffffff",
