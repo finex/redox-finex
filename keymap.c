@@ -48,7 +48,7 @@ enum tap_dance_codes {
 #define KC_AR_X RALT_T(KC_X)          // X / Right Alt
 #define KC_GU_O RGUI_T(KC_O)          // O / Right Gui
 #define KC_AL_I LALT_T(KC_I)          // E / Left Alt (left alt because used as Emacs M- )
-#define KC_AR_DT RALT_T(KC_DOT)       // . / Right Alt
+#define KC_AR_DO RALT_T(KC_DOT)       // . / Right Alt
 #define KC_CT_E RCTL_T(KC_E)          // I / Right Ctrl
 #define KC_RS_N RSFT_T(KC_N)          // N / Right Shift
 #define KC_LS_T LSFT_T(KC_T)          // T / Left Shift
