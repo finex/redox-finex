@@ -152,6 +152,8 @@ The following scheme describe the meaning of the keys symbols positions.
   Temporarily Added ~*~ and ~+~ back on right hand using AwesomeWM Layer.
 - 2022/01/28
   Misc updats: moved accents to function layer to avoid errors on "enter" button. Moved ~*~ and ~+~ on left hand only (numbers layer).
+- 2022/02/04
+  Moved again accents, ~*~ and ~+~. Changed number layers keycodes from numpad numbers to regular numbers.
 
 * Todo
 Simple Awesome layout is quite good. The following task are planned on "evo2" branch.

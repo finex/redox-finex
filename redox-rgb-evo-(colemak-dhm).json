@@ -105,18 +105,7 @@
       "x": 3.5,
       "c": "#4f4f4f",
       "t": "#ffffff\n\n\n\n\n\n\n\n#06a809",
-      "a": 0,
-      "fa": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        1
-      ]
+      "a": 0
     },
     "F\nf\n\n\n\nRGB_TOG\n\n\n#",
     {
@@ -131,7 +120,7 @@
         0,
         1,
         1,
-        1,
+        0,
         0,
         1
       ]
@@ -147,7 +136,7 @@
     "W\nw\n\n\n\nRGB_M_P\n\n\n@\n\n▼",
     {
       "x": 1,
-      "t": "#ffffff\n\n\n\n\n\n#f24900\n\n#06a809\n\n#ee07de"
+      "t": "#ffffff\n\n\n\n\n\n#f24900\n\n#06a809"
     },
     "P\np\n\n\n\nRGB_MOD\nNum<br/>Lock\n\n$",
     {
@@ -171,7 +160,7 @@
       "x": 6.5,
       "t": "#ffffff\n\n\n\n\n\n\n#fff100\n\n\n#0094ff"
     },
-    "J\nj\n\n\n\nRGB_SAI\n\n↶\n\n\n+"
+    "J\nj\n\n\n\nRGB_SAI\n\n↶"
   ],
   [
     {
@@ -191,9 +180,9 @@
     "Q\nq\n\n\n\nRESET\n\n\n!",
     {
       "x": 14.5,
-      "t": "#ffffff\n\n\n\n\n\n#f24900\n#fff100\n\n#ff0000"
+      "t": "#ffffff\n\n\n\n\n\n#f24900\n#fff100\n\n#ff0000\n#0094ff"
     },
-    ":\n;\n°\n¶\n\nRGB_M_SW\nF12\n↷\n\n:",
+    ":\n;\n°\n¶\n\nRGB_M_SW\nF12\n↷\n\n:\n+",
     {
       "c": "#333333",
       "t": "#ffffff",
@@ -229,14 +218,14 @@
         0,
         0,
         0,
+        3,
+        1,
         0,
-        1,
-        1,
         0,
         1
       ]
     },
-    "S\ns\n\n\nCtrl\n\n<span>&#9676;&#769;</span>\n\n'\n\n▶",
+    "S\ns\n\n\nCtrl\n\n<span>&#9676;&#768;</span>\n\n'\n\n▶",
     {
       "x": 10.5,
       "t": "#ffffff\n\n\n\n#aeaeae\n\n#f24900\n#fff100\n#06a809\n\n#0094ff",
@@ -249,7 +238,7 @@
         0,
         1,
         1,
-        1,
+        0,
         0,
         1
       ]
@@ -265,7 +254,7 @@
     "R\nr\n\n®\nAlt\n\n\n\n-\n\n▼",
     {
       "x": 1,
-      "t": "#ffffff\n\n\n\n#aeaeae\n\n#f24900\n\n#06a809\n\n#0094ff",
+      "t": "#ffffff\n\n\n\n#aeaeae\n\n#f24900\n\n#06a809",
       "fa": [
         0,
         0,
@@ -273,14 +262,12 @@
         0,
         0,
         0,
-        0,
+        3,
         1,
-        1,
-        0,
-        1
+        0
       ]
     },
-    "T\nt\n\n\nShift\n\n<span>&#9676;&#768;</span>\n\n\"",
+    "T\nt\n\n\nShift\n\n<span>&#9676;&#769;</span>\n\n\"",
     {
       "x": 8.5,
       "t": "#ffffff\n\n\n\n#aeaeae\n\n#f24900\n#fff100\n#06a809\n\n#0094ff",
@@ -293,7 +280,7 @@
         0,
         1,
         1,
-        1,
+        0,
         0,
         1
       ]
@@ -308,10 +295,10 @@
     {
       "y": -0.875,
       "x": 5.5,
-      "t": "#ffffff\n\n\n\n\n\n#f24900\n\n#06a809\n\n#ee07de",
+      "t": "#ffffff\n\n\n\n\n\n#f24900\n\n#06a809",
       "a": 0
     },
-    "G\ng\n\n\n\nRGB_M_S\nIns\n\n&",
+    "G\ng\n\n\n\nRGB_M_S\n\n\n&",
     {
       "x": 6.5,
       "t": "#ffffff\n\n\n\n\n\n\n\n\n\n#0094ff"
@@ -388,10 +375,10 @@
     {
       "y": -0.875,
       "x": 5.5,
-      "t": "#ffffff\n\n\n\n\n\n\n\n#06a809\n\n#0094ff",
+      "t": "#ffffff\n\n\n\n\n\n#f24900\n\n#06a809\n\n#0094ff",
       "a": 0
     },
-    "V\nv\n\n\n\nRGB_HUI\n\n\n=\n\n↷",
+    "V\nv\n\n\n\nRGB_HUI\nIns\n\n=\n\n↷",
     {
       "x": 6.5,
       "t": "#ffffff\n\n\n\n\n\n\n\n\n\n#0094ff",
@@ -476,7 +463,11 @@
         0,
         0,
         0,
-        1
+        1,
+        0,
+        1,
+        1,
+        0
       ]
     },
     "\n␣\n\n\nGui",
@@ -495,7 +486,17 @@
       "y": -0.75,
       "x": -1.25,
       "t": "#ffffff\n\n\n\n#0094ff",
-      "f": 2,
+      "fa": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0
+      ],
       "w": 1.25
     },
     "\nEsc\n\n\n⌥ Num"
@@ -506,18 +507,7 @@
       "rx": 6.5,
       "ry": 4.25,
       "y": -1,
-      "t": "#ffffff\n\n\n\n#aeaeae\n\n\n\n#06a809",
-      "fa": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        1
-      ]
+      "t": "#ffffff\n\n\n\n#aeaeae\n\n\n\n#06a809"
     },
     "\n↑\n\n\n⌥ Adj\n\n\n\n:-(",
     {
@@ -527,12 +517,12 @@
   ],
   [
     {
-      "t": "#ffffff\n\n\n\n#aeaeae",
+      "t": "#ffffff\n\n\n\n#aeaeae\n\n\n\n#06a809",
       "h": 1.5
     },
-    "\n⌫\n\n\nCtrl",
+    "\n⌫\n\n\nCtrl\n\n\n\n*",
     {
-      "t": "#ffffff\n\n\n\n#aeaeae\n\n\n\n\n#fff100",
+      "t": "#ffffff\n\n\n\n#aeaeae\n\n\n\n#06a809\n#fff100",
       "fa": [
         0,
         0,
@@ -540,14 +530,14 @@
         0,
         0,
         0,
-        0,
-        0,
         1,
+        1,
+        0,
         1
       ],
       "h": 1.5
     },
-    "\n⌦\n\n\nGui\n\n\n\n\n<strong>⌥ Mou</strong>"
+    "\n⌦\n\n\nGui\n\n\n\n+\n<strong>⌥ Mou</strong>"
   ],
   [
     {
@@ -567,16 +557,6 @@
     {
       "x": -2,
       "t": "#ffffff\n\n\n\n#ee07de\n\n\n#fff100",
-      "fa": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        1
-      ],
       "h": 1.5
     },
     "\n⏎\n\n\n⌥ Awm\n\n\n1",
@@ -601,10 +581,10 @@
         0,
         0,
         0,
-        0,
+        1,
         1,
         0,
-        0,
+        1,
         1
       ],
       "w": 1.25
