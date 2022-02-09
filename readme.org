@@ -51,7 +51,7 @@ setxkbmap -layout us -variant intl -option eurosign:e
 #+end_src
 
 #+CAPTION: Redox FiNeX layout
-[[https://raw.githubusercontent.com/finex/redox-finex/simpleawesome_fullsplit/images/redox-finex.png]]
+[[https://raw.githubusercontent.com/finex/redox-finex/simpleawesome/images/redox-finex.png]]
 
 ** Keys Legend
 The following scheme describe the meaning of the keys symbols positions.
