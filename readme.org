@@ -154,6 +154,8 @@ The following scheme describe the meaning of the keys symbols positions.
   Misc updats: moved accents to function layer to avoid errors on "enter" button. Moved ~*~ and ~+~ on left hand only (numbers layer).
 - 2022/02/04
   Moved again accents, ~*~ and ~+~. Changed number layers keycodes from numpad numbers to regular numbers.
+- 2022/02/10
+  Moved ~*~ again to allow pressing backspace even if the symbol layer is still active.
 
 * Todo
 Simple Awesome layout is quite good. The following task are planned on "evo2" branch.
