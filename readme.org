@@ -65,9 +65,8 @@ The following scheme describe the meaning of the keys symbols positions.
 |-------------+-----------+---------------|
 | Single Tap  | Numbers   | AltGr         |
 |-------------+-----------+---------------|
-| Modifier    |           | Adjust        |
+|             | Modifier  | Adjust        |
 |-------------+-----------+---------------|
-
 
 ** Color Legend
 - Green: Symbols
