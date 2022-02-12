@@ -3,7 +3,7 @@
     "backcolor": "#ffffff",
     "name": "Redox RGB Evo (Colemak DHm)",
     "author": "Leonardo (FiNeX) Finetti (https://www.leonardofinetti.it)",
-    "notes": "# Ergonomic Redox Keyboard Layout #\nRevision date: 2021-11-22\nLayout: English (US, intl, with dead keys)\n\n\n## Keys Legend: ##\nThe following scheme describe the meaning of the keys symbols positions.\n\n|-------------+-------------+---------------|\n| Shifted key | Symbols     | Shifted AltGr |\n|-------------+-------------+---------------|\n| Functions   | Tap dance   | Mouse         |\n|-------------+-------------+---------------|\n| Single Tap  | Numbers (*) | AltGr         |\n|-------------+-------------+---------------|\n|             | Modifier    | Adjust        |\n|-------------+-------------+---------------|\n\n\n(*): Numeric pad position is also used on Awesome WM layer with the \"gui\" modifier: LGUI(KC_[1..9]).\n\n\n## Color Legend: ##\n- Green: Symbols & Navigation layer \n- Blue: Numbers Layer on right, one hand layer on left\n- Orange: Functions Layer\n- Red: Tap dance\n- Pink: AwesomeWM Layer\n- Yellow: Mouse Layer",
+    "notes": "# Ergonomic Redox Keyboard Layout #\nRevision date: 2021-11-22\nLayout: English (US, intl, with dead keys)\n\n\n## Keys Legend: ##\nThe following scheme describe the meaning of the keys symbols positions.\n\n|-------------+-----------+---------------|\n| Shifted key | Symbols   | Shifted AltGr |\n|-------------+-----------+---------------|\n| Functions   | Tap dance | Navigation    |\n|-------------+-----------+---------------|\n| Single Tap  | Numbers   | AltGr         |\n|-------------+-----------+---------------|\n| Modifier    |           | Adjust        |\n|-------------+-----------+---------------|\n\n\n## Color Legend: ##\n- Green: Symbols\n- Yellow: Navigation\n- Cyan: Numbers / AwesomeWM shortcuts\n- Orange: Functions\n- Red: Tap dance",
     "background": {
       "name": "Bamboo",
       "style": "background-image: url('/bg/wood/bamboo.jpg');"
@@ -20,7 +20,6 @@
     {
       "x": 3.5,
       "c": "#4f4f4f",
-      "t": "",
       "sm": "cherry",
       "sb": "cherry",
       "f": 1
@@ -80,7 +79,7 @@
       "x": 14.5,
       "a": 4
     },
-    ")\n0\n\n’",
+    ")\n0\n°\n’",
     {
       "c": "#333333",
       "w": 1.25
@@ -135,7 +134,7 @@
       "y": -0.875,
       "x": 5.5
     },
-    "B\nb\n\n\n\nRGB_HUD\nF12\n\n%\n\n+",
+    "B\nb\n\n\n\nRGB_HUD\nCaps<br>Lock\n\n%\n\n+",
     {
       "x": 6.5
     },
@@ -154,7 +153,7 @@
       "c": "#4f4f4f",
       "a": 0
     },
-    "Q\nq\n\n\n\nRESET\nCaps<br>Lock\n↑\n!\n\n*",
+    "Q\nq\n\n\n\nRESET\nF12\n↑\n]\n\n[",
     {
       "x": 14.5
     },
@@ -172,12 +171,12 @@
       "x": 6.5,
       "h": 1.5
     },
-    "{\n[\n“\n«\n\n\n\n\n->\n{",
+    "{\n[\n“\n«\n\n\n=>\n\n->\n{",
     {
       "x": 4.5,
       "h": 1.5
     },
-    "}\n]\n”\n»\n\n\n\n\n=>\n}"
+    "}\n]\n”\n»\n\n\n\n\n\n}"
   ],
   [
     {
@@ -216,7 +215,7 @@
       "y": -0.875,
       "x": 5.5
     },
-    "G\ng\n\n\n\nRGB_M_S\nF11\n\n&\n\n-",
+    "G\ng\n\n\n\nRGB_M_S\nNum<br/>Lock\n\n&\n\n*",
     {
       "x": 6.5
     },
@@ -230,12 +229,12 @@
       "a": 4,
       "w": 1.25
     },
-    "\n<span>&#9676;&#768;</span>",
+    "\n⎋",
     {
       "c": "#4f4f4f",
       "a": 0
     },
-    "A\na\n\n\nGui\n\nNum<br/>Lock\n◀\n|\n\n/",
+    "A\na\n\n\nGui\n\nF11\n◀\n|\n\n-",
     {
       "x": 14.5
     },
@@ -245,7 +244,7 @@
       "a": 4,
       "w": 1.25
     },
-    "\n<span>&#9676;&#769;</span>"
+    "_\n-"
   ],
   [
     {
@@ -288,7 +287,7 @@
       "y": -0.875,
       "x": 5.5
     },
-    "V\nv\n\n\n\nRGB_HUI\nF10\n↷\n=\n\n=",
+    "V\nv\n\n\n\nRGB_HUI\nIns\n↷\n!\n\n=",
     {
       "x": 6.5,
       "a": 4
@@ -301,7 +300,7 @@
       "x": 1.5,
       "a": 0
     },
-    "Z\nz\n\n\n\nRGB_M_B\nIns\n↶\n\\\n\n[",
+    "Z\nz\n\n\n\nRGB_M_B\nF10\n↶\n\\\n\n/",
     {
       "x": 14.5,
       "a": 4
@@ -327,12 +326,12 @@
       "y": -0.37509999999999977,
       "x": 3.5
     },
-    "\n⏎\n\n\nMEH",
+    "\n⏎\n\n\nMEH\n\n\n\n\n\n0",
     {
       "x": 10.5,
       "a": 4
     },
-    "\n◀\n\n\n\n\n\n\n\n\n0"
+    "\n◀"
   ],
   [
     {
@@ -340,7 +339,7 @@
       "x": 2.5,
       "a": 0
     },
-    "\n⌫\n\n\nHyper"
+    "\n⌫\n\n\nHyper\n\n\n\n\n\n."
   ],
   [
     {
@@ -348,25 +347,23 @@
       "x": 16,
       "a": 4
     },
-    "\n▼\n\n\n\n\n\n\n\n\n."
+    "\n▼"
   ],
   [
     {
       "y": -0.7549999999999999,
       "x": 1.5
     },
-    "\n⎇ NUM\n\n\n\n\n\n\n\n⎇ NAV"
+    "\n⎇ NUM"
   ],
   [
     {
       "y": -0.9950000000000001,
-      "x": 0.5,
-      "a": 0
+      "x": 0.5
     },
-    "\n␣\n\n\nGui",
+    "\n⎇ NAV",
     {
-      "x": 15.5,
-      "a": 4
+      "x": 15.5
     },
     "\n▲",
     "\n▶"
@@ -379,11 +376,10 @@
       "y": -0.75,
       "x": -1.25,
       "t": "yellow!important",
-      "sb": "",
       "a": 0,
       "w": 1.25
     },
-    "\n⎋\n\n\n⌥ Nav\n\n\n\n*"
+    "\n⎋\n\n\n⌥ Nav\n\n\n\n\n\n,"
   ],
   [
     {
@@ -391,25 +387,26 @@
       "rx": 6.5,
       "ry": 4.25,
       "y": -1,
-      "t": "",
-      "sb": "cherry"
+      "t": "#000000"
     },
     "\n↑\n\n\n⌥ Adj\n\n\n\n:-(",
     {
+      "t": "yellow!important",
       "a": 4
     },
     "\n↓\n\n\n\n\n\n\n:-)"
   ],
   [
     {
+      "t": "#000000",
       "a": 0,
       "h": 1.5
     },
-    "\n␣\n\n\nCtrl",
+    "\n⌫\n\n\nCtrl\n\n\n\n<span>&#9676;&#768;</span>",
     {
       "h": 1.5
     },
-    "\n⭾\n\n\nGui\n\n\n\n+"
+    "\n⌦\n\n\nGui\n\n\n\n<span>&#9676;&#769;</span>\n\n⏎"
   ],
   [
     {
@@ -417,10 +414,12 @@
       "rx": 13,
       "y": -1,
       "x": -2,
+      "t": "yellow!important",
       "a": 4
     },
     "⇤",
     {
+      "t": "#000000",
       "a": 0
     },
     "⇥\n\n\n\n⌥ Adj"
@@ -431,12 +430,12 @@
       "t": "cyan!important",
       "h": 1.5
     },
-    "\n⏎\n\n\n⌥ Num\n\n\n1",
+    "\n⏎\n\n\n⌥ Num",
     {
       "t": "lime!important",
       "h": 1.5
     },
-    "\n⌫\n\n\n⌥ Sym\n\n\n3"
+    "\n␣\n\n\n⌥ Sym"
   ],
   [
     {
@@ -448,6 +447,6 @@
       "t": "orange!important",
       "w": 1.25
     },
-    "\n⌦\n\n\n⌥ Fun\n\n\n2\n\n\n,"
+    "\n⭾\n\n\n⌥ Fun"
   ]
 ]

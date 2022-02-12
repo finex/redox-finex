@@ -56,27 +56,25 @@ setxkbmap -layout us -variant intl -option eurosign:e
 ** Keys Legend
 The following scheme describe the meaning of the keys symbols positions.
 
-|-------------+----------------------+---------------|
-|             |                      |               |
-|-------------+----------------------+---------------|
-| Shifted key | Symbols / Navigation | Shifted AltGr |
-|-------------+----------------------+---------------|
-| Functions   | Tap dance            | Mouse         |
-|-------------+----------------------+---------------|
-| Single Tap  | Numbers (*)          | AltGr         |
-|-------------+----------------------+---------------|
-|             | Modifier             | Adjust        |
-|-------------+----------------------+---------------|
+|-------------+-----------+---------------|
+|             |           |               |
+|-------------+-----------+---------------|
+| Shifted key | Symbols   | Shifted AltGr |
+|-------------+-----------+---------------|
+| Functions   | Tap dance | Navigation    |
+|-------------+-----------+---------------|
+| Single Tap  | Numbers   | AltGr         |
+|-------------+-----------+---------------|
+| Modifier    |           | Adjust        |
+|-------------+-----------+---------------|
 
-(*): Numeric pad position is also used on Awesome WM layer with the "gui" modifier: LGUI(KC_[1..9]).
 
 ** Color Legend
-- Green: Symbols (left) & Navigation layer (right)
-- Blue: Numbers Layer on right, one hand layer on left
-- Orange: Functions Layer
+- Green: Symbols
+- Yellow: Navigation
+- Cyan: Numbers / AwesomeWM shortcuts
+- Orange: Functions
 - Red: Tap dance
-- Pink: AwesomeWM Layer
-- Yellow: Mouse
 
 * Changelog
 - 2018/11/13
@@ -147,7 +145,13 @@ The following scheme describe the meaning of the keys symbols positions.
   Moved numbers on left half, swapped some thumbs keys and minor updates. Now the layout can be easily remapped on Kyria keyboard.
 - 2022/01/14
   Enable ~TAPPING_FORCE_HOLD_PER_KEY~ on home row mods.
-
+- 2022/02/11
+  Major update:
+  - Moved numbers and function keys to the right side to use it when right hand is on the mouse.
+  - Removed unused mouse layer.
+  - Reorganized some symbols.
+  - Splitted navigation and symbols in two layers.
+  - Merged numbers and AwesomeWM layers into one.
 
 * Credits
 Thanks to [[https://github.com/manna-harbour/][Manna Harbour]], [[https://github.com/sdothum][Steven Hum]] and [[https://github.com/benvallack][Ben Vallack]] for many ideas I used to improve the layout like the home row, per key tapping term and multiple tap dance functions.
