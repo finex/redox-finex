@@ -7,7 +7,7 @@ enum{
   _NAVI, // Navigation
   _NUMB, // Numbers
   _FUNC, // Functions keys
-  _MOUS, // Mouse
+  /* _MOUS, // Mouse */
   _ADJUST // Adjust
 };
 
@@ -31,7 +31,7 @@ enum custom_keycodes {
 
 // Tap dance codes
 enum tap_dance_codes {
-  DANCE_1, // Delete (single), Gui (hold), Mouse layer (double hold)
+  /* DANCE_1, // Delete (single), Gui (hold), Mouse layer (double hold) */
   DANCE_2, // Semicolon (single), Colon (double)
   DANCE_3, // Left Bracket (single), Left Brace (double)
   DANCE_4  // Right Bracket (single), Left Brace (double)
@@ -76,30 +76,30 @@ enum tap_dance_codes {
 
 // - Toggle layers:
 #define TG_NUM TG(_NUMB)
-#define TG_NAV TG(_NAVI)
+/* #define TG_NAV TG(_NAVI) */
 
 // - Tap dance keys:
-#define TD_DGUM TD(DANCE_1)
+/* #define TD_DGUM TD(DANCE_1) */
 #define TD_SCLN TD(DANCE_2)
 #define TD_LBRC TD(DANCE_3)
 #define TD_RBRC TD(DANCE_4)
 // - Awesome WM macros:
-#define KC_AW1 LGUI(KC_1)
-#define KC_AW2 LGUI(KC_2)
-#define KC_AW3 LGUI(KC_3)
-#define KC_AW4 LGUI(KC_4)
-#define KC_AW5 LGUI(KC_5)
-#define KC_AW6 LGUI(KC_6)
-#define KC_AW7 LGUI(KC_7)
-#define KC_AW8 LGUI(KC_8)
-#define KC_AW9 LGUI(KC_9)
-// - Clipboard, Undo/Redo and "select all"
+/* #define KC_AW1 LGUI(KC_1) */
+/* #define KC_AW2 LGUI(KC_2) */
+/* #define KC_AW3 LGUI(KC_3) */
+/* #define KC_AW4 LGUI(KC_4) */
+/* #define KC_AW5 LGUI(KC_5) */
+/* #define KC_AW6 LGUI(KC_6) */
+/* #define KC_AW7 LGUI(KC_7) */
+/* #define KC_AW8 LGUI(KC_8) */
+/* #define KC_AW9 LGUI(KC_9) */
+/* // - Clipboard, Undo/Redo and "select all" */
 #define U_PST S(KC_INS)
 #define U_CPY C(KC_INS)
 #define U_CUT S(KC_DEL)
 #define U_UND KC_UNDO
 #define U_RDO KC_AGIN
-#define U_ALL C(KC_A) // Emacs need to rebind mark-whole-buffer to: C-a
+/* #define U_ALL C(KC_A) // Emacs need to rebind mark-whole-buffer to: C-a */
 
 // Send custom strings or change default base layer
 bool process_record_user(uint16_t keycode, keyrecord_t *record) {
@@ -201,13 +201,13 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     //┌────────┬────────┬────────┬────────┬────────┬────────┐                                           ┌────────┬────────┬────────┬────────┬────────┬────────┐
        KC_ESC  ,KC_1    ,KC_2    ,KC_3    ,KC_4    ,KC_5    ,                                            KC_6    ,KC_7    ,KC_8    ,KC_9    ,KC_0    ,KC_BSPC ,
     //├────────┼────────┼────────┼────────┼────────┼────────┼────────┐                         ┌────────┼────────┼────────┼────────┼────────┼────────┼────────┤
-       KC_TAB  ,KC_Q    ,KC_W    ,KC_F    ,KC_P    ,KC_B    ,KC_PSCR ,                          XXXXXXX ,KC_J    ,KC_L    ,KC_U    ,KC_Y    ,TD_SCLN ,KC_EQL  ,
+       KC_TAB  ,KC_Q    ,KC_W    ,KC_F    ,KC_P    ,KC_B    ,KC_PSCR ,                          KC_DEL  ,KC_J    ,KC_L    ,KC_U    ,KC_Y    ,TD_SCLN ,KC_EQL  ,
     //├────────┼────────┼────────┼────────┼────────┼────────┼────────┤                         ├────────┼────────┼────────┼────────┼────────┼────────┼────────┤
-       KC_ESC  ,KC_GU_A ,KC_AL_R ,KC_CT_S ,KC_LS_T ,KC_G    ,TD_LBRC ,                          TD_RBRC ,KC_M    ,KC_RS_N ,KC_CT_E ,KC_AL_I ,KC_GU_O ,KC_MINS ,
+       KC_CESC ,KC_GU_A ,KC_AL_R ,KC_CT_S ,KC_LS_T ,KC_G    ,TD_LBRC ,                          TD_RBRC ,KC_M    ,KC_RS_N ,KC_CT_E ,KC_AL_I ,KC_GU_O ,KC_CMIN ,
     //├────────┼────────┼────────┼────────┼────────┼────────┼────────┼────────┐       ┌────────┼────────┼────────┼────────┼────────┼────────┼────────┼────────┤
        KC_LSPO ,KC_Z    ,KC_AR_X ,KC_C    ,KC_D    ,KC_V    ,KC_ADPU ,KC_PGDN ,        KC_HOME ,KC_ADEN ,KC_K    ,KC_H    ,KC_COMM ,KC_AR_DO,KC_SLSH ,KC_RSPC ,
     //├────────┼────────┼────────┼────────┼────┬───┴────┬───┼────────┼────────┤       ├────────┼────────┼───┬────┴───┬────┼────────┼────────┼────────┼────────┤
-       TG_NAV  ,TG_NUM  ,KC_HYBS ,KC_MEEN ,     KC_NAES ,    KC_CBSP ,KC_GUDE ,        KC_NUEN ,KC_SYSP ,    KC_FUTA ,     KC_LEFT ,KC_DOWN ,KC_UP   ,KC_RGHT
+       KC_GUSP ,TG_NUM  ,KC_HYBS ,KC_MEEN ,     KC_NAES ,    KC_CBSP ,KC_GUDE ,        KC_NUEN ,KC_SYSP ,    KC_FUTA ,     KC_LEFT ,KC_DOWN ,KC_UP   ,KC_RGHT
     //└────────┴────────┴────────┴────────┘    └────────┘   └────────┴────────┘       └────────┴────────┘   └────────┘    └────────┴────────┴────────┴────────┘
   ),
 
@@ -231,26 +231,39 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     //┌────────┬────────┬────────┬────────┬────────┬────────┐                                           ┌────────┬────────┬────────┬────────┬────────┬────────┐
        _______ ,_______ ,_______ ,_______ ,_______ ,_______ ,                                            _______ ,_______ ,_______ ,_______ ,_______ ,_______ ,
     //├────────┼────────┼────────┼────────┼────────┼────────┼────────┐                         ┌────────┼────────┼────────┼────────┼────────┼────────┼────────┤
-       _______ ,KC_PGUP ,KC_UP   ,KC_PGDN ,KC_HOME ,_______ ,_______ ,                          _______ ,U_UND   ,U_CUT   ,U_CPY   ,U_PST   ,U_RDO   ,_______ ,
+       _______ ,_______ ,_______ ,_______ ,_______ ,_______ ,_______ ,                          _______ ,U_UND   ,U_CUT   ,U_CPY   ,U_PST   ,U_RDO   ,_______ ,
     //├────────┼────────┼────────┼────────┼────────┼────────┼────────┤                         ├────────┼────────┼────────┼────────┼────────┼────────┼────────┤
-       _______ ,KC_LEFT ,KC_DOWN ,KC_RGHT ,KC_END  ,_______ ,_______ ,                          _______ ,_______ ,KC_LEFT ,KC_DOWN ,KC_UP   ,KC_RGHT ,_______ ,
+       _______ ,_______ ,_______ ,_______ ,_______ ,_______ ,_______ ,                          _______ ,_______ ,KC_LEFT ,KC_DOWN ,KC_UP   ,KC_RGHT ,_______ ,
     //├────────┼────────┼────────┼────────┼────────┼────────┼────────┼────────┐       ┌────────┼────────┼────────┼────────┼────────┼────────┼────────┼────────┤
-       _______ ,U_UND   ,U_CUT   ,U_CPY   ,U_PST   ,U_RDO   ,_______ ,_______ ,        _______ ,_______ ,_______ ,KC_HOME ,KC_PGDN ,KC_PGUP ,KC_END  ,_______ ,
+       _______ ,_______ ,_______ ,_______ ,_______ ,_______ ,_______ ,_______ ,        _______ ,_______ ,_______ ,KC_HOME ,KC_PGDN ,KC_PGUP ,KC_END  ,_______ ,
     //├────────┼────────┼────────┼────────┼────┬───┴────┬───┼────────┼────────┤       ├────────┼────────┼───┬────┴───┬────┼────────┼────────┼────────┼────────┤
        _______ ,_______ ,_______ ,_______ ,     _______ ,    _______ ,_______ ,        _______ ,_______ ,    _______ ,     _______ ,_______ ,_______ ,_______
     //└────────┴────────┴────────┴────────┘    └────────┘   └────────┴────────┘       └────────┴────────┘   └────────┘    └────────┴────────┴────────┴────────┘
   ),
 
   // Numeric keypad layer
+  /* [_NUMB] = LAYOUT( */
+  /*   //┌────────┬────────┬────────┬────────┬────────┬────────┐                                           ┌────────┬────────┬────────┬────────┬────────┬────────┐ */
+  /*      _______ ,_______ ,_______ ,_______ ,_______ ,_______ ,                                            _______ ,_______ ,_______ ,_______ ,_______ ,_______ , */
+  /*   //├────────┼────────┼────────┼────────┼────────┼────────┼────────┐                         ┌────────┼────────┼────────┼────────┼────────┼────────┼────────┤ */
+  /*      _______ ,KC_LBRC ,KC_7    ,KC_8    ,KC_9    ,KC_PPLS ,_______ ,                          _______ ,_______ ,KC_AW7  ,KC_AW8  ,KC_AW9  ,_______ ,_______ , */
+  /*   //├────────┼────────┼────────┼────────┼────────┼────────┼────────┤                         ├────────┼────────┼────────┼────────┼────────┼────────┼────────┤ */
+  /*      _______ ,KC_PMNS ,KC_4    ,KC_5    ,KC_6    ,KC_PAST ,_______ ,                          _______ ,_______ ,KC_AW4  ,KC_AW5  ,KC_AW6  ,_______ ,_______ , */
+  /*   //├────────┼────────┼────────┼────────┼────────┼────────┼────────┼────────┐       ┌────────┼────────┼────────┼────────┼────────┼────────┼────────┼────────┤ */
+  /*      _______ ,KC_PSLS ,KC_1    ,KC_2    ,KC_3    ,KC_EQL  ,_______ ,_______ ,        _______ ,_______ ,_______ ,KC_AW1  ,KC_AW2  ,KC_AW3  ,_______ ,_______ , */
+  /*   //├────────┼────────┼────────┼────────┼────┬───┴────┬───┼────────┼────────┤       ├────────┼────────┼───┬────┴───┬────┼────────┼────────┼────────┼────────┤ */
+  /*      _______ ,_______ ,KC_DOT  ,KC_0    ,     KC_COMM ,    _______ ,KC_ENT  ,        _______ ,_______ ,    _______ ,     _______ ,_______ ,_______ ,_______ */
+  /*   //└────────┴────────┴────────┴────────┘    └────────┘   └────────┴────────┘       └────────┴────────┘   └────────┘    └────────┴────────┴────────┴────────┘ */
+  /* ), */
   [_NUMB] = LAYOUT(
     //┌────────┬────────┬────────┬────────┬────────┬────────┐                                           ┌────────┬────────┬────────┬────────┬────────┬────────┐
        _______ ,_______ ,_______ ,_______ ,_______ ,_______ ,                                            _______ ,_______ ,_______ ,_______ ,_______ ,_______ ,
     //├────────┼────────┼────────┼────────┼────────┼────────┼────────┐                         ┌────────┼────────┼────────┼────────┼────────┼────────┼────────┤
-       _______ ,KC_LBRC ,KC_7    ,KC_8    ,KC_9    ,KC_PPLS ,_______ ,                          _______ ,_______ ,KC_AW7  ,KC_AW8  ,KC_AW9  ,_______ ,_______ ,
+       _______ ,KC_LBRC ,KC_7    ,KC_8    ,KC_9    ,KC_PPLS ,_______ ,                          _______ ,_______ ,_______ ,_______ ,_______ ,_______ ,_______ ,
     //├────────┼────────┼────────┼────────┼────────┼────────┼────────┤                         ├────────┼────────┼────────┼────────┼────────┼────────┼────────┤
-       _______ ,KC_PMNS ,KC_4    ,KC_5    ,KC_6    ,KC_PAST ,_______ ,                          _______ ,_______ ,KC_AW4  ,KC_AW5  ,KC_AW6  ,_______ ,_______ ,
+       _______ ,KC_PMNS ,KC_4    ,KC_5    ,KC_6    ,KC_PAST ,_______ ,                          _______ ,_______ ,_______ ,_______ ,_______ ,_______ ,_______ ,
     //├────────┼────────┼────────┼────────┼────────┼────────┼────────┼────────┐       ┌────────┼────────┼────────┼────────┼────────┼────────┼────────┼────────┤
-       _______ ,KC_PSLS ,KC_1    ,KC_2    ,KC_3    ,KC_EQL  ,_______ ,_______ ,        _______ ,_______ ,_______ ,KC_AW1  ,KC_AW2  ,KC_AW3  ,_______ ,_______ ,
+       _______ ,KC_PSLS ,KC_1    ,KC_2    ,KC_3    ,KC_EQL  ,_______ ,_______ ,        _______ ,_______ ,_______ ,_______ ,_______ ,_______ ,_______ ,_______ ,
     //├────────┼────────┼────────┼────────┼────┬───┴────┬───┼────────┼────────┤       ├────────┼────────┼───┬────┴───┬────┼────────┼────────┼────────┼────────┤
        _______ ,_______ ,KC_DOT  ,KC_0    ,     KC_COMM ,    _______ ,KC_ENT  ,        _______ ,_______ ,    _______ ,     _______ ,_______ ,_______ ,_______
     //└────────┴────────┴────────┴────────┘    └────────┘   └────────┴────────┘       └────────┴────────┘   └────────┘    └────────┴────────┴────────┴────────┘
@@ -272,20 +285,20 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   ),
 
 
-  // Mouse
-  [_MOUS] = LAYOUT(
-    //┌────────┬────────┬────────┬────────┬────────┬────────┐                                           ┌────────┬────────┬────────┬────────┬────────┬────────┐
-       _______ ,_______ ,_______ ,_______ ,_______ ,_______ ,                                            _______ ,_______ ,_______ ,_______ ,_______ ,_______ ,
-    //├────────┼────────┼────────┼────────┼────────┼────────┼────────┐                         ┌────────┼────────┼────────┼────────┼────────┼────────┼────────┤
-       _______ ,U_UND   ,U_CUT   ,U_CPY   ,U_PST   ,U_RDO   ,_______ ,                          _______ ,U_RDO   ,U_PST   ,U_CPY   ,U_CUT   ,U_UND   ,_______ ,
-    //├────────┼────────┼────────┼────────┼────────┼────────┼────────┤                         ├────────┼────────┼────────┼────────┼────────┼────────┼────────┤
-       _______ ,_______ ,_______ ,_______ ,_______ ,_______ ,_______ ,                          _______ ,_______ ,KC_MS_L ,KC_MS_D ,KC_MS_U ,KC_MS_R ,_______ ,
-    //├────────┼────────┼────────┼────────┼────────┼────────┼────────┼────────┐       ┌────────┼────────┼────────┼────────┼────────┼────────┼────────┼────────┤
-       _______ ,_______ ,_______ ,_______ ,_______ ,_______ ,_______ ,_______ ,        _______ ,_______ ,_______ ,KC_WH_L ,KC_WH_D ,KC_WH_U ,KC_WH_R ,_______ ,
-    //├────────┼────────┼────────┼────────┼────┬───┴────┬───┼────────┼────────┤       ├────────┼────────┼───┬────┴───┬────┼────────┼────────┼────────┼────────┤
-       _______ ,_______ ,_______ ,XXXXXXX ,     _______ ,    _______ ,_______ ,        KC_BTN1 ,KC_BTN3 ,    KC_BTN2 ,     _______ ,_______ ,_______ ,_______
-    //└────────┴────────┴────────┴────────┘    └────────┘   └────────┴────────┘       └────────┴────────┘   └────────┘    └────────┴────────┴────────┴────────┘
-  ),
+  /* // Mouse */
+  /* [_MOUS] = LAYOUT( */
+  /*   //┌────────┬────────┬────────┬────────┬────────┬────────┐                                           ┌────────┬────────┬────────┬────────┬────────┬────────┐ */
+  /*      _______ ,_______ ,_______ ,_______ ,_______ ,_______ ,                                            _______ ,_______ ,_______ ,_______ ,_______ ,_______ , */
+  /*   //├────────┼────────┼────────┼────────┼────────┼────────┼────────┐                         ┌────────┼────────┼────────┼────────┼────────┼────────┼────────┤ */
+  /*      _______ ,U_UND   ,U_CUT   ,U_CPY   ,U_PST   ,U_RDO   ,_______ ,                          _______ ,U_RDO   ,U_PST   ,U_CPY   ,U_CUT   ,U_UND   ,_______ , */
+  /*   //├────────┼────────┼────────┼────────┼────────┼────────┼────────┤                         ├────────┼────────┼────────┼────────┼────────┼────────┼────────┤ */
+  /*      _______ ,_______ ,_______ ,_______ ,_______ ,_______ ,_______ ,                          _______ ,_______ ,KC_MS_L ,KC_MS_D ,KC_MS_U ,KC_MS_R ,_______ , */
+  /*   //├────────┼────────┼────────┼────────┼────────┼────────┼────────┼────────┐       ┌────────┼────────┼────────┼────────┼────────┼────────┼────────┼────────┤ */
+  /*      _______ ,_______ ,_______ ,_______ ,_______ ,_______ ,_______ ,_______ ,        _______ ,_______ ,_______ ,KC_WH_L ,KC_WH_D ,KC_WH_U ,KC_WH_R ,_______ , */
+  /*   //├────────┼────────┼────────┼────────┼────┬───┴────┬───┼────────┼────────┤       ├────────┼────────┼───┬────┴───┬────┼────────┼────────┼────────┼────────┤ */
+  /*      _______ ,_______ ,_______ ,XXXXXXX ,     _______ ,    _______ ,_______ ,        KC_BTN1 ,KC_BTN3 ,    KC_BTN2 ,     _______ ,_______ ,_______ ,_______ */
+  /*   //└────────┴────────┴────────┴────────┘    └────────┘   └────────┴────────┘       └────────┴────────┘   └────────┘    └────────┴────────┴────────┴────────┘ */
+  /* ), */
 
   // Adjust layer (RGB, Reset and base layer switch)
   [_ADJUST] = LAYOUT(
@@ -325,61 +338,61 @@ enum {
     MORE_TAPS
 };
 
-static tap dance_state = {
-    .is_press_action = true,
-    .step = 0
-};
+/* static tap dance_state = { */
+/*     .is_press_action = true, */
+/*     .step = 0 */
+/* }; */
 
 /* void on_dance_1(qk_tap_dance_state_t *state, void *user_data); */
 /* uint8_t dance_1_dance_step(qk_tap_dance_state_t *state); */
 /* void dance_1_finished(qk_tap_dance_state_t *state, void *user_data); */
 /* void dance_1_reset(qk_tap_dance_state_t *state, void *user_data); */
 
-// Dance 1: Delete / Gui / _Mouse
-void on_dance_1(qk_tap_dance_state_t *state, void *user_data) {
-  if(state->count == 3) {
-    tap_code16(KC_DEL);
-    tap_code16(KC_DEL);
-    tap_code16(KC_DEL);
-  }
-  if(state->count > 3) {
-    tap_code16(KC_DEL);
-  }
-}
+/* // Dance 1: Delete / Gui / _Mouse */
+/* void on_dance_1(qk_tap_dance_state_t *state, void *user_data) { */
+/*   if(state->count == 3) { */
+/*     tap_code16(KC_DEL); */
+/*     tap_code16(KC_DEL); */
+/*     tap_code16(KC_DEL); */
+/*   } */
+/*   if(state->count > 3) { */
+/*     tap_code16(KC_DEL); */
+/*   } */
+/* } */
 
-uint8_t dance_1_dance_step(qk_tap_dance_state_t *state) {
-  if (state->count == 1) {
-    if (state->interrupted || !state->pressed) return SINGLE_TAP;
-    else return SINGLE_HOLD;
-  } else if (state->count == 2) {
-    if (state->interrupted) return DOUBLE_SINGLE_TAP;
-    else if (state->pressed) return DOUBLE_HOLD;
-    else return DOUBLE_TAP;
-  }
-  return MORE_TAPS;
-}
-void dance_1_finished(qk_tap_dance_state_t *state, void *user_data) {
-  dance_state.step = dance_1_dance_step(state);
-  switch (dance_state.step) {
-  case SINGLE_TAP: register_code16(KC_DEL); break;
-  case SINGLE_HOLD: register_mods(MOD_BIT(KC_LGUI)); break;
-  case DOUBLE_TAP: register_code16(KC_DEL); register_code16(KC_DEL); break;
-  case DOUBLE_HOLD: layer_on(_MOUS); break;
-  case DOUBLE_SINGLE_TAP: tap_code16(KC_DEL); register_code16(KC_DEL);
-  }
-}
+/* uint8_t dance_1_dance_step(qk_tap_dance_state_t *state) { */
+/*   if (state->count == 1) { */
+/*     if (state->interrupted || !state->pressed) return SINGLE_TAP; */
+/*     else return SINGLE_HOLD; */
+/*   } else if (state->count == 2) { */
+/*     if (state->interrupted) return DOUBLE_SINGLE_TAP; */
+/*     else if (state->pressed) return DOUBLE_HOLD; */
+/*     else return DOUBLE_TAP; */
+/*   } */
+/*   return MORE_TAPS; */
+/* } */
+/* void dance_1_finished(qk_tap_dance_state_t *state, void *user_data) { */
+/*   dance_state.step = dance_1_dance_step(state); */
+/*   switch (dance_state.step) { */
+/*   case SINGLE_TAP: register_code16(KC_DEL); break; */
+/*   case SINGLE_HOLD: register_mods(MOD_BIT(KC_LGUI)); break; */
+/*   case DOUBLE_TAP: register_code16(KC_DEL); register_code16(KC_DEL); break; */
+/*   case DOUBLE_HOLD: layer_on(_MOUS); break; */
+/*   case DOUBLE_SINGLE_TAP: tap_code16(KC_DEL); register_code16(KC_DEL); */
+/*   } */
+/* } */
 
-void dance_1_reset(qk_tap_dance_state_t *state, void *user_data) {
-  wait_ms(10);
-  switch (dance_state.step) {
-  case SINGLE_TAP: unregister_code16(KC_DEL); break;
-  case SINGLE_HOLD: unregister_mods(MOD_BIT(KC_LGUI)); break;
-  case DOUBLE_TAP: unregister_code16(KC_DEL); break;
-  case DOUBLE_HOLD: layer_off(_MOUS); break;
-  case DOUBLE_SINGLE_TAP: unregister_code16(KC_DEL); break;
-  }
-  dance_state.step = 0;
-}
+/* void dance_1_reset(qk_tap_dance_state_t *state, void *user_data) { */
+/*   wait_ms(10); */
+/*   switch (dance_state.step) { */
+/*   case SINGLE_TAP: unregister_code16(KC_DEL); break; */
+/*   case SINGLE_HOLD: unregister_mods(MOD_BIT(KC_LGUI)); break; */
+/*   case DOUBLE_TAP: unregister_code16(KC_DEL); break; */
+/*   case DOUBLE_HOLD: layer_off(_MOUS); break; */
+/*   case DOUBLE_SINGLE_TAP: unregister_code16(KC_DEL); break; */
+/*   } */
+/*   dance_state.step = 0; */
+/* } */
 
 // Dance 2: Semicolon to Colon
 void dance_2_finished (qk_tap_dance_state_t *state, void *user_data) {
@@ -437,7 +450,7 @@ void dance_4_reset (qk_tap_dance_state_t *state, void *user_data) {
 
 // Match tap dance actions with the corresponding index
 qk_tap_dance_action_t tap_dance_actions[] = {
-  [DANCE_1] = ACTION_TAP_DANCE_FN_ADVANCED(on_dance_1, dance_1_finished, dance_1_reset),
+  /* [DANCE_1] = ACTION_TAP_DANCE_FN_ADVANCED(on_dance_1, dance_1_finished, dance_1_reset), */
   [DANCE_2] = ACTION_TAP_DANCE_FN_ADVANCED(NULL, dance_2_finished, dance_2_reset),
   [DANCE_3] = ACTION_TAP_DANCE_FN_ADVANCED(NULL, dance_3_finished, dance_3_reset),
   [DANCE_4] = ACTION_TAP_DANCE_FN_ADVANCED(NULL, dance_4_finished, dance_4_reset)

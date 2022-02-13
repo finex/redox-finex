@@ -56,22 +56,22 @@ setxkbmap -layout us -variant intl -option eurosign:e
 ** Keys Legend
 The following scheme describe the meaning of the keys symbols positions.
 
-|-------------+-----------+---------------|
-|             |           |               |
-|-------------+-----------+---------------|
-| Shifted key | Symbols   | Shifted AltGr |
-|-------------+-----------+---------------|
-| Functions   | Tap dance | Navigation    |
-|-------------+-----------+---------------|
-| Single Tap  | Numbers   | AltGr         |
-|-------------+-----------+---------------|
-| Modifier    |           | Adjust        |
-|-------------+-----------+---------------|
+|-------------+------------+---------------|
+|             |            |               |
+|-------------+------------+---------------|
+| Shifted key | Symbols    | Shifted AltGr |
+|-------------+------------+---------------|
+| Functions   | Tap dance  | Numbers       |
+|-------------+------------+---------------|
+| Single Tap  | Navigation | AltGr         |
+|-------------+------------+---------------|
+| Modifier    |            | Adjust        |
+|-------------+------------+---------------|
 
 ** Color Legend
 - Green: Symbols
 - Yellow: Navigation
-- Cyan: Numbers / AwesomeWM shortcuts
+- Cyan: Numbers
 - Orange: Functions
 - Red: Tap dance
 
@@ -151,6 +151,8 @@ The following scheme describe the meaning of the keys symbols positions.
   - Reorganized some symbols.
   - Splitted navigation and symbols in two layers.
   - Merged numbers and AwesomeWM layers into one.
+- 2022/02/13
+  Removed AwesomeWM and other unused keys, added back some extra modifiers and partially cleaned up the code.
 
 * Credits
 Thanks to [[https://github.com/manna-harbour/][Manna Harbour]], [[https://github.com/sdothum][Steven Hum]] and [[https://github.com/benvallack][Ben Vallack]] for many ideas I used to improve the layout like the home row, per key tapping term and multiple tap dance functions.
