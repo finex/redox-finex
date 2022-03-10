@@ -66,6 +66,7 @@ enum tap_dance_codes {
 #define KC_RAEN RALT_T(KC_ENT)        // Enter / Right Alt
 
 #define KC_GUDE RGUI_T(KC_DEL)        // Delete / Right Gui
+#define KC_GUEN RGUI_T(KC_ENT)        // Enter / Right Gui
 #define KC_SYBS LT(_SYMB, KC_BSPC)    // Backspace / _symbols
 #define KC_FUDE LT(_FUNC, KC_DEL)     // Delete / _functions
 #define KC_NUEN LT(_NUMB, KC_ENT)     // Enter / _numbers
@@ -167,6 +168,8 @@ uint16_t get_tapping_term(uint16_t keycode, keyrecord_t *record) {
   // Ring fingers
   case KC_AL_I:
   case KC_AL_R:
+  case KC_AR_X:
+  case KC_AR_DO:
     return TAPPING_TERM + 200;
 
   // Pinkies
@@ -185,6 +188,7 @@ uint16_t get_tapping_term(uint16_t keycode, keyrecord_t *record) {
 
   // Left thumb for delete/gui/mouse combo
   case KC_GUDE:
+  case KC_GUEN:
     return TAPPING_TERM - 20;
 
   // All other keys
@@ -265,7 +269,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     //├────────┼────────┼────────┼────────┼────────┼────────┼────────┼────────┐       ┌────────┼────────┼────────┼────────┼────────┼────────┼────────┼────────┤
        _______ ,KC_PSLS ,KC_1    ,KC_2    ,KC_3    ,KC_EQL  ,_______ ,_______ ,        _______ ,_______ ,_______ ,_______ ,_______ ,_______ ,_______ ,_______ ,
     //├────────┼────────┼────────┼────────┼────┬───┴────┬───┼────────┼────────┤       ├────────┼────────┼───┬────┴───┬────┼────────┼────────┼────────┼────────┤
-       _______ ,_______ ,KC_DOT  ,KC_0    ,     KC_COMM ,    _______ ,KC_ENT  ,        _______ ,_______ ,    _______ ,     _______ ,_______ ,_______ ,_______
+       _______ ,_______ ,KC_DOT  ,KC_0    ,     KC_COMM ,    _______ ,KC_GUEN ,        _______ ,_______ ,    _______ ,     _______ ,_______ ,_______ ,_______
     //└────────┴────────┴────────┴────────┘    └────────┘   └────────┴────────┘       └────────┴────────┘   └────────┘    └────────┴────────┴────────┴────────┘
   ),
 
