@@ -1,4 +1,5 @@
 #include QMK_KEYBOARD_H
+#include "features/caps_word.h"
 
 // Layer names
 enum{
@@ -98,12 +99,20 @@ enum tap_dance_codes {
 #define U_PST S(KC_INS)
 #define U_CPY C(KC_INS)
 #define U_CUT S(KC_DEL)
-#define U_UND KC_UNDO
-#define U_RDO KC_AGIN
+/* #define U_UND KC_UNDO */
+// #define U_RDO KC_AGIN // Emacs executes "reperat-complex-command"
+#define U_UND C(KC_UNDS)
+#define U_RDO A(KC_UNDS)
 /* #define U_ALL C(KC_A) // Emacs need to rebind mark-whole-buffer to: C-a */
+
+
 
 // Send custom strings or change default base layer
 bool process_record_user(uint16_t keycode, keyrecord_t *record) {
+
+  // Process caps_word
+  if (!process_caps_word(keycode, record)) { return false; }
+
   if (record->event.pressed) {
     switch(keycode) {
       case ASC_SAR:

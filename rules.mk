@@ -6,3 +6,5 @@ LTO_ENABLE = yes
 CONSOLE_ENABLE = no
 AUTO_SHIFT_ENABLE = no
 MOUSEKEY_ENABLE = no
+
+SRC += features/caps_word.c

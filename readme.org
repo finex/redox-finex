@@ -10,6 +10,7 @@
 - [[#layout][Layout]]
   - [[#keys-legend][Keys Legend]]
   - [[#color-legend][Color Legend]]
+- [[#instructions][Instructions]]
 - [[#changelog][Changelog]]
 - [[#credits][Credits]]
 - [[#finex-qmk-layouts][FiNeX QMK Layouts]]
@@ -19,7 +20,6 @@ This keymap use the default one with some changes to suit my needs. Mainly
 having most used symbols on a separated layer copying the common symbols from the
 number keys to the second row, adding other symbols and ~◌̀~ ~◌́~ dead keys for
 accents.
-
 
 * Features and differences from default layout
 - Enabled USE_SERIAL for Falba.Tech Redox keyboards.
@@ -74,6 +74,12 @@ The following scheme describe the meaning of the keys symbols positions.
 - Cyan: Numbers
 - Orange: Functions
 - Red: Tap dance
+
+* Instructions
+To compile and flash the firmware just use the following command from the QMK main directory:
+#+begin_src sh
+sudo make redox/rev1:finex:avrdude
+#+end_src
 
 * Changelog
 - 2018/11/13
@@ -153,6 +159,8 @@ The following scheme describe the meaning of the keys symbols positions.
   - Merged numbers and AwesomeWM layers into one.
 - 2022/02/13
   Removed AwesomeWM and other unused keys, added back some extra modifiers and partially cleaned up the code.
+- 2022/04/18
+  Added [[https://getreuer.info/posts/keyboards/caps-word/index.html][Caps Word]] feature.
 
 * Credits
 Thanks to [[https://github.com/manna-harbour/][Manna Harbour]], [[https://github.com/sdothum][Steven Hum]] and [[https://github.com/benvallack][Ben Vallack]] for many ideas I used to improve the layout like the home row, per key tapping term and multiple tap dance functions.
