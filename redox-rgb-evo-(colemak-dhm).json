@@ -153,7 +153,7 @@
       "c": "#4f4f4f",
       "a": 0
     },
-    "Q\nq\n\n\n\nRESET\nF12\n[\n]",
+    "Q\nq\n\n\n\nRESET\nF12\n-\n|",
     {
       "x": 14.5
     },
@@ -215,7 +215,7 @@
       "y": -0.875,
       "x": 5.5
     },
-    "G\ng\n\n\n\nRGB_M_S\nNum<br/>Lock\n*\n&",
+    "G\ng\n\n\n\nRGB_M_S\nNum<br/>Lock\n=\n&",
     {
       "x": 6.5
     },
@@ -232,7 +232,7 @@
     {
       "c": "#4f4f4f"
     },
-    "A\na\n\n\nGui\n\nF11\n-\n|",
+    "A\na\n\n\nGui\n\nF11\n]\n[",
     {
       "x": 14.5
     },
@@ -283,7 +283,7 @@
       "y": -0.875,
       "x": 5.5
     },
-    "V\nv\n\n\n\nRGB_HUI\nIns\n=\n!",
+    "V\nv\n\n\n\nRGB_HUI\nIns\n*\n!",
     {
       "x": 6.5,
       "a": 4
@@ -377,7 +377,7 @@
       "a": 0,
       "w": 1.25
     },
-    "\n⎋\n\n\n⌥ Nav\n\n\n,"
+    "\n⎋\n\n\n⌥ Nav\n\n\n,\n<span>&#9676;&#768;</span>"
   ],
   [
     {
@@ -400,7 +400,7 @@
       "a": 0,
       "h": 1.5
     },
-    "\n⌫\n\n\nCtrl\n\n\n\n<span>&#9676;&#768;</span>",
+    "\n⌫\n\n\nCtrl\n\n\n\n(",
     {
       "h": 1.5
     },

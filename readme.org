@@ -163,6 +163,8 @@ sudo make redox/rev1:finex:avrdude
   Added [[https://getreuer.info/posts/keyboards/caps-word/index.html][Caps Word]] feature.
 - 2022/05/01
   Minor number layer update, test combo: ~B+G -> [~
+- 2022/07/10
+  Misc updates and number layer update: inverted ~*~ and ~=~, shifted dot, zero ando comma to the left. Added open ~(~ on symbol layer.
 
 * Credits
 Thanks to [[https://github.com/manna-harbour/][Manna Harbour]], [[https://github.com/sdothum][Steven Hum]] and [[https://github.com/benvallack][Ben Vallack]] for many ideas I used to improve the layout like the home row, per key tapping term and multiple tap dance functions.
